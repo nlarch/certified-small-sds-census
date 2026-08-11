@@ -1,0 +1,1002 @@
+{
+  "as_of": "2026-08-12",
+  "complete": false,
+  "entries": [
+    {
+      "contribution_level": "VALID_RESULT",
+      "evidence_path": "artifacts/runs/order9_exhaustion.json",
+      "evidence_sha256": "f0b1a06720a512e2e60723d578f773842e65c78a8e0bea032970c81d3279a63e",
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        3,
+        3
+      ],
+      "k": 8,
+      "lambda": 1,
+      "name": "SDS(9,8,1,[3,3])",
+      "project_status": "NONEXISTENT_BY_EXHAUSTION",
+      "result": "NONEXISTENT_BY_EXHAUSTION",
+      "schema": "order9-exhaustion-v1",
+      "v": 9
+    },
+    {
+      "contribution_level": "VALID_RESULT",
+      "evidence_path": "artifacts/runs/v18_15_2_c3xc6_exhaustion.json",
+      "evidence_sha256": "649a411c9a893b3b0d4fe58ce8da6a533b7481626aeb807d4abe7e3fbb61744a",
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        3,
+        6
+      ],
+      "k": 15,
+      "lambda": 2,
+      "name": "SDS(18,15,2,[3,6])",
+      "project_status": "NONEXISTENT_BY_EXHAUSTION",
+      "result": "NONEXISTENT_BY_EXHAUSTION",
+      "schema": "v18-15-2-c3xc6-exhaustion-v1",
+      "v": 18
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        2,
+        10
+      ],
+      "k": 11,
+      "lambda": 2,
+      "name": "SDS(20,11,2,[2,10])",
+      "project_status": "UNRESOLVED",
+      "v": 20
+    },
+    {
+      "contribution_level": "VALID_RESULT",
+      "evidence_path": "artifacts/runs/v20_17_8_c2xc10_exhaustion.json",
+      "evidence_sha256": "ca398c2a61f6cedb07595b333c19d4eb02b2e25428de455683446c80123dca83",
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        2,
+        10
+      ],
+      "k": 17,
+      "lambda": 8,
+      "name": "SDS(20,17,8,[2,10])",
+      "project_status": "NONEXISTENT_BY_EXHAUSTION",
+      "result": "NONEXISTENT_BY_EXHAUSTION",
+      "schema": "v20-17-8-c2xc10-exhaustion-v1",
+      "v": 20
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        2,
+        12
+      ],
+      "k": 18,
+      "lambda": 2,
+      "name": "SDS(24,18,2,[2,12])",
+      "project_status": "UNRESOLVED",
+      "v": 24
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        2,
+        2,
+        6
+      ],
+      "k": 18,
+      "lambda": 2,
+      "name": "SDS(24,18,2,[2,2,6])",
+      "project_status": "UNRESOLVED",
+      "v": 24
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        5,
+        5
+      ],
+      "k": 12,
+      "lambda": 1,
+      "name": "SDS(25,12,1,[5,5])",
+      "project_status": "UNRESOLVED",
+      "v": 25
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        5,
+        5
+      ],
+      "k": 16,
+      "lambda": 2,
+      "name": "SDS(25,16,2,[5,5])",
+      "project_status": "UNRESOLVED",
+      "v": 25
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        5,
+        5
+      ],
+      "k": 24,
+      "lambda": 5,
+      "name": "SDS(25,24,5,[5,5])",
+      "project_status": "UNRESOLVED",
+      "v": 25
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        3,
+        3,
+        3
+      ],
+      "k": 10,
+      "lambda": 1,
+      "name": "SDS(27,10,1,[3,3,3])",
+      "project_status": "UNRESOLVED",
+      "v": 27
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        3,
+        9
+      ],
+      "k": 10,
+      "lambda": 1,
+      "name": "SDS(27,10,1,[3,9])",
+      "project_status": "UNRESOLVED",
+      "v": 27
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        3,
+        3,
+        3
+      ],
+      "k": 12,
+      "lambda": 2,
+      "name": "SDS(27,12,2,[3,3,3])",
+      "project_status": "UNRESOLVED",
+      "v": 27
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        3,
+        9
+      ],
+      "k": 12,
+      "lambda": 2,
+      "name": "SDS(27,12,2,[3,9])",
+      "project_status": "UNRESOLVED",
+      "v": 27
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        3,
+        3,
+        3
+      ],
+      "k": 14,
+      "lambda": 5,
+      "name": "SDS(27,14,5,[3,3,3])",
+      "project_status": "UNRESOLVED",
+      "v": 27
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        3,
+        9
+      ],
+      "k": 14,
+      "lambda": 5,
+      "name": "SDS(27,14,5,[3,9])",
+      "project_status": "UNRESOLVED",
+      "v": 27
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        3,
+        3,
+        3
+      ],
+      "k": 17,
+      "lambda": 4,
+      "name": "SDS(27,17,4,[3,3,3])",
+      "project_status": "UNRESOLVED",
+      "v": 27
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        3,
+        9
+      ],
+      "k": 17,
+      "lambda": 4,
+      "name": "SDS(27,17,4,[3,9])",
+      "project_status": "UNRESOLVED",
+      "v": 27
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        27
+      ],
+      "k": 17,
+      "lambda": 8,
+      "name": "SDS(27,17,8,[27])",
+      "project_status": "UNRESOLVED",
+      "v": 27
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        3,
+        3,
+        3
+      ],
+      "k": 17,
+      "lambda": 8,
+      "name": "SDS(27,17,8,[3,3,3])",
+      "project_status": "UNRESOLVED",
+      "v": 27
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        3,
+        3,
+        3
+      ],
+      "k": 22,
+      "lambda": 3,
+      "name": "SDS(27,22,3,[3,3,3])",
+      "project_status": "UNRESOLVED",
+      "v": 27
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        3,
+        9
+      ],
+      "k": 22,
+      "lambda": 3,
+      "name": "SDS(27,22,3,[3,9])",
+      "project_status": "UNRESOLVED",
+      "v": 27
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        3,
+        3,
+        3
+      ],
+      "k": 22,
+      "lambda": 9,
+      "name": "SDS(27,22,9,[3,3,3])",
+      "project_status": "UNRESOLVED",
+      "v": 27
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        3,
+        9
+      ],
+      "k": 22,
+      "lambda": 9,
+      "name": "SDS(27,22,9,[3,9])",
+      "project_status": "UNRESOLVED",
+      "v": 27
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        3,
+        3,
+        3
+      ],
+      "k": 23,
+      "lambda": 1,
+      "name": "SDS(27,23,1,[3,3,3])",
+      "project_status": "UNRESOLVED",
+      "v": 27
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        3,
+        9
+      ],
+      "k": 23,
+      "lambda": 1,
+      "name": "SDS(27,23,1,[3,9])",
+      "project_status": "UNRESOLVED",
+      "v": 27
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        3,
+        3,
+        3
+      ],
+      "k": 23,
+      "lambda": 13,
+      "name": "SDS(27,23,13,[3,3,3])",
+      "project_status": "UNRESOLVED",
+      "v": 27
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        3,
+        9
+      ],
+      "k": 23,
+      "lambda": 13,
+      "name": "SDS(27,23,13,[3,9])",
+      "project_status": "UNRESOLVED",
+      "v": 27
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        27
+      ],
+      "k": 25,
+      "lambda": 16,
+      "name": "SDS(27,25,16,[27])",
+      "project_status": "UNRESOLVED",
+      "v": 27
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        3,
+        3,
+        3
+      ],
+      "k": 25,
+      "lambda": 16,
+      "name": "SDS(27,25,16,[3,3,3])",
+      "project_status": "UNRESOLVED",
+      "v": 27
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        3,
+        9
+      ],
+      "k": 25,
+      "lambda": 16,
+      "name": "SDS(27,25,16,[3,9])",
+      "project_status": "UNRESOLVED",
+      "v": 27
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        2,
+        14
+      ],
+      "k": 10,
+      "lambda": 2,
+      "name": "SDS(28,10,2,[2,14])",
+      "project_status": "UNRESOLVED",
+      "v": 28
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        2,
+        14
+      ],
+      "k": 13,
+      "lambda": 4,
+      "name": "SDS(28,13,4,[2,14])",
+      "project_status": "UNRESOLVED",
+      "v": 28
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        2,
+        14
+      ],
+      "k": 19,
+      "lambda": 10,
+      "name": "SDS(28,19,10,[2,14])",
+      "project_status": "UNRESOLVED",
+      "v": 28
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        2,
+        14
+      ],
+      "k": 22,
+      "lambda": 14,
+      "name": "SDS(28,22,14,[2,14])",
+      "project_status": "UNRESOLVED",
+      "v": 28
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        2,
+        14
+      ],
+      "k": 27,
+      "lambda": 2,
+      "name": "SDS(28,27,2,[2,14])",
+      "project_status": "UNRESOLVED",
+      "v": 28
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        2,
+        16
+      ],
+      "k": 19,
+      "lambda": 2,
+      "name": "SDS(32,19,2,[2,16])",
+      "project_status": "UNRESOLVED",
+      "v": 32
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "k": 19,
+      "lambda": 2,
+      "name": "SDS(32,19,2,[2,2,2,2,2])",
+      "project_status": "UNRESOLVED",
+      "v": 32
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        2,
+        2,
+        2,
+        4
+      ],
+      "k": 19,
+      "lambda": 2,
+      "name": "SDS(32,19,2,[2,2,2,4])",
+      "project_status": "UNRESOLVED",
+      "v": 32
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        2,
+        2,
+        8
+      ],
+      "k": 19,
+      "lambda": 2,
+      "name": "SDS(32,19,2,[2,2,8])",
+      "project_status": "UNRESOLVED",
+      "v": 32
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        2,
+        4,
+        4
+      ],
+      "k": 19,
+      "lambda": 2,
+      "name": "SDS(32,19,2,[2,4,4])",
+      "project_status": "UNRESOLVED",
+      "v": 32
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        32
+      ],
+      "k": 19,
+      "lambda": 2,
+      "name": "SDS(32,19,2,[32])",
+      "project_status": "UNRESOLVED",
+      "v": 32
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        4,
+        8
+      ],
+      "k": 19,
+      "lambda": 2,
+      "name": "SDS(32,19,2,[4,8])",
+      "project_status": "UNRESOLVED",
+      "v": 32
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        2,
+        16
+      ],
+      "k": 20,
+      "lambda": 4,
+      "name": "SDS(32,20,4,[2,16])",
+      "project_status": "UNRESOLVED",
+      "v": 32
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "k": 20,
+      "lambda": 4,
+      "name": "SDS(32,20,4,[2,2,2,2,2])",
+      "project_status": "UNRESOLVED",
+      "v": 32
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        2,
+        2,
+        2,
+        4
+      ],
+      "k": 20,
+      "lambda": 4,
+      "name": "SDS(32,20,4,[2,2,2,4])",
+      "project_status": "UNRESOLVED",
+      "v": 32
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        2,
+        2,
+        8
+      ],
+      "k": 20,
+      "lambda": 4,
+      "name": "SDS(32,20,4,[2,2,8])",
+      "project_status": "UNRESOLVED",
+      "v": 32
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        2,
+        4,
+        4
+      ],
+      "k": 20,
+      "lambda": 4,
+      "name": "SDS(32,20,4,[2,4,4])",
+      "project_status": "UNRESOLVED",
+      "v": 32
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        32
+      ],
+      "k": 20,
+      "lambda": 4,
+      "name": "SDS(32,20,4,[32])",
+      "project_status": "UNRESOLVED",
+      "v": 32
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        4,
+        8
+      ],
+      "k": 20,
+      "lambda": 4,
+      "name": "SDS(32,20,4,[4,8])",
+      "project_status": "UNRESOLVED",
+      "v": 32
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        2,
+        16
+      ],
+      "k": 28,
+      "lambda": 12,
+      "name": "SDS(32,28,12,[2,16])",
+      "project_status": "UNRESOLVED",
+      "v": 32
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "k": 28,
+      "lambda": 12,
+      "name": "SDS(32,28,12,[2,2,2,2,2])",
+      "project_status": "UNRESOLVED",
+      "v": 32
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        2,
+        2,
+        2,
+        4
+      ],
+      "k": 28,
+      "lambda": 12,
+      "name": "SDS(32,28,12,[2,2,2,4])",
+      "project_status": "UNRESOLVED",
+      "v": 32
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        2,
+        2,
+        8
+      ],
+      "k": 28,
+      "lambda": 12,
+      "name": "SDS(32,28,12,[2,2,8])",
+      "project_status": "UNRESOLVED",
+      "v": 32
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        2,
+        4,
+        4
+      ],
+      "k": 28,
+      "lambda": 12,
+      "name": "SDS(32,28,12,[2,4,4])",
+      "project_status": "UNRESOLVED",
+      "v": 32
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        32
+      ],
+      "k": 28,
+      "lambda": 12,
+      "name": "SDS(32,28,12,[32])",
+      "project_status": "UNRESOLVED",
+      "v": 32
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        4,
+        8
+      ],
+      "k": 28,
+      "lambda": 12,
+      "name": "SDS(32,28,12,[4,8])",
+      "project_status": "UNRESOLVED",
+      "v": 32
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        2,
+        18
+      ],
+      "k": 11,
+      "lambda": 2,
+      "name": "SDS(36,11,2,[2,18])",
+      "project_status": "UNRESOLVED",
+      "v": 36
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        3,
+        12
+      ],
+      "k": 11,
+      "lambda": 2,
+      "name": "SDS(36,11,2,[3,12])",
+      "project_status": "UNRESOLVED",
+      "v": 36
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        6,
+        6
+      ],
+      "k": 11,
+      "lambda": 2,
+      "name": "SDS(36,11,2,[6,6])",
+      "project_status": "UNRESOLVED",
+      "v": 36
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        2,
+        18
+      ],
+      "k": 29,
+      "lambda": 4,
+      "name": "SDS(36,29,4,[2,18])",
+      "project_status": "UNRESOLVED",
+      "v": 36
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        3,
+        12
+      ],
+      "k": 29,
+      "lambda": 4,
+      "name": "SDS(36,29,4,[3,12])",
+      "project_status": "UNRESOLVED",
+      "v": 36
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        6,
+        6
+      ],
+      "k": 29,
+      "lambda": 4,
+      "name": "SDS(36,29,4,[6,6])",
+      "project_status": "UNRESOLVED",
+      "v": 36
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        2,
+        18
+      ],
+      "k": 29,
+      "lambda": 20,
+      "name": "SDS(36,29,20,[2,18])",
+      "project_status": "UNRESOLVED",
+      "v": 36
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        3,
+        12
+      ],
+      "k": 29,
+      "lambda": 20,
+      "name": "SDS(36,29,20,[3,12])",
+      "project_status": "UNRESOLVED",
+      "v": 36
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        6,
+        6
+      ],
+      "k": 29,
+      "lambda": 20,
+      "name": "SDS(36,29,20,[6,6])",
+      "project_status": "UNRESOLVED",
+      "v": 36
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        2,
+        18
+      ],
+      "k": 30,
+      "lambda": 2,
+      "name": "SDS(36,30,2,[2,18])",
+      "project_status": "UNRESOLVED",
+      "v": 36
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        3,
+        12
+      ],
+      "k": 30,
+      "lambda": 2,
+      "name": "SDS(36,30,2,[3,12])",
+      "project_status": "UNRESOLVED",
+      "v": 36
+    },
+    {
+      "contribution_level": null,
+      "frozen_comment": "",
+      "frozen_status": "Open",
+      "group_invariant_factors": [
+        6,
+        6
+      ],
+      "k": 30,
+      "lambda": 2,
+      "name": "SDS(36,30,2,[6,6])",
+      "project_status": "UNRESOLVED",
+      "v": 36
+    }
+  ],
+  "frozen_source_commit": "e3bf810c5ee6826cf5030f983f6adf23b0ffd20e",
+  "resolved_count": 3,
+  "schema": "certified-small-sds-census-v1",
+  "target_count": 68,
+  "unresolved_count": 65
+}

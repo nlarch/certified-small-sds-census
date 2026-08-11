@@ -1,0 +1,64 @@
+{
+  "commit": "e3bf810c5ee6826cf5030f983f6adf23b0ffd20e",
+  "commit_date": "2026-04-24T10:48:35-07:00",
+  "count_matches_expectation": true,
+  "dataset_entries": 70543,
+  "derived_open_v_le_36_count": 68,
+  "environment": {
+    "git": "git version 2.51.0",
+    "platform": "macOS-26.3-arm64-arm-64bit",
+    "python": "3.9.6"
+  },
+  "expected_count": 68,
+  "files": [
+    {
+      "bytes": 548,
+      "path": "sources/signed-difference-sets/CITATION.cff",
+      "sha256": "2c2ea0e9165e9ad1978965cabd0322842b91d68411761eae642437ac365c53b9"
+    },
+    {
+      "bytes": 621,
+      "path": "sources/signed-difference-sets/LICENSE",
+      "sha256": "f09742ea49ee013d10083c3c8f6616f8a4b6f335cc4e4d4e314635242bc7264e"
+    },
+    {
+      "bytes": 1107,
+      "path": "sources/signed-difference-sets/README.md",
+      "sha256": "493358a3cf9c4825b5e3c03c439bbdaec037a55d45deae179bcf9549c795cc66"
+    },
+    {
+      "bytes": 1077,
+      "path": "sources/signed-difference-sets/codemeta.json",
+      "sha256": "cb21c51e0828920120a07f0497bee2445405ada2238cb90011705cfc7334e315"
+    },
+    {
+      "bytes": 7,
+      "path": "sources/signed-difference-sets/requirements.txt",
+      "sha256": "fd6f8460ec2c463c8eedfa9a900217d09defbef0aacd2599f33e51b675c8483c"
+    },
+    {
+      "bytes": 5193480,
+      "path": "sources/signed-difference-sets/sds.json",
+      "sha256": "39bab9fce78d5c4353c22ba482ff5c3bb8b8b9931edc5ca0fc60062dfe80ca85"
+    },
+    {
+      "bytes": 7778,
+      "path": "sources/signed-difference-sets/sds_code.py",
+      "sha256": "5ddfff64a102b2c1235cbc1152903d6f76f7ecf56714059e8b6663e06d5ff1b3"
+    },
+    {
+      "bytes": 32579,
+      "path": "sources/signed-difference-sets/signed_difference_sets.ipynb",
+      "sha256": "95ad91aae1b7c4d3d6cd0bda07394c80b3b9fc01d96159e614e50067e32c6e1b"
+    }
+  ],
+  "group_convention_evidence": {
+    "description": "get_G parses the bracketed list and validators use Sage AdditiveAbelianGroup(D[3]); therefore entries such as [3,3] are direct products of cyclic invariant factors.",
+    "file": "sources/signed-difference-sets/sds_code.py"
+  },
+  "license": "CC-BY-4.0",
+  "license_file": "sources/signed-difference-sets/LICENSE",
+  "repository": "https://github.com/dmgordo/signed-difference-sets",
+  "retrieval_date": "2026-08-12",
+  "schema": "signed-difference-set-snapshot-v1"
+}

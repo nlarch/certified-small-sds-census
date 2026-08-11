@@ -1,0 +1,114 @@
+{
+  "command": "python3 scripts/run_order9_exhaustion.py --output artifacts/runs/order9_exhaustion.json",
+  "completed_at_utc": "2026-08-11T23:50:44.020502+00:00",
+  "deterministic_enumeration": true,
+  "environment": {
+    "pid": 69881,
+    "platform": "macOS-26.3-arm64-arm-64bit",
+    "python": "3.9.6"
+  },
+  "inputs": {
+    "dataset_path": "sources/signed-difference-sets/sds.json",
+    "sha256": "39bab9fce78d5c4353c22ba482ff5c3bb8b8b9931edc5ca0fc60062dfe80ca85"
+  },
+  "known_negative_baseline": {
+    "completeness_argument": [
+      "There are 3^9 total coefficient vectors and 9*2^8 with support 8.",
+      "The augmentation/trivial-character equation gives (sum a_g)^2 = k + lambda*(v-1) = 16, hence sum a_g is +4 or -4.",
+      "Support 8 and sum +4 force six +1, two -1, and one zero, giving 9*C(8,2)=252 assignments.",
+      "Global sign is a fixed-point-free bijection between sums +4 and -4 and preserves every autocorrelation, so the normalized 252 cover all 504 forced assignments.",
+      "Method B additionally enumerates and validates all 504 assignments without applying the global-sign quotient."
+    ],
+    "instance": "SDS(9,8,1,[9])",
+    "method_a": {
+      "expected_trivial_character_square": 16,
+      "name": "zero_position_and_negative_pair_tuple_search",
+      "normalized_assignments_tested": 252,
+      "normalized_coefficient_sum": 4,
+      "solutions": []
+    },
+    "method_b": {
+      "forced_abs_sum_four_assignments_tested": 504,
+      "full_ternary_domain_tested": 19683,
+      "name": "full_ternary_product_mixed_radix_validation",
+      "normalized_solutions": [],
+      "positive_sum_normalized_assignments": 252,
+      "solutions": [],
+      "support_eight_assignments": 2304
+    },
+    "result": "NONEXISTENT_BY_EXHAUSTION",
+    "runtime_seconds": 0.051409917
+  },
+  "known_positive_smoke": {
+    "coefficient_vector": [
+      0,
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "independent_report": {
+      "autocorrelation": [
+        4,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "coefficient_sum": 0,
+      "errors": [],
+      "mismatches": {},
+      "support": 4,
+      "valid": true,
+      "validator": "independent_mixed_radix_v1"
+    },
+    "instance": "SDS(5,4,-1,[5])",
+    "reference_report": {
+      "autocorrelation": [
+        4,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "coefficient_sum": 0,
+      "errors": [],
+      "mismatches": {},
+      "support": 4,
+      "valid": true,
+      "validator": "reference_tuple_dictionary_v1"
+    },
+    "repository_status": "Yes"
+  },
+  "open_pilot": {
+    "completeness_argument": [
+      "There are 3^9 total coefficient vectors and 9*2^8 with support 8.",
+      "The augmentation/trivial-character equation gives (sum a_g)^2 = k + lambda*(v-1) = 16, hence sum a_g is +4 or -4.",
+      "Support 8 and sum +4 force six +1, two -1, and one zero, giving 9*C(8,2)=252 assignments.",
+      "Global sign is a fixed-point-free bijection between sums +4 and -4 and preserves every autocorrelation, so the normalized 252 cover all 504 forced assignments.",
+      "Method B additionally enumerates and validates all 504 assignments without applying the global-sign quotient."
+    ],
+    "instance": "SDS(9,8,1,[3,3])",
+    "method_a": {
+      "expected_trivial_character_square": 16,
+      "name": "zero_position_and_negative_pair_tuple_search",
+      "normalized_assignments_tested": 252,
+      "normalized_coefficient_sum": 4,
+      "solutions": []
+    },
+    "method_b": {
+      "forced_abs_sum_four_assignments_tested": 504,
+      "full_ternary_domain_tested": 19683,
+      "name": "full_ternary_product_mixed_radix_validation",
+      "normalized_solutions": [],
+      "positive_sum_normalized_assignments": 252,
+      "solutions": [],
+      "support_eight_assignments": 2304
+    },
+    "result": "NONEXISTENT_BY_EXHAUSTION",
+    "runtime_seconds": 0.063965292
+  },
+  "schema": "order9-exhaustion-v1",
+  "seed": null,
+  "started_at_utc": "2026-08-11T23:50:43.887103+00:00"
+}
