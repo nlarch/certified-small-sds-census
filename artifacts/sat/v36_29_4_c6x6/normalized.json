@@ -1,0 +1,49 @@
+{
+  "checker": {
+    "binary_sha256": "2a92f76b682bc64ab76ebd1d23f188e66ff138cf7f8172f80ec7ea94ecc5389a",
+    "output_path": "artifacts/sat/v36_29_4_c6x6/normalized.check.txt",
+    "output_sha256": "b5c810a6cf2a0e1fb2f5e53a06474f57d3d22544970e94ca0d8749d9c39ecc2e",
+    "source_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+    "verified": true
+  },
+  "completed_at_utc": "2026-08-12T07:59:30.182549+00:00",
+  "formula": {
+    "clauses": 814764,
+    "path": "artifacts/sat/v36_29_4_c6x6/normalized.cnf",
+    "sha256": "3b67af8cc63ea9377220816334fdf26cb1c2c22e5c4dac637f2c9a6f4d3158ff",
+    "variables": 79680
+  },
+  "instance": "SDS(36,29,4,[6,6])",
+  "order3_pattern": [
+    -3,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "proof": {
+    "bytes": 23359321,
+    "path": "artifacts/sat/v36_29_4_c6x6/normalized.drat",
+    "sha256": "f8a427135933a5033aa33e69554f269c41b3b3544ae00cf2cf18d92b007bb4c4"
+  },
+  "real_pattern": [
+    7,
+    2,
+    2,
+    2
+  ],
+  "result": "UNSAT",
+  "schema": "v36-29-4-c6x6-normalized-proof-v1",
+  "solve_seconds": 18.023541208,
+  "solver_stats": {
+    "conflicts": 61683,
+    "decisions": 72594,
+    "propagations": 388195199,
+    "restarts": 49
+  },
+  "translation_fixed_negative_identity": false
+}

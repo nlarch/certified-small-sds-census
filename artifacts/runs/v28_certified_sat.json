@@ -1,0 +1,398 @@
+{
+  "all_twelve_proofs_checked": true,
+  "completed_at_utc": "2026-08-12T07:14:52.283324+00:00",
+  "completeness_argument": [
+    "For C2 x C14, the real-character quotient is C2^2 with four cosets of size seven.",
+    "The principal character is normalized positive and each of three nonprincipal real characters is independently plus or minus sqrt(k-lambda).",
+    "Inverse Walsh transformation leaves exactly four bounded integral cell-sum patterns for each parameter set; all are recorded.",
+    "Each pattern CNF encodes the exact coefficient composition and every full autocorrelation equation. All twelve UNSAT proofs pass independent forward DRAT checking."
+  ],
+  "result_count": 3,
+  "results": [
+    {
+      "instance": "SDS(28,13,4,[2,14])",
+      "patterns": [
+        [
+          2,
+          2,
+          2,
+          5
+        ],
+        [
+          2,
+          5,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          5,
+          2
+        ],
+        [
+          5,
+          2,
+          2,
+          2
+        ]
+      ],
+      "result": "NONEXISTENT_BY_CHECKED_SAT_PROOFS",
+      "subcases": [
+        {
+          "checker": {
+            "binary_sha256": "2a92f76b682bc64ab76ebd1d23f188e66ff138cf7f8172f80ec7ea94ecc5389a",
+            "command": "tools/drat-trim-src/drat-trim artifacts/sat/v28_subcases/case_0_pattern_0.cnf artifacts/sat/v28_subcases/case_0_pattern_0.drat -f",
+            "output_path": "artifacts/sat/v28_subcases/case_0_pattern_0.check.txt",
+            "output_sha256": "b99838de8d50489f539adff7b3bdcc47c0f3c3102a0660d319e9ede251742545",
+            "source_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+            "verified": true
+          },
+          "formula": {
+            "clauses": 389005,
+            "path": "artifacts/sat/v28_subcases/case_0_pattern_0.cnf",
+            "sha256": "a363635bc8a09069466f77460015dca76b19eb7a020bd3650a5b99bf145dc3a2",
+            "variables": 45392
+          },
+          "pattern_index": 0,
+          "proof": {
+            "bytes": 9013863,
+            "format": "ASCII DRAT/DRUP",
+            "path": "artifacts/sat/v28_subcases/case_0_pattern_0.drat",
+            "sha256": "b14977afabcebd755fb9b91906d855f89f1201d15204a05c4cdb6e92d22ed1a7"
+          },
+          "solve_seconds": 1.3228405840000002
+        },
+        {
+          "checker": {
+            "binary_sha256": "2a92f76b682bc64ab76ebd1d23f188e66ff138cf7f8172f80ec7ea94ecc5389a",
+            "command": "tools/drat-trim-src/drat-trim artifacts/sat/v28_subcases/case_0_pattern_1.cnf artifacts/sat/v28_subcases/case_0_pattern_1.drat -f",
+            "output_path": "artifacts/sat/v28_subcases/case_0_pattern_1.check.txt",
+            "output_sha256": "cdacd8168af59907713129aa92ecfae4dba59632e882377cf86e00a9a4b5349a",
+            "source_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+            "verified": true
+          },
+          "formula": {
+            "clauses": 389005,
+            "path": "artifacts/sat/v28_subcases/case_0_pattern_1.cnf",
+            "sha256": "8a9b9cc643e040098df7a9e3a38e068d6faa3d1e2b6b3328460888031e955836",
+            "variables": 45392
+          },
+          "pattern_index": 1,
+          "proof": {
+            "bytes": 7472447,
+            "format": "ASCII DRAT/DRUP",
+            "path": "artifacts/sat/v28_subcases/case_0_pattern_1.drat",
+            "sha256": "727a81762284fd5d09eb513454e5250e41e4c2fe4b05c355985e915f6a5dd9a5"
+          },
+          "solve_seconds": 1.148879167
+        },
+        {
+          "checker": {
+            "binary_sha256": "2a92f76b682bc64ab76ebd1d23f188e66ff138cf7f8172f80ec7ea94ecc5389a",
+            "command": "tools/drat-trim-src/drat-trim artifacts/sat/v28_subcases/case_0_pattern_2.cnf artifacts/sat/v28_subcases/case_0_pattern_2.drat -f",
+            "output_path": "artifacts/sat/v28_subcases/case_0_pattern_2.check.txt",
+            "output_sha256": "96ad82de338f6e9276d343e1dfa91ac9cde85b9f84452272c998e4b15563bc2b",
+            "source_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+            "verified": true
+          },
+          "formula": {
+            "clauses": 389005,
+            "path": "artifacts/sat/v28_subcases/case_0_pattern_2.cnf",
+            "sha256": "b817e3d1e5d4a22bfba711d790dc2feab9ae289104b73799cab0755054d09d7e",
+            "variables": 45392
+          },
+          "pattern_index": 2,
+          "proof": {
+            "bytes": 7750091,
+            "format": "ASCII DRAT/DRUP",
+            "path": "artifacts/sat/v28_subcases/case_0_pattern_2.drat",
+            "sha256": "d6855858a300c176d70730ec80c92385f20c866f2be069877f95a5b33e0cda4e"
+          },
+          "solve_seconds": 1.127325542
+        },
+        {
+          "checker": {
+            "binary_sha256": "2a92f76b682bc64ab76ebd1d23f188e66ff138cf7f8172f80ec7ea94ecc5389a",
+            "command": "tools/drat-trim-src/drat-trim artifacts/sat/v28_subcases/case_0_pattern_3.cnf artifacts/sat/v28_subcases/case_0_pattern_3.drat -f",
+            "output_path": "artifacts/sat/v28_subcases/case_0_pattern_3.check.txt",
+            "output_sha256": "6815bf2fd4102bedaf74fe08823e7c50a027b9987d4ba166d5bf9668519eff97",
+            "source_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+            "verified": true
+          },
+          "formula": {
+            "clauses": 389005,
+            "path": "artifacts/sat/v28_subcases/case_0_pattern_3.cnf",
+            "sha256": "53597569b724c2040e89055fb7c9f24a5241c277d6a96dce8be4d3e82ca375c2",
+            "variables": 45392
+          },
+          "pattern_index": 3,
+          "proof": {
+            "bytes": 6424950,
+            "format": "ASCII DRAT/DRUP",
+            "path": "artifacts/sat/v28_subcases/case_0_pattern_3.drat",
+            "sha256": "c288937fd182561d2b69b022ebc7d59961550ebc539be51915ccb78af6a6bcbd"
+          },
+          "solve_seconds": 0.8395739999999999
+        }
+      ]
+    },
+    {
+      "instance": "SDS(28,19,10,[2,14])",
+      "patterns": [
+        [
+          2,
+          5,
+          5,
+          5
+        ],
+        [
+          5,
+          5,
+          2,
+          5
+        ],
+        [
+          5,
+          2,
+          5,
+          5
+        ],
+        [
+          5,
+          5,
+          5,
+          2
+        ]
+      ],
+      "result": "NONEXISTENT_BY_CHECKED_SAT_PROOFS",
+      "subcases": [
+        {
+          "checker": {
+            "binary_sha256": "2a92f76b682bc64ab76ebd1d23f188e66ff138cf7f8172f80ec7ea94ecc5389a",
+            "command": "tools/drat-trim-src/drat-trim artifacts/sat/v28_subcases/case_1_pattern_0.cnf artifacts/sat/v28_subcases/case_1_pattern_0.drat -f",
+            "output_path": "artifacts/sat/v28_subcases/case_1_pattern_0.check.txt",
+            "output_sha256": "9919c761d5e55987e1ea26e4ce4695d109e2caf23eccb8ced7571a1f6d360af0",
+            "source_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+            "verified": true
+          },
+          "formula": {
+            "clauses": 389005,
+            "path": "artifacts/sat/v28_subcases/case_1_pattern_0.cnf",
+            "sha256": "69dee3a8810beaa2aa14ff7d5f676f94eaaed65d98bd8cc0867f073af1059bcd",
+            "variables": 45392
+          },
+          "pattern_index": 0,
+          "proof": {
+            "bytes": 12513556,
+            "format": "ASCII DRAT/DRUP",
+            "path": "artifacts/sat/v28_subcases/case_1_pattern_0.drat",
+            "sha256": "f9efa3eecd56b8364b390bdc3f1def9e30085d174ea02a017119a44b5780f3c9"
+          },
+          "solve_seconds": 3.7832605829999997
+        },
+        {
+          "checker": {
+            "binary_sha256": "2a92f76b682bc64ab76ebd1d23f188e66ff138cf7f8172f80ec7ea94ecc5389a",
+            "command": "tools/drat-trim-src/drat-trim artifacts/sat/v28_subcases/case_1_pattern_1.cnf artifacts/sat/v28_subcases/case_1_pattern_1.drat -f",
+            "output_path": "artifacts/sat/v28_subcases/case_1_pattern_1.check.txt",
+            "output_sha256": "a432d2d188e2e05321653b1668b555446a5014d9044b886b8cf71ede8b883707",
+            "source_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+            "verified": true
+          },
+          "formula": {
+            "clauses": 389005,
+            "path": "artifacts/sat/v28_subcases/case_1_pattern_1.cnf",
+            "sha256": "c96798eb2fcf81c18fe61262bafe2211b2785bdb3dcb3d0f31602b085fe1c99e",
+            "variables": 45392
+          },
+          "pattern_index": 1,
+          "proof": {
+            "bytes": 6954987,
+            "format": "ASCII DRAT/DRUP",
+            "path": "artifacts/sat/v28_subcases/case_1_pattern_1.drat",
+            "sha256": "d000bc01f24cb65cd1a6cc2156c508cc187f0ff686bce670a803bdf7364fa015"
+          },
+          "solve_seconds": 0.841552458
+        },
+        {
+          "checker": {
+            "binary_sha256": "2a92f76b682bc64ab76ebd1d23f188e66ff138cf7f8172f80ec7ea94ecc5389a",
+            "command": "tools/drat-trim-src/drat-trim artifacts/sat/v28_subcases/case_1_pattern_2.cnf artifacts/sat/v28_subcases/case_1_pattern_2.drat -f",
+            "output_path": "artifacts/sat/v28_subcases/case_1_pattern_2.check.txt",
+            "output_sha256": "a6a10523363f358f3ed6e921023719abf8426d3f3e1a67b9d9a5866f8030fd3f",
+            "source_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+            "verified": true
+          },
+          "formula": {
+            "clauses": 389005,
+            "path": "artifacts/sat/v28_subcases/case_1_pattern_2.cnf",
+            "sha256": "62413cc02c7b9976eaa2f09dbf6c05e8377ec93d73997ee0dc0857e2a6aea6ad",
+            "variables": 45392
+          },
+          "pattern_index": 2,
+          "proof": {
+            "bytes": 6565763,
+            "format": "ASCII DRAT/DRUP",
+            "path": "artifacts/sat/v28_subcases/case_1_pattern_2.drat",
+            "sha256": "444da06140eb454ed8e926272c479082599c53ef7cd28f949e82827a1e59719b"
+          },
+          "solve_seconds": 0.780807625
+        },
+        {
+          "checker": {
+            "binary_sha256": "2a92f76b682bc64ab76ebd1d23f188e66ff138cf7f8172f80ec7ea94ecc5389a",
+            "command": "tools/drat-trim-src/drat-trim artifacts/sat/v28_subcases/case_1_pattern_3.cnf artifacts/sat/v28_subcases/case_1_pattern_3.drat -f",
+            "output_path": "artifacts/sat/v28_subcases/case_1_pattern_3.check.txt",
+            "output_sha256": "7c3e4e1ed71a47f018ca3286b98232c93ef4721cf0ae1bb8a7f850b04d3e6f69",
+            "source_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+            "verified": true
+          },
+          "formula": {
+            "clauses": 389005,
+            "path": "artifacts/sat/v28_subcases/case_1_pattern_3.cnf",
+            "sha256": "b41c82ecce194907f4e449e486ec638ba87f0788815450103764a0fcbc0110d4",
+            "variables": 45392
+          },
+          "pattern_index": 3,
+          "proof": {
+            "bytes": 6691514,
+            "format": "ASCII DRAT/DRUP",
+            "path": "artifacts/sat/v28_subcases/case_1_pattern_3.drat",
+            "sha256": "6a611c348b1372c25ed805c65d9da375148de69c91c39f60bfccafea3372baab"
+          },
+          "solve_seconds": 0.930725584
+        }
+      ]
+    },
+    {
+      "instance": "SDS(28,27,2,[2,14])",
+      "patterns": [
+        [
+          1,
+          1,
+          1,
+          6
+        ],
+        [
+          1,
+          6,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          6,
+          1
+        ],
+        [
+          6,
+          1,
+          1,
+          1
+        ]
+      ],
+      "result": "NONEXISTENT_BY_CHECKED_SAT_PROOFS",
+      "subcases": [
+        {
+          "checker": {
+            "binary_sha256": "2a92f76b682bc64ab76ebd1d23f188e66ff138cf7f8172f80ec7ea94ecc5389a",
+            "command": "tools/drat-trim-src/drat-trim artifacts/sat/v28_subcases/case_2_pattern_0.cnf artifacts/sat/v28_subcases/case_2_pattern_0.drat -f",
+            "output_path": "artifacts/sat/v28_subcases/case_2_pattern_0.check.txt",
+            "output_sha256": "46b6966d92cb9e4b2edbefa56f7cd1ce9991d61392998e3d7cc9405eee0d5ef4",
+            "source_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+            "verified": true
+          },
+          "formula": {
+            "clauses": 389374,
+            "path": "artifacts/sat/v28_subcases/case_2_pattern_0.cnf",
+            "sha256": "a80ccfdd763fee44e19652d0405caff3aa0faefa6f1ec1d240579c1d5c2cd3b2",
+            "variables": 45474
+          },
+          "pattern_index": 0,
+          "proof": {
+            "bytes": 6992939,
+            "format": "ASCII DRAT/DRUP",
+            "path": "artifacts/sat/v28_subcases/case_2_pattern_0.drat",
+            "sha256": "7bd638c1574976e6a6f50b2b4f2b2d91a679a062940e62900a322aef99d18b97"
+          },
+          "solve_seconds": 3.001780084
+        },
+        {
+          "checker": {
+            "binary_sha256": "2a92f76b682bc64ab76ebd1d23f188e66ff138cf7f8172f80ec7ea94ecc5389a",
+            "command": "tools/drat-trim-src/drat-trim artifacts/sat/v28_subcases/case_2_pattern_1.cnf artifacts/sat/v28_subcases/case_2_pattern_1.drat -f",
+            "output_path": "artifacts/sat/v28_subcases/case_2_pattern_1.check.txt",
+            "output_sha256": "0c1e484f7e6bd071df47da2744567c295635a35bb045b67149526df0870f1340",
+            "source_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+            "verified": true
+          },
+          "formula": {
+            "clauses": 389374,
+            "path": "artifacts/sat/v28_subcases/case_2_pattern_1.cnf",
+            "sha256": "8da9249a0fdafdee83c804518c7521fe9b6c4a44af2cf70d60aa95ab451d69d2",
+            "variables": 45474
+          },
+          "pattern_index": 1,
+          "proof": {
+            "bytes": 7495217,
+            "format": "ASCII DRAT/DRUP",
+            "path": "artifacts/sat/v28_subcases/case_2_pattern_1.drat",
+            "sha256": "71c145227fb3e2c7d6c62333fa732e1dad56d6faa16e6af0e8516abdf92c0108"
+          },
+          "solve_seconds": 2.788415084
+        },
+        {
+          "checker": {
+            "binary_sha256": "2a92f76b682bc64ab76ebd1d23f188e66ff138cf7f8172f80ec7ea94ecc5389a",
+            "command": "tools/drat-trim-src/drat-trim artifacts/sat/v28_subcases/case_2_pattern_2.cnf artifacts/sat/v28_subcases/case_2_pattern_2.drat -f",
+            "output_path": "artifacts/sat/v28_subcases/case_2_pattern_2.check.txt",
+            "output_sha256": "f6bf76bcc04f922088783dfc2438546375572942e6ed285693b338cdead453ea",
+            "source_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+            "verified": true
+          },
+          "formula": {
+            "clauses": 389374,
+            "path": "artifacts/sat/v28_subcases/case_2_pattern_2.cnf",
+            "sha256": "c565b39004c015c9b2853fc512b0a6d0e88071732b450788d3985c58accce9ac",
+            "variables": 45474
+          },
+          "pattern_index": 2,
+          "proof": {
+            "bytes": 6975015,
+            "format": "ASCII DRAT/DRUP",
+            "path": "artifacts/sat/v28_subcases/case_2_pattern_2.drat",
+            "sha256": "0cdd68be3d690c9f24afb5964a6d3716b2d0ef5d922d5b969e4c4de76d4c4cd2"
+          },
+          "solve_seconds": 2.799449042
+        },
+        {
+          "checker": {
+            "binary_sha256": "2a92f76b682bc64ab76ebd1d23f188e66ff138cf7f8172f80ec7ea94ecc5389a",
+            "command": "tools/drat-trim-src/drat-trim artifacts/sat/v28_subcases/case_2_pattern_3.cnf artifacts/sat/v28_subcases/case_2_pattern_3.drat -f",
+            "output_path": "artifacts/sat/v28_subcases/case_2_pattern_3.check.txt",
+            "output_sha256": "3db8cabadb918abd7508cb96492045881cea199608835c4e126d99fed7bab536",
+            "source_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+            "verified": true
+          },
+          "formula": {
+            "clauses": 389374,
+            "path": "artifacts/sat/v28_subcases/case_2_pattern_3.cnf",
+            "sha256": "8f203061c87d4f3839bb489d00a10412ae47c992cf62cb302f8b9418bd74ae8a",
+            "variables": 45474
+          },
+          "pattern_index": 3,
+          "proof": {
+            "bytes": 1,
+            "format": "ASCII DRAT/DRUP",
+            "path": "artifacts/sat/v28_subcases/case_2_pattern_3.drat",
+            "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+          },
+          "solve_seconds": 0.12978120799999993
+        }
+      ]
+    }
+  ],
+  "schema": "v28-certified-nonexistence-v1"
+}

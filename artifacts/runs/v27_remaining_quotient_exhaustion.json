@@ -1,0 +1,591 @@
+{
+  "completeness_argument": [
+    "Projection through a kernel of order three gives identity quotient correlation k+2lambda and every nonidentity quotient correlation 3lambda.",
+    "All bounded integral C3^2 quotient vectors with the required sum and norm are enumerated before exact quotient autocorrelation filtering.",
+    "For C3^3, every AGL(2,3) quotient action lifts; for C3 x C9, only the complete translation action is used, and every translation lifts.",
+    "Every ternary coefficient refinement of every orbit representative is checked against every full-group shift."
+  ],
+  "results": [
+    {
+      "candidates_after_sum_and_norm": 16254,
+      "cell_bound": [
+        -3,
+        3
+      ],
+      "full_solutions": 0,
+      "instance": "SDS(27,17,4,[3,3,3])",
+      "kernel_order": 3,
+      "nonzero_shift_correlation": 12,
+      "quotient": "C3^2",
+      "quotient_orbit_count": 1,
+      "quotient_orbit_sizes": [
+        144
+      ],
+      "quotient_representatives": [
+        [
+          -1,
+          0,
+          3,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2
+        ]
+      ],
+      "quotient_solutions": 144,
+      "refinement_counts": [
+        244944
+      ],
+      "result": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+      "symmetry_action": "AGL(2,3), lifted on the first two factors",
+      "total_refinements_checked": 244944,
+      "zero_shift_correlation": 25
+    },
+    {
+      "candidates_after_sum_and_norm": 16254,
+      "cell_bound": [
+        -3,
+        3
+      ],
+      "full_solutions": 0,
+      "instance": "SDS(27,17,4,[3,9])",
+      "kernel_order": 3,
+      "nonzero_shift_correlation": 12,
+      "quotient": "C3^2",
+      "quotient_orbit_count": 16,
+      "quotient_orbit_sizes": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "quotient_representatives": [
+        [
+          -1,
+          0,
+          3,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        [
+          -1,
+          0,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        [
+          -1,
+          1,
+          2,
+          0,
+          1,
+          2,
+          3,
+          1,
+          2
+        ],
+        [
+          -1,
+          1,
+          2,
+          1,
+          2,
+          0,
+          2,
+          3,
+          1
+        ],
+        [
+          -1,
+          1,
+          2,
+          1,
+          2,
+          3,
+          2,
+          0,
+          1
+        ],
+        [
+          -1,
+          1,
+          2,
+          2,
+          0,
+          1,
+          1,
+          2,
+          3
+        ],
+        [
+          -1,
+          1,
+          2,
+          2,
+          3,
+          1,
+          1,
+          2,
+          0
+        ],
+        [
+          -1,
+          1,
+          2,
+          3,
+          1,
+          2,
+          0,
+          1,
+          2
+        ],
+        [
+          -1,
+          2,
+          1,
+          0,
+          2,
+          1,
+          3,
+          2,
+          1
+        ],
+        [
+          -1,
+          2,
+          1,
+          1,
+          0,
+          2,
+          2,
+          1,
+          3
+        ],
+        [
+          -1,
+          2,
+          1,
+          1,
+          3,
+          2,
+          2,
+          1,
+          0
+        ],
+        [
+          -1,
+          2,
+          1,
+          2,
+          1,
+          0,
+          1,
+          3,
+          2
+        ],
+        [
+          -1,
+          2,
+          1,
+          2,
+          1,
+          3,
+          1,
+          0,
+          2
+        ],
+        [
+          -1,
+          2,
+          1,
+          3,
+          2,
+          1,
+          0,
+          2,
+          1
+        ],
+        [
+          -1,
+          3,
+          0,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        [
+          -1,
+          3,
+          0,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ]
+      ],
+      "quotient_solutions": 144,
+      "refinement_counts": [
+        244944,
+        244944,
+        244944,
+        244944,
+        244944,
+        244944,
+        244944,
+        244944,
+        244944,
+        244944,
+        244944,
+        244944,
+        244944,
+        244944,
+        244944,
+        244944
+      ],
+      "result": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+      "symmetry_action": "all C3^2 translations, lifted to C3 x C9",
+      "total_refinements_checked": 3919104,
+      "zero_shift_correlation": 25
+    },
+    {
+      "candidates_after_sum_and_norm": 37548,
+      "cell_bound": [
+        -3,
+        3
+      ],
+      "full_solutions": 0,
+      "instance": "SDS(27,22,3,[3,3,3])",
+      "kernel_order": 3,
+      "nonzero_shift_correlation": 9,
+      "quotient": "C3^2",
+      "quotient_orbit_count": 1,
+      "quotient_orbit_sizes": [
+        144
+      ],
+      "quotient_representatives": [
+        [
+          -2,
+          0,
+          3,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2
+        ]
+      ],
+      "quotient_solutions": 144,
+      "refinement_counts": [
+        122472
+      ],
+      "result": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+      "symmetry_action": "AGL(2,3), lifted on the first two factors",
+      "total_refinements_checked": 122472,
+      "zero_shift_correlation": 28
+    },
+    {
+      "candidates_after_sum_and_norm": 37548,
+      "cell_bound": [
+        -3,
+        3
+      ],
+      "full_solutions": 0,
+      "instance": "SDS(27,22,3,[3,9])",
+      "kernel_order": 3,
+      "nonzero_shift_correlation": 9,
+      "quotient": "C3^2",
+      "quotient_orbit_count": 16,
+      "quotient_orbit_sizes": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "quotient_representatives": [
+        [
+          -2,
+          0,
+          3,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        [
+          -2,
+          0,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        [
+          -2,
+          1,
+          2,
+          0,
+          1,
+          2,
+          3,
+          1,
+          2
+        ],
+        [
+          -2,
+          1,
+          2,
+          1,
+          2,
+          0,
+          2,
+          3,
+          1
+        ],
+        [
+          -2,
+          1,
+          2,
+          1,
+          2,
+          3,
+          2,
+          0,
+          1
+        ],
+        [
+          -2,
+          1,
+          2,
+          2,
+          0,
+          1,
+          1,
+          2,
+          3
+        ],
+        [
+          -2,
+          1,
+          2,
+          2,
+          3,
+          1,
+          1,
+          2,
+          0
+        ],
+        [
+          -2,
+          1,
+          2,
+          3,
+          1,
+          2,
+          0,
+          1,
+          2
+        ],
+        [
+          -2,
+          2,
+          1,
+          0,
+          2,
+          1,
+          3,
+          2,
+          1
+        ],
+        [
+          -2,
+          2,
+          1,
+          1,
+          0,
+          2,
+          2,
+          1,
+          3
+        ],
+        [
+          -2,
+          2,
+          1,
+          1,
+          3,
+          2,
+          2,
+          1,
+          0
+        ],
+        [
+          -2,
+          2,
+          1,
+          2,
+          1,
+          0,
+          1,
+          3,
+          2
+        ],
+        [
+          -2,
+          2,
+          1,
+          2,
+          1,
+          3,
+          1,
+          0,
+          2
+        ],
+        [
+          -2,
+          2,
+          1,
+          3,
+          2,
+          1,
+          0,
+          2,
+          1
+        ],
+        [
+          -2,
+          3,
+          0,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        [
+          -2,
+          3,
+          0,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ]
+      ],
+      "quotient_solutions": 144,
+      "refinement_counts": [
+        122472,
+        122472,
+        122472,
+        122472,
+        122472,
+        122472,
+        122472,
+        122472,
+        122472,
+        122472,
+        122472,
+        122472,
+        122472,
+        122472,
+        122472,
+        122472
+      ],
+      "result": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+      "symmetry_action": "all C3^2 translations, lifted to C3 x C9",
+      "total_refinements_checked": 1959552,
+      "zero_shift_correlation": 28
+    },
+    {
+      "candidates_after_sum_and_norm": 7182,
+      "cell_bound": [
+        -3,
+        3
+      ],
+      "full_solutions": 0,
+      "instance": "SDS(27,22,9,[3,3,3])",
+      "kernel_order": 3,
+      "nonzero_shift_correlation": 27,
+      "quotient": "C3^2",
+      "quotient_orbit_count": 0,
+      "quotient_orbit_sizes": [],
+      "quotient_representatives": [],
+      "quotient_solutions": 0,
+      "refinement_counts": [],
+      "result": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+      "symmetry_action": "AGL(2,3), lifted on the first two factors",
+      "total_refinements_checked": 0,
+      "zero_shift_correlation": 40
+    },
+    {
+      "candidates_after_sum_and_norm": 7182,
+      "cell_bound": [
+        -3,
+        3
+      ],
+      "full_solutions": 0,
+      "instance": "SDS(27,22,9,[3,9])",
+      "kernel_order": 3,
+      "nonzero_shift_correlation": 27,
+      "quotient": "C3^2",
+      "quotient_orbit_count": 0,
+      "quotient_orbit_sizes": [],
+      "quotient_representatives": [],
+      "quotient_solutions": 0,
+      "refinement_counts": [],
+      "result": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+      "symmetry_action": "all C3^2 translations, lifted to C3 x C9",
+      "total_refinements_checked": 0,
+      "zero_shift_correlation": 40
+    }
+  ],
+  "schema": "v27-remaining-quotient-exhaustion-v1"
+}

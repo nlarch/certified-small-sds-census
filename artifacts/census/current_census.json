@@ -1,6 +1,6 @@
 {
   "as_of": "2026-08-12",
-  "complete": false,
+  "complete": true,
   "entries": [
     {
       "contribution_level": "VALID_RESULT",
@@ -277,7 +277,9 @@
       "v": 27
     },
     {
-      "contribution_level": null,
+      "contribution_level": "VALID_RESULT",
+      "evidence_path": "artifacts/runs/v27_remaining_quotient_exhaustion.json",
+      "evidence_sha256": "442c3d80c64a9481615037f8134dfb5e3d45db121ace7b9f405be082403b8b55",
       "frozen_comment": "",
       "frozen_status": "Open",
       "group_invariant_factors": [
@@ -288,11 +290,15 @@
       "k": 17,
       "lambda": 4,
       "name": "SDS(27,17,4,[3,3,3])",
-      "project_status": "UNRESOLVED",
+      "project_status": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+      "result": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+      "schema": "v27-remaining-quotient-exhaustion-v1",
       "v": 27
     },
     {
-      "contribution_level": null,
+      "contribution_level": "VALID_RESULT",
+      "evidence_path": "artifacts/runs/v27_remaining_quotient_exhaustion.json",
+      "evidence_sha256": "442c3d80c64a9481615037f8134dfb5e3d45db121ace7b9f405be082403b8b55",
       "frozen_comment": "",
       "frozen_status": "Open",
       "group_invariant_factors": [
@@ -302,11 +308,15 @@
       "k": 17,
       "lambda": 4,
       "name": "SDS(27,17,4,[3,9])",
-      "project_status": "UNRESOLVED",
+      "project_status": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+      "result": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+      "schema": "v27-remaining-quotient-exhaustion-v1",
       "v": 27
     },
     {
-      "contribution_level": null,
+      "contribution_level": "VALID_RESULT",
+      "evidence_path": "artifacts/runs/v27_certified_sat.json",
+      "evidence_sha256": "5a98b9a9b38b9adc6ea5c0bf5508576a2beb698a077a492d6c5c540b50eb4ad3",
       "frozen_comment": "",
       "frozen_status": "Open",
       "group_invariant_factors": [
@@ -315,7 +325,9 @@
       "k": 17,
       "lambda": 8,
       "name": "SDS(27,17,8,[27])",
-      "project_status": "UNRESOLVED",
+      "project_status": "NONEXISTENT_BY_CHECKED_SAT_PROOFS",
+      "result": "NONEXISTENT_BY_CHECKED_SAT_PROOFS",
+      "schema": "v27-certified-nonexistence-v1",
       "v": 27
     },
     {
@@ -338,7 +350,9 @@
       "v": 27
     },
     {
-      "contribution_level": null,
+      "contribution_level": "VALID_RESULT",
+      "evidence_path": "artifacts/runs/v27_remaining_quotient_exhaustion.json",
+      "evidence_sha256": "442c3d80c64a9481615037f8134dfb5e3d45db121ace7b9f405be082403b8b55",
       "frozen_comment": "",
       "frozen_status": "Open",
       "group_invariant_factors": [
@@ -349,11 +363,15 @@
       "k": 22,
       "lambda": 3,
       "name": "SDS(27,22,3,[3,3,3])",
-      "project_status": "UNRESOLVED",
+      "project_status": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+      "result": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+      "schema": "v27-remaining-quotient-exhaustion-v1",
       "v": 27
     },
     {
-      "contribution_level": null,
+      "contribution_level": "VALID_RESULT",
+      "evidence_path": "artifacts/runs/v27_remaining_quotient_exhaustion.json",
+      "evidence_sha256": "442c3d80c64a9481615037f8134dfb5e3d45db121ace7b9f405be082403b8b55",
       "frozen_comment": "",
       "frozen_status": "Open",
       "group_invariant_factors": [
@@ -363,11 +381,15 @@
       "k": 22,
       "lambda": 3,
       "name": "SDS(27,22,3,[3,9])",
-      "project_status": "UNRESOLVED",
+      "project_status": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+      "result": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+      "schema": "v27-remaining-quotient-exhaustion-v1",
       "v": 27
     },
     {
-      "contribution_level": null,
+      "contribution_level": "VALID_RESULT",
+      "evidence_path": "artifacts/runs/v27_remaining_quotient_exhaustion.json",
+      "evidence_sha256": "442c3d80c64a9481615037f8134dfb5e3d45db121ace7b9f405be082403b8b55",
       "frozen_comment": "",
       "frozen_status": "Open",
       "group_invariant_factors": [
@@ -378,11 +400,15 @@
       "k": 22,
       "lambda": 9,
       "name": "SDS(27,22,9,[3,3,3])",
-      "project_status": "UNRESOLVED",
+      "project_status": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+      "result": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+      "schema": "v27-remaining-quotient-exhaustion-v1",
       "v": 27
     },
     {
-      "contribution_level": null,
+      "contribution_level": "VALID_RESULT",
+      "evidence_path": "artifacts/runs/v27_remaining_quotient_exhaustion.json",
+      "evidence_sha256": "442c3d80c64a9481615037f8134dfb5e3d45db121ace7b9f405be082403b8b55",
       "frozen_comment": "",
       "frozen_status": "Open",
       "group_invariant_factors": [
@@ -392,7 +418,9 @@
       "k": 22,
       "lambda": 9,
       "name": "SDS(27,22,9,[3,9])",
-      "project_status": "UNRESOLVED",
+      "project_status": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+      "result": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+      "schema": "v27-remaining-quotient-exhaustion-v1",
       "v": 27
     },
     {
@@ -470,7 +498,9 @@
       "v": 27
     },
     {
-      "contribution_level": null,
+      "contribution_level": "VALID_RESULT",
+      "evidence_path": "artifacts/runs/v27_certified_sat.json",
+      "evidence_sha256": "5a98b9a9b38b9adc6ea5c0bf5508576a2beb698a077a492d6c5c540b50eb4ad3",
       "frozen_comment": "",
       "frozen_status": "Open",
       "group_invariant_factors": [
@@ -479,11 +509,15 @@
       "k": 25,
       "lambda": 16,
       "name": "SDS(27,25,16,[27])",
-      "project_status": "UNRESOLVED",
+      "project_status": "NONEXISTENT_BY_CHECKED_SAT_PROOFS",
+      "result": "NONEXISTENT_BY_CHECKED_SAT_PROOFS",
+      "schema": "v27-certified-nonexistence-v1",
       "v": 27
     },
     {
-      "contribution_level": null,
+      "contribution_level": "VALID_RESULT",
+      "evidence_path": "artifacts/runs/v27_certified_sat.json",
+      "evidence_sha256": "5a98b9a9b38b9adc6ea5c0bf5508576a2beb698a077a492d6c5c540b50eb4ad3",
       "frozen_comment": "",
       "frozen_status": "Open",
       "group_invariant_factors": [
@@ -494,11 +528,15 @@
       "k": 25,
       "lambda": 16,
       "name": "SDS(27,25,16,[3,3,3])",
-      "project_status": "UNRESOLVED",
+      "project_status": "NONEXISTENT_BY_CHECKED_SAT_PROOFS",
+      "result": "NONEXISTENT_BY_CHECKED_SAT_PROOFS",
+      "schema": "v27-certified-nonexistence-v1",
       "v": 27
     },
     {
-      "contribution_level": null,
+      "contribution_level": "VALID_RESULT",
+      "evidence_path": "artifacts/runs/v27_certified_sat.json",
+      "evidence_sha256": "5a98b9a9b38b9adc6ea5c0bf5508576a2beb698a077a492d6c5c540b50eb4ad3",
       "frozen_comment": "",
       "frozen_status": "Open",
       "group_invariant_factors": [
@@ -508,7 +546,9 @@
       "k": 25,
       "lambda": 16,
       "name": "SDS(27,25,16,[3,9])",
-      "project_status": "UNRESOLVED",
+      "project_status": "NONEXISTENT_BY_CHECKED_SAT_PROOFS",
+      "result": "NONEXISTENT_BY_CHECKED_SAT_PROOFS",
+      "schema": "v27-certified-nonexistence-v1",
       "v": 27
     },
     {
@@ -530,7 +570,9 @@
       "v": 28
     },
     {
-      "contribution_level": null,
+      "contribution_level": "VALID_RESULT",
+      "evidence_path": "artifacts/runs/v28_certified_sat.json",
+      "evidence_sha256": "b9af8df0c4ee29dc6350bf8629f3032b51398d13ff4c1506fe82e1ebc94a483c",
       "frozen_comment": "",
       "frozen_status": "Open",
       "group_invariant_factors": [
@@ -540,11 +582,15 @@
       "k": 13,
       "lambda": 4,
       "name": "SDS(28,13,4,[2,14])",
-      "project_status": "UNRESOLVED",
+      "project_status": "NONEXISTENT_BY_CHECKED_SAT_PROOFS",
+      "result": "NONEXISTENT_BY_CHECKED_SAT_PROOFS",
+      "schema": "v28-certified-nonexistence-v1",
       "v": 28
     },
     {
-      "contribution_level": null,
+      "contribution_level": "VALID_RESULT",
+      "evidence_path": "artifacts/runs/v28_certified_sat.json",
+      "evidence_sha256": "b9af8df0c4ee29dc6350bf8629f3032b51398d13ff4c1506fe82e1ebc94a483c",
       "frozen_comment": "",
       "frozen_status": "Open",
       "group_invariant_factors": [
@@ -554,7 +600,9 @@
       "k": 19,
       "lambda": 10,
       "name": "SDS(28,19,10,[2,14])",
-      "project_status": "UNRESOLVED",
+      "project_status": "NONEXISTENT_BY_CHECKED_SAT_PROOFS",
+      "result": "NONEXISTENT_BY_CHECKED_SAT_PROOFS",
+      "schema": "v28-certified-nonexistence-v1",
       "v": 28
     },
     {
@@ -576,7 +624,9 @@
       "v": 28
     },
     {
-      "contribution_level": null,
+      "contribution_level": "VALID_RESULT",
+      "evidence_path": "artifacts/runs/v28_certified_sat.json",
+      "evidence_sha256": "b9af8df0c4ee29dc6350bf8629f3032b51398d13ff4c1506fe82e1ebc94a483c",
       "frozen_comment": "",
       "frozen_status": "Open",
       "group_invariant_factors": [
@@ -586,7 +636,9 @@
       "k": 27,
       "lambda": 2,
       "name": "SDS(28,27,2,[2,14])",
-      "project_status": "UNRESOLVED",
+      "project_status": "NONEXISTENT_BY_CHECKED_SAT_PROOFS",
+      "result": "NONEXISTENT_BY_CHECKED_SAT_PROOFS",
+      "schema": "v28-certified-nonexistence-v1",
       "v": 28
     },
     {
@@ -722,7 +774,9 @@
       "v": 32
     },
     {
-      "contribution_level": null,
+      "contribution_level": "VALID_RESULT",
+      "evidence_path": "artifacts/runs/v32_20_4_c2x16_quotient_witness.json",
+      "evidence_sha256": "429b386613a793be31a328850b9a372512ceb45db07b7c5d986b6300e9f92373",
       "frozen_comment": "",
       "frozen_status": "Open",
       "group_invariant_factors": [
@@ -732,7 +786,9 @@
       "k": 20,
       "lambda": 4,
       "name": "SDS(32,20,4,[2,16])",
-      "project_status": "UNRESOLVED",
+      "project_status": "EXISTS",
+      "result": "EXISTS",
+      "schema": "v32-c2x16-quotient-witness-v1",
       "v": 32
     },
     {
@@ -815,7 +871,9 @@
       "v": 32
     },
     {
-      "contribution_level": null,
+      "contribution_level": "VALID_RESULT",
+      "evidence_path": "artifacts/runs/v32_remaining_quotient_exhaustion.json",
+      "evidence_sha256": "2870150476387abadaf39792d254455a85cd2321a85011c6b2719a756001b1ab",
       "frozen_comment": "",
       "frozen_status": "Open",
       "group_invariant_factors": [
@@ -824,11 +882,15 @@
       "k": 20,
       "lambda": 4,
       "name": "SDS(32,20,4,[32])",
-      "project_status": "UNRESOLVED",
+      "project_status": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+      "result": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+      "schema": "v32-remaining-quotient-exhaustion-v1",
       "v": 32
     },
     {
-      "contribution_level": null,
+      "contribution_level": "VALID_RESULT",
+      "evidence_path": "artifacts/runs/rank1_sat_v32_20_4_c4xc8.json",
+      "evidence_sha256": "6852686ac46b013226b9cec3d164824edab5db1efaf84d8a52b6a4bfdd6129f7",
       "frozen_comment": "",
       "frozen_status": "Open",
       "group_invariant_factors": [
@@ -838,11 +900,15 @@
       "k": 20,
       "lambda": 4,
       "name": "SDS(32,20,4,[4,8])",
-      "project_status": "UNRESOLVED",
+      "project_status": "EXISTS",
+      "result": "EXISTS",
+      "schema": "rank1-walsh-sat-search-v1",
       "v": 32
     },
     {
-      "contribution_level": null,
+      "contribution_level": "VALID_RESULT",
+      "evidence_path": "artifacts/runs/v32_remaining_quotient_exhaustion.json",
+      "evidence_sha256": "2870150476387abadaf39792d254455a85cd2321a85011c6b2719a756001b1ab",
       "frozen_comment": "",
       "frozen_status": "Open",
       "group_invariant_factors": [
@@ -852,11 +918,15 @@
       "k": 28,
       "lambda": 12,
       "name": "SDS(32,28,12,[2,16])",
-      "project_status": "UNRESOLVED",
+      "project_status": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+      "result": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+      "schema": "v32-remaining-quotient-exhaustion-v1",
       "v": 32
     },
     {
-      "contribution_level": null,
+      "contribution_level": "VALID_RESULT",
+      "evidence_path": "artifacts/runs/v32_remaining_quotient_exhaustion.json",
+      "evidence_sha256": "2870150476387abadaf39792d254455a85cd2321a85011c6b2719a756001b1ab",
       "frozen_comment": "",
       "frozen_status": "Open",
       "group_invariant_factors": [
@@ -869,11 +939,15 @@
       "k": 28,
       "lambda": 12,
       "name": "SDS(32,28,12,[2,2,2,2,2])",
-      "project_status": "UNRESOLVED",
+      "project_status": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+      "result": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+      "schema": "v32-remaining-quotient-exhaustion-v1",
       "v": 32
     },
     {
-      "contribution_level": null,
+      "contribution_level": "VALID_RESULT",
+      "evidence_path": "artifacts/runs/v32_28_12_c2c2c2c4_walsh_exhaustion.json",
+      "evidence_sha256": "dbd4d8354d11a1d1b6edfc24e4443bee312e615cbadf6821e60f9beedf072998",
       "frozen_comment": "",
       "frozen_status": "Open",
       "group_invariant_factors": [
@@ -885,11 +959,15 @@
       "k": 28,
       "lambda": 12,
       "name": "SDS(32,28,12,[2,2,2,4])",
-      "project_status": "UNRESOLVED",
+      "project_status": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+      "result": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+      "schema": "v32-28-12-c2c2c2c4-walsh-exhaustion-v1",
       "v": 32
     },
     {
-      "contribution_level": null,
+      "contribution_level": "VALID_RESULT",
+      "evidence_path": "artifacts/runs/v32_28_12_c2c2c8_walsh_exhaustion.json",
+      "evidence_sha256": "4aa01344227d07163b70dc55d33cf741194a4b4f278b9ff70ad97295f7527322",
       "frozen_comment": "",
       "frozen_status": "Open",
       "group_invariant_factors": [
@@ -900,7 +978,9 @@
       "k": 28,
       "lambda": 12,
       "name": "SDS(32,28,12,[2,2,8])",
-      "project_status": "UNRESOLVED",
+      "project_status": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+      "result": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+      "schema": "v32-28-12-c2c2c8-walsh-exhaustion-v1",
       "v": 32
     },
     {
@@ -923,7 +1003,9 @@
       "v": 32
     },
     {
-      "contribution_level": null,
+      "contribution_level": "VALID_RESULT",
+      "evidence_path": "artifacts/runs/v32_remaining_quotient_exhaustion.json",
+      "evidence_sha256": "2870150476387abadaf39792d254455a85cd2321a85011c6b2719a756001b1ab",
       "frozen_comment": "",
       "frozen_status": "Open",
       "group_invariant_factors": [
@@ -932,11 +1014,15 @@
       "k": 28,
       "lambda": 12,
       "name": "SDS(32,28,12,[32])",
-      "project_status": "UNRESOLVED",
+      "project_status": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+      "result": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+      "schema": "v32-remaining-quotient-exhaustion-v1",
       "v": 32
     },
     {
-      "contribution_level": null,
+      "contribution_level": "VALID_RESULT",
+      "evidence_path": "artifacts/runs/rank1_sat_v32_28_12_c4xc8.json",
+      "evidence_sha256": "2d3715583e8a4f9089d573481543ebc5ffb09bad061a7fd5b4d5c41fd0536f4c",
       "frozen_comment": "",
       "frozen_status": "Open",
       "group_invariant_factors": [
@@ -946,11 +1032,15 @@
       "k": 28,
       "lambda": 12,
       "name": "SDS(32,28,12,[4,8])",
-      "project_status": "UNRESOLVED",
+      "project_status": "EXISTS",
+      "result": "EXISTS",
+      "schema": "rank1-walsh-sat-search-v1",
       "v": 32
     },
     {
-      "contribution_level": null,
+      "contribution_level": "VALID_RESULT",
+      "evidence_path": "artifacts/runs/v36_11_2_c2x18_certified_sat.json",
+      "evidence_sha256": "01187802e9d770244ff7460429f42a567d456e957c49a8092d005986aad9733a",
       "frozen_comment": "",
       "frozen_status": "Open",
       "group_invariant_factors": [
@@ -960,11 +1050,15 @@
       "k": 11,
       "lambda": 2,
       "name": "SDS(36,11,2,[2,18])",
-      "project_status": "UNRESOLVED",
+      "project_status": "NONEXISTENT_BY_CHECKED_SAT_PROOFS",
+      "result": "NONEXISTENT_BY_CHECKED_SAT_PROOFS",
+      "schema": "v36-11-2-c2x18-certified-v1",
       "v": 36
     },
     {
-      "contribution_level": null,
+      "contribution_level": "VALID_RESULT",
+      "evidence_path": "artifacts/runs/rank1_sat_v36_11_2_c3xc12.json",
+      "evidence_sha256": "7ccf494c7282efb3aaf9ea4f383d498381125ca00efe30865b272c6ab0e264e3",
       "frozen_comment": "",
       "frozen_status": "Open",
       "group_invariant_factors": [
@@ -974,7 +1068,9 @@
       "k": 11,
       "lambda": 2,
       "name": "SDS(36,11,2,[3,12])",
-      "project_status": "UNRESOLVED",
+      "project_status": "EXISTS",
+      "result": "EXISTS",
+      "schema": "rank1-walsh-sat-search-v1",
       "v": 36
     },
     {
@@ -996,7 +1092,9 @@
       "v": 36
     },
     {
-      "contribution_level": null,
+      "contribution_level": "VALID_RESULT",
+      "evidence_path": "artifacts/runs/v36_29_4_combined_quotient_exhaustion.json",
+      "evidence_sha256": "416ca62582a54b9d3b398436b36ccfbd239db1c48b113ed385329110c98b99e5",
       "frozen_comment": "",
       "frozen_status": "Open",
       "group_invariant_factors": [
@@ -1006,11 +1104,15 @@
       "k": 29,
       "lambda": 4,
       "name": "SDS(36,29,4,[2,18])",
-      "project_status": "UNRESOLVED",
+      "project_status": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+      "result": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+      "schema": "v36-29-4-combined-quotient-exhaustion-v1",
       "v": 36
     },
     {
-      "contribution_level": null,
+      "contribution_level": "VALID_RESULT",
+      "evidence_path": "artifacts/runs/v36_29_4_combined_quotient_exhaustion.json",
+      "evidence_sha256": "416ca62582a54b9d3b398436b36ccfbd239db1c48b113ed385329110c98b99e5",
       "frozen_comment": "",
       "frozen_status": "Open",
       "group_invariant_factors": [
@@ -1020,11 +1122,15 @@
       "k": 29,
       "lambda": 4,
       "name": "SDS(36,29,4,[3,12])",
-      "project_status": "UNRESOLVED",
+      "project_status": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+      "result": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+      "schema": "v36-29-4-combined-quotient-exhaustion-v1",
       "v": 36
     },
     {
-      "contribution_level": null,
+      "contribution_level": "VALID_RESULT",
+      "evidence_path": "artifacts/runs/v36_29_4_c6x6_certified_sat.json",
+      "evidence_sha256": "013e11fd7bb8e7312d1e9d594d58d569a023b17915b4a4af146c779ef6485c98",
       "frozen_comment": "",
       "frozen_status": "Open",
       "group_invariant_factors": [
@@ -1034,11 +1140,15 @@
       "k": 29,
       "lambda": 4,
       "name": "SDS(36,29,4,[6,6])",
-      "project_status": "UNRESOLVED",
+      "project_status": "NONEXISTENT_BY_CHECKED_SAT_PROOFS",
+      "result": "NONEXISTENT_BY_CHECKED_SAT_PROOFS",
+      "schema": "v36-29-4-c6x6-certified-v1",
       "v": 36
     },
     {
-      "contribution_level": null,
+      "contribution_level": "VALID_RESULT",
+      "evidence_path": "artifacts/runs/v36_29_20_even_certified_sat.json",
+      "evidence_sha256": "be5aa592b54ee2e5946568ecbc578a4e256b2b404c78e104e787791a7043be83",
       "frozen_comment": "",
       "frozen_status": "Open",
       "group_invariant_factors": [
@@ -1048,11 +1158,15 @@
       "k": 29,
       "lambda": 20,
       "name": "SDS(36,29,20,[2,18])",
-      "project_status": "UNRESOLVED",
+      "project_status": "NONEXISTENT_BY_CHECKED_SAT_PROOFS",
+      "result": "NONEXISTENT_BY_CHECKED_SAT_PROOFS",
+      "schema": "v36-29-20-even-certified-v1",
       "v": 36
     },
     {
-      "contribution_level": null,
+      "contribution_level": "VALID_RESULT",
+      "evidence_path": "artifacts/runs/v36_29_20_c3x12_certified_sat.json",
+      "evidence_sha256": "4586bd67a05e966c9b2dd83d2510f68d7caf4dd0fd7a3444cb6080c97b8af024",
       "frozen_comment": "",
       "frozen_status": "Open",
       "group_invariant_factors": [
@@ -1062,11 +1176,15 @@
       "k": 29,
       "lambda": 20,
       "name": "SDS(36,29,20,[3,12])",
-      "project_status": "UNRESOLVED",
+      "project_status": "NONEXISTENT_BY_CHECKED_SAT_PROOFS",
+      "result": "NONEXISTENT_BY_CHECKED_SAT_PROOFS",
+      "schema": "v36-29-20-c3x12-certified-v1",
       "v": 36
     },
     {
-      "contribution_level": null,
+      "contribution_level": "VALID_RESULT",
+      "evidence_path": "artifacts/runs/v36_29_20_even_certified_sat.json",
+      "evidence_sha256": "be5aa592b54ee2e5946568ecbc578a4e256b2b404c78e104e787791a7043be83",
       "frozen_comment": "",
       "frozen_status": "Open",
       "group_invariant_factors": [
@@ -1076,7 +1194,9 @@
       "k": 29,
       "lambda": 20,
       "name": "SDS(36,29,20,[6,6])",
-      "project_status": "UNRESOLVED",
+      "project_status": "NONEXISTENT_BY_CHECKED_SAT_PROOFS",
+      "result": "NONEXISTENT_BY_CHECKED_SAT_PROOFS",
+      "schema": "v36-29-20-even-certified-v1",
       "v": 36
     },
     {
@@ -1135,8 +1255,8 @@
     }
   ],
   "frozen_source_commit": "e3bf810c5ee6826cf5030f983f6adf23b0ffd20e",
-  "resolved_count": 38,
+  "resolved_count": 68,
   "schema": "certified-small-sds-census-v1",
   "target_count": 68,
-  "unresolved_count": 30
+  "unresolved_count": 0
 }

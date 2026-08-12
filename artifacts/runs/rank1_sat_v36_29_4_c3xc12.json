@@ -1,0 +1,62 @@
+{
+  "command": ".venv/bin/python scripts/search_rank1_walsh_sat.py --name SDS(36,29,4,[3,12]) --conflicts 100000 --tag v36_29_4_c3xc12",
+  "completed_at_utc": "2026-08-12T07:21:44.758914+00:00",
+  "environment": {
+    "platform": "macOS-26.3-arm64-arm-64bit",
+    "python": "3.9.6"
+  },
+  "instances": [
+    {
+      "best_objective": null,
+      "best_vector": null,
+      "composition_positive_negative_zero": [
+        21,
+        8,
+        7
+      ],
+      "evidence_warning": "UNKNOWN or raw UNSAT attempts do not resolve the entry.",
+      "instance": "SDS(36,29,4,[3,12])",
+      "restarts_completed": 2,
+      "result": "NO_DECISION",
+      "runs": [
+        {
+          "answer": "UNKNOWN",
+          "conflict_budget": 100000,
+          "pattern": [
+            4,
+            9
+          ],
+          "pattern_index": 0,
+          "solve_seconds": 15.800462833,
+          "solver_stats": {
+            "conflicts": 100000,
+            "decisions": 187232,
+            "propagations": 375068001,
+            "restarts": 449
+          }
+        },
+        {
+          "answer": "UNKNOWN",
+          "conflict_budget": 100000,
+          "pattern": [
+            9,
+            4
+          ],
+          "pattern_index": 1,
+          "solve_seconds": 12.969814457999998,
+          "solver_stats": {
+            "conflicts": 100000,
+            "decisions": 176249,
+            "propagations": 321278245,
+            "restarts": 315
+          }
+        }
+      ],
+      "runtime_seconds": 28.770277291,
+      "seed_offset": null,
+      "steps_per_restart": 0,
+      "validation": null
+    }
+  ],
+  "schema": "rank1-walsh-sat-search-v1"
+}

@@ -1,0 +1,58 @@
+
+c parsing input formula with 80164 variables and 816882 clauses
+
+c WARNING: deleted clause on proof line 922084 does not occur: [0] -79123 79116 0
+
+c WARNING: deleted clause on proof line 922107 does not occur: [0] -79155 79148 0
+
+c WARNING: deleted clause on proof line 922236 does not occur: [0] -79337 79330 0
+
+c WARNING: deleted clause on proof line 922259 does not occur: [0] -79369 79362 0
+
+c WARNING: deleted clause on proof line 922388 does not occur: [0] -79571 79564 0
+
+c WARNING: deleted clause on proof line 922411 does not occur: [0] -79603 79596 0
+
+c WARNING: deleted clause on proof line 1020993 does not occur: [0] 40 79122 0
+
+c WARNING: deleted clause on proof line 1021036 does not occur: [0] 52 79570 0
+
+c WARNING: deleted clause on proof line 1129500 does not occur: [0] -79572 79565 0
+
+c WARNING: deleted clause on proof line 1129501 does not occur: [0] 50 79572 0
+
+c WARNING: deleted clause on proof line 1129538 does not occur: [0] -79905 79903 0
+
+c WARNING: deleted clause on proof line 1170761 does not occur: [0] 64 79336 0
+
+c WARNING: deleted clause on proof line 1170792 does not occur: [0] -79604 79597 0
+
+c WARNING: deleted clause on proof line 1170793 does not occur: [0] -14 79604 0
+
+c WARNING: deleted clause on proof line 1170829 does not occur: [0] -79906 79904 0
+
+c WARNING: deleted clause on proof line 1170841 does not occur: [0] -79937 79935 0
+
+c WARNING: deleted clause on proof line 1211982 does not occur: [0] -28 79368 0
+
+c WARNING: deleted clause on proof line 1212035 does not occur: [0] -80121 80114 0
+
+c WARNING: deleted clause on proof line 1212036 does not occur: [0] -80122 80115 0
+
+c WARNING: deleted clause on proof line 1212049 does not occur: [0] -80153 80146 0
+
+c finished parsing
+
+c start forward verification
+
+c 23948 of 816882 clauses in core                            
+
+c 3476 of 3965 lemmas in core using 840870 resolution steps
+
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+
+c optimized proofs are not supported for forward checking
+
+s VERIFIED
+
+c verification time: 5.231 seconds

@@ -1,0 +1,1012 @@
+{
+  "adversarial_screen": {
+    "decisive_tests": [
+      "The v=32 verifier independently reconstructs each affine orbit cover and fully refines every normalized-parent survivor; an initially unjustified second quotient was detected and removed before acceptance.",
+      "The v=36 C2xC18 and C3xC12 claims have independent quotient enumerations; the C6xC6 claim uses the complete unique quotient orbit plus an independently checked DRAT proof.",
+      "All six novelty-supported existence results are explicit vectors accepted by both full unsymmetrized validators."
+    ],
+    "equivalence_check": "Global sign, translation, inversion, and group automorphisms preserve the exact named (v,k,lambda,G) entry, so they cannot move a result to a different frozen entry; all final validators ignore discovery normalization and check the full equation.",
+    "strongest_objection": "An exhaustive negative result might omit a symmetry orbit or use a quotient action that does not lift."
+  },
+  "as_of": "2026-08-12",
+  "counts": {
+    "independently_replicated": 58,
+    "novelty_supported": 10
+  },
+  "entries": [
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(9,8,1,[3,3])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/order9_exhaustion.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(18,15,2,[3,6])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust+criterion",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v18_15_2_c3xc6_exhaustion.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(20,11,2,[2,10])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v20_11_2_c2xc10_search.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(20,17,8,[2,10])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v20_17_8_c2xc10_exhaustion.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(24,18,2,[2,12])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v24_18_2_c2xc12_certified_sat.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(24,18,2,[2,2,6])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v24_18_2_c2c2c6_walsh_proof.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(25,12,1,[5,5])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "EXIST",
+        "method": "exhaust",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "EXIST",
+      "project_evidence_path": "artifacts/runs/v25_local_search.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(25,16,2,[5,5])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust+criterion",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v25_c5xc5_character_obstructions.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(25,24,5,[5,5])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust+criterion",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v25_c5xc5_character_obstructions.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(27,10,1,[3,3,3])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "EXIST",
+        "method": "exhaust",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "EXIST",
+      "project_evidence_path": "artifacts/runs/v27_unresolved_local_search.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(27,10,1,[3,9])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "EXIST",
+        "method": "exhaust",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "EXIST",
+      "project_evidence_path": "artifacts/runs/v27_unresolved_local_search.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(27,12,2,[3,3,3])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust+criterion",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v27_order3_character_obstructions.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(27,12,2,[3,9])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust+criterion",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v27_order3_character_obstructions.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(27,14,5,[3,3,3])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "EXIST",
+        "method": "exhaust",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "EXIST",
+      "project_evidence_path": "artifacts/runs/v27_unresolved_local_search.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(27,14,5,[3,9])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "EXIST",
+        "method": "exhaust",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "EXIST",
+      "project_evidence_path": "artifacts/runs/v27_unresolved_local_search.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(27,17,4,[3,3,3])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v27_remaining_quotient_exhaustion.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(27,17,4,[3,9])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v27_remaining_quotient_exhaustion.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(27,17,8,[27])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v27_certified_sat.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(27,17,8,[3,3,3])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "EXIST",
+        "method": "exhaust",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "EXIST",
+      "project_evidence_path": "artifacts/runs/v27_unresolved_local_search.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(27,22,3,[3,3,3])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v27_remaining_quotient_exhaustion.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(27,22,3,[3,9])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v27_remaining_quotient_exhaustion.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(27,22,9,[3,3,3])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v27_remaining_quotient_exhaustion.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(27,22,9,[3,9])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v27_remaining_quotient_exhaustion.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(27,23,1,[3,3,3])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust+criterion",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v27_order3_character_obstructions.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(27,23,1,[3,9])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust+criterion",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v27_order3_character_obstructions.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(27,23,13,[3,3,3])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust+criterion",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v27_order3_character_obstructions.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(27,23,13,[3,9])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust+criterion",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v27_order3_character_obstructions.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(27,25,16,[27])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v27_certified_sat.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(27,25,16,[3,3,3])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v27_certified_sat.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(27,25,16,[3,9])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v27_certified_sat.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(28,10,2,[2,14])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust+criterion",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/real_character_square_obstructions.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(28,13,4,[2,14])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v28_certified_sat.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(28,19,10,[2,14])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v28_certified_sat.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(28,22,14,[2,14])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust+criterion",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/real_character_square_obstructions.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(28,27,2,[2,14])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v28_certified_sat.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(32,19,2,[2,16])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "criterion": "T1: |G| even, k-lam=17 not a perfect square",
+        "decision": "NONEXIST",
+        "method": "character criterion",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/theory_closures.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/real_character_square_obstructions.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(32,19,2,[2,2,2,2,2])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "criterion": "T1: |G| even, k-lam=17 not a perfect square",
+        "decision": "NONEXIST",
+        "method": "character criterion",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/theory_closures.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/real_character_square_obstructions.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(32,19,2,[2,2,2,4])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "criterion": "T1: |G| even, k-lam=17 not a perfect square",
+        "decision": "NONEXIST",
+        "method": "character criterion",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/theory_closures.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/real_character_square_obstructions.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(32,19,2,[2,2,8])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "criterion": "T1: |G| even, k-lam=17 not a perfect square",
+        "decision": "NONEXIST",
+        "method": "character criterion",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/theory_closures.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/real_character_square_obstructions.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(32,19,2,[2,4,4])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "criterion": "T1: |G| even, k-lam=17 not a perfect square",
+        "decision": "NONEXIST",
+        "method": "character criterion",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/theory_closures.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/real_character_square_obstructions.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(32,19,2,[32])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "criterion": "T1: |G| even, k-lam=17 not a perfect square",
+        "decision": "NONEXIST",
+        "method": "character criterion",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/theory_closures.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/real_character_square_obstructions.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(32,19,2,[4,8])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "criterion": "T1: |G| even, k-lam=17 not a perfect square",
+        "decision": "NONEXIST",
+        "method": "character criterion",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/theory_closures.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/real_character_square_obstructions.json"
+    },
+    {
+      "contribution_level": "NOVELTY_SUPPORTED_RESULT",
+      "instance": "SDS(32,20,4,[2,16])",
+      "novelty_class": "NOVELTY_SUPPORTED_NO_PRIOR_EXACT_RESOLUTION_FOUND",
+      "prior_public_decision": null,
+      "project_decision": "EXIST",
+      "project_evidence_path": "artifacts/runs/v32_20_4_c2x16_quotient_witness.json"
+    },
+    {
+      "contribution_level": "NOVELTY_SUPPORTED_RESULT",
+      "instance": "SDS(32,20,4,[2,2,2,2,2])",
+      "novelty_class": "NOVELTY_SUPPORTED_NO_PRIOR_EXACT_RESOLUTION_FOUND",
+      "prior_public_decision": null,
+      "project_decision": "EXIST",
+      "project_evidence_path": "artifacts/runs/v32_unresolved_local_search.json"
+    },
+    {
+      "contribution_level": "NOVELTY_SUPPORTED_RESULT",
+      "instance": "SDS(32,20,4,[2,2,2,4])",
+      "novelty_class": "NOVELTY_SUPPORTED_NO_PRIOR_EXACT_RESOLUTION_FOUND",
+      "prior_public_decision": null,
+      "project_decision": "EXIST",
+      "project_evidence_path": "artifacts/runs/v32_unresolved_local_search.json"
+    },
+    {
+      "contribution_level": "NOVELTY_SUPPORTED_RESULT",
+      "instance": "SDS(32,20,4,[2,2,8])",
+      "novelty_class": "NOVELTY_SUPPORTED_NO_PRIOR_EXACT_RESOLUTION_FOUND",
+      "prior_public_decision": null,
+      "project_decision": "EXIST",
+      "project_evidence_path": "artifacts/runs/v32_unresolved_local_search.json"
+    },
+    {
+      "contribution_level": "NOVELTY_SUPPORTED_RESULT",
+      "instance": "SDS(32,20,4,[2,4,4])",
+      "novelty_class": "NOVELTY_SUPPORTED_NO_PRIOR_EXACT_RESOLUTION_FOUND",
+      "prior_public_decision": null,
+      "project_decision": "EXIST",
+      "project_evidence_path": "artifacts/runs/v32_unresolved_local_search.json"
+    },
+    {
+      "contribution_level": "NOVELTY_SUPPORTED_RESULT",
+      "instance": "SDS(32,20,4,[32])",
+      "novelty_class": "NOVELTY_SUPPORTED_NO_PRIOR_EXACT_RESOLUTION_FOUND",
+      "prior_public_decision": null,
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v32_remaining_quotient_exhaustion.json"
+    },
+    {
+      "contribution_level": "NOVELTY_SUPPORTED_RESULT",
+      "instance": "SDS(32,20,4,[4,8])",
+      "novelty_class": "NOVELTY_SUPPORTED_NO_PRIOR_EXACT_RESOLUTION_FOUND",
+      "prior_public_decision": null,
+      "project_decision": "EXIST",
+      "project_evidence_path": "artifacts/runs/rank1_sat_v32_20_4_c4xc8.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(32,28,12,[2,16])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v32_remaining_quotient_exhaustion.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(32,28,12,[2,2,2,2,2])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v32_remaining_quotient_exhaustion.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(32,28,12,[2,2,2,4])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v32_28_12_c2c2c2c4_walsh_exhaustion.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(32,28,12,[2,2,8])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v32_28_12_c2c2c8_walsh_exhaustion.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(32,28,12,[2,4,4])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "EXIST",
+        "method": "exhaust",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "EXIST",
+      "project_evidence_path": "artifacts/runs/v32_unresolved_local_search.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(32,28,12,[32])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v32_remaining_quotient_exhaustion.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(32,28,12,[4,8])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "EXIST",
+        "method": "exhaust",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "EXIST",
+      "project_evidence_path": "artifacts/runs/rank1_sat_v32_28_12_c4xc8.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(36,11,2,[2,18])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v36_11_2_c2x18_certified_sat.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(36,11,2,[3,12])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "EXIST",
+        "method": "exhaust",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "EXIST",
+      "project_evidence_path": "artifacts/runs/rank1_sat_v36_11_2_c3xc12.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(36,11,2,[6,6])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "EXIST",
+        "method": "exhaust",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "EXIST",
+      "project_evidence_path": "artifacts/runs/v36_unresolved_local_search.json"
+    },
+    {
+      "contribution_level": "NOVELTY_SUPPORTED_RESULT",
+      "instance": "SDS(36,29,4,[2,18])",
+      "novelty_class": "NOVELTY_SUPPORTED_NO_PRIOR_EXACT_RESOLUTION_FOUND",
+      "prior_public_decision": null,
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v36_29_4_combined_quotient_exhaustion.json"
+    },
+    {
+      "contribution_level": "NOVELTY_SUPPORTED_RESULT",
+      "instance": "SDS(36,29,4,[3,12])",
+      "novelty_class": "NOVELTY_SUPPORTED_NO_PRIOR_EXACT_RESOLUTION_FOUND",
+      "prior_public_decision": null,
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v36_29_4_combined_quotient_exhaustion.json"
+    },
+    {
+      "contribution_level": "NOVELTY_SUPPORTED_RESULT",
+      "instance": "SDS(36,29,4,[6,6])",
+      "novelty_class": "NOVELTY_SUPPORTED_NO_PRIOR_EXACT_RESOLUTION_FOUND",
+      "prior_public_decision": null,
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v36_29_4_c6x6_certified_sat.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(36,29,20,[2,18])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v36_29_20_even_certified_sat.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(36,29,20,[3,12])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v36_29_20_c3x12_certified_sat.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(36,29,20,[6,6])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "decision": "NONEXIST",
+        "method": "exhaust",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/v36_29_20_even_certified_sat.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(36,30,2,[2,18])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "criterion": "T1: |G| even, k-lam=28 not a perfect square",
+        "decision": "NONEXIST",
+        "method": "character criterion",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/theory_closures.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/real_character_square_obstructions.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(36,30,2,[3,12])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "criterion": "T1: |G| even, k-lam=28 not a perfect square",
+        "decision": "NONEXIST",
+        "method": "character criterion",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/theory_closures.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/real_character_square_obstructions.json"
+    },
+    {
+      "contribution_level": "INDEPENDENTLY_REPLICATED",
+      "instance": "SDS(36,30,2,[6,6])",
+      "novelty_class": "INDEPENDENT_REPLICATION_OF_PRIOR_PUBLIC_DECISION",
+      "prior_public_decision": {
+        "criterion": "T1: |G| even, k-lam=28 not a perfect square",
+        "decision": "NONEXIST",
+        "method": "character criterion",
+        "source_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/theory_closures.csv"
+      },
+      "project_decision": "NONEXIST",
+      "project_evidence_path": "artifacts/runs/real_character_square_obstructions.json"
+    }
+  ],
+  "exact_web_queries": {
+    "parameter_triples": [
+      [
+        9,
+        8,
+        1
+      ],
+      [
+        18,
+        15,
+        2
+      ],
+      [
+        20,
+        11,
+        2
+      ],
+      [
+        20,
+        17,
+        8
+      ],
+      [
+        24,
+        18,
+        2
+      ],
+      [
+        25,
+        12,
+        1
+      ],
+      [
+        25,
+        16,
+        2
+      ],
+      [
+        25,
+        24,
+        5
+      ],
+      [
+        27,
+        10,
+        1
+      ],
+      [
+        27,
+        12,
+        2
+      ],
+      [
+        27,
+        14,
+        5
+      ],
+      [
+        27,
+        17,
+        4
+      ],
+      [
+        27,
+        17,
+        8
+      ],
+      [
+        27,
+        22,
+        3
+      ],
+      [
+        27,
+        22,
+        9
+      ],
+      [
+        27,
+        23,
+        1
+      ],
+      [
+        27,
+        23,
+        13
+      ],
+      [
+        27,
+        25,
+        16
+      ],
+      [
+        28,
+        10,
+        2
+      ],
+      [
+        28,
+        13,
+        4
+      ],
+      [
+        28,
+        19,
+        10
+      ],
+      [
+        28,
+        22,
+        14
+      ],
+      [
+        28,
+        27,
+        2
+      ],
+      [
+        32,
+        19,
+        2
+      ],
+      [
+        32,
+        20,
+        4
+      ],
+      [
+        32,
+        28,
+        12
+      ],
+      [
+        36,
+        11,
+        2
+      ],
+      [
+        36,
+        29,
+        4
+      ],
+      [
+        36,
+        29,
+        20
+      ],
+      [
+        36,
+        30,
+        2
+      ]
+    ],
+    "query_template": "exact phrase 'signed difference set' plus exact '(v,k,lambda)'",
+    "result": "No exact-resolution hits for any of the 30 triples; unrelated false positives were discarded."
+  },
+  "frozen_repository_currency": {
+    "last_push_utc": "2026-04-24T17:51:16Z",
+    "observation_method": "git ls-remote plus GitHub public API",
+    "observed_branches": [
+      "main"
+    ],
+    "observed_issue_count": 0,
+    "observed_main_commit": "e3bf810c5ee6826cf5030f983f6adf23b0ffd20e",
+    "observed_pull_request_count": 0,
+    "repository": "https://github.com/dmgordo/signed-difference-sets"
+  },
+  "global_github_code_queries_for_prior_absent_families": [
+    {
+      "query": "SDS(32,20,4",
+      "result_count": 0
+    },
+    {
+      "query": "SDS(36,29,4",
+      "result_count": 0
+    }
+  ],
+  "important_limitation": "Search and citation indexes are not proofs of novelty; novelty-supported means no prior exact resolution was found in the documented screen.",
+  "literature_screen": {
+    "followup_doi": "10.1007/s10623-024-01389-8",
+    "followup_source_check": "The complete arXiv source of 2306.05631 was searched for the target orders 27, 32, and 36; none occurred as parameter results.",
+    "foundational_doi": "10.1007/s10623-022-01171-8",
+    "openalex_observation": "OpenAlex returned one citing work for the foundational paper (the He-Chen-Ge follow-up) and zero citing works for that follow-up."
+  },
+  "prior_exact_result_source": {
+    "commit": "a6a0805686e97f4a05bd7d9870d6e1648186afaf",
+    "decision_disagreements": [],
+    "first_relevant_commits": [
+      {
+        "commit": "06e07baa2e0432b9c82a23e915e52f8dc54727f3",
+        "scope": "character-criterion closures",
+        "timestamp_utc": "2026-08-09T12:31:09Z"
+      },
+      {
+        "commit": "84237919b028f143e2f2212b4e863e99ea55aca7",
+        "scope": "batch decisions including exact small entries",
+        "timestamp_utc": "2026-08-09T12:36:37Z"
+      }
+    ],
+    "overlap_count": 58,
+    "repository": "https://github.com/farev/Matematica",
+    "theory_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/theory_closures.csv",
+    "theory_sha256": "b865067495fc0a58fa1a7a164bf0cff36c808ad058ce9bfc7a616ee4716a0937",
+    "values_path": "sources/novelty-farev-matematica/conjectures/signed-difference-sets/data/values.csv",
+    "values_sha256": "53f945d1f08600ef8972403cbebf0cf4e0ee2b2726387c63bc44a903cfecfa6b"
+  },
+  "schema": "certified-small-sds-novelty-screen-v1",
+  "scope": "Every one of the 68 frozen Open entries with v <= 36"
+}

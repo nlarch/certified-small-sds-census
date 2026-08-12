@@ -1,0 +1,22 @@
+{
+  "bounded_integral_patterns": 688,
+  "completed_at_utc": "2026-08-12T07:35:42.638812+00:00",
+  "environment": {
+    "platform": "macOS-26.3-arm64-arm-64bit",
+    "python": "3.9.6"
+  },
+  "full_vectors_tested": 107520,
+  "instance": "SDS(32,28,12,[2,2,2,4])",
+  "mathematical_argument": [
+    "The real-character quotient of C2^3 x C4 is C2^4, with sixteen cells of two elements.",
+    "The principal character is +20 and all fifteen nonprincipal real characters are independently +/-4. Exhausting all 2^15 spectra and inverse Walsh transforming yields exactly 688 bounded integral cell-sum patterns.",
+    "For a two-element cell, each sum in {-2,-1,0,1,2} has the explicitly enumerated coefficient-pair preimages. Exact global composition is 24 positive, 4 negative, and 4 zero coefficients.",
+    "Exactly 448 Walsh patterns admit that composition, with 107520 full coefficient vectors in total. Every one is checked against the full unsymmetrized autocorrelation equation."
+  ],
+  "patterns_with_exact_composition": 448,
+  "result": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+  "runtime_seconds": 5.45002575,
+  "schema": "v32-28-12-c2c2c2c4-walsh-exhaustion-v1",
+  "solutions": [],
+  "spectra_tested": 32768
+}

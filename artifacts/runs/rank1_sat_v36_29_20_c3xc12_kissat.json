@@ -1,0 +1,57 @@
+{
+  "command": ".venv/bin/python scripts/search_rank1_walsh_sat.py --name SDS(36,29,20,[3,12]) --conflicts 300000 --tag v36_29_20_c3xc12_kissat --solver kissat404",
+  "completed_at_utc": "2026-08-12T07:38:11.670849+00:00",
+  "environment": {
+    "platform": "macOS-26.3-arm64-arm-64bit",
+    "python": "3.9.6"
+  },
+  "instances": [
+    {
+      "best_objective": null,
+      "best_vector": null,
+      "composition_positive_negative_zero": [
+        28,
+        1,
+        7
+      ],
+      "evidence_warning": "UNKNOWN or raw UNSAT attempts do not resolve the entry.",
+      "instance": "SDS(36,29,20,[3,12])",
+      "restarts_completed": 2,
+      "result": "NO_DECISION",
+      "runs": [
+        {
+          "answer": "UNKNOWN",
+          "conflict_budget": 300000,
+          "pattern": [
+            12,
+            15
+          ],
+          "pattern_index": 0,
+          "solve_seconds": 34.961229249999995,
+          "solver_stats": {
+            "unavailable_for_solver": "kissat404"
+          }
+        },
+        {
+          "answer": "UNSAT",
+          "conflict_budget": 300000,
+          "pattern": [
+            15,
+            12
+          ],
+          "pattern_index": 1,
+          "solve_seconds": 11.432457166999995,
+          "solver_stats": {
+            "unavailable_for_solver": "kissat404"
+          }
+        }
+      ],
+      "runtime_seconds": 46.39368641699999,
+      "seed_offset": null,
+      "steps_per_restart": 0,
+      "validation": null
+    }
+  ],
+  "schema": "rank1-walsh-sat-search-v1",
+  "solver": "kissat404"
+}

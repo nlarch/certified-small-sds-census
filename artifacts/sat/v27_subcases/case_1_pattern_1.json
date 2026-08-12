@@ -1,0 +1,70 @@
+{
+  "all_patterns": [
+    [
+      5,
+      8,
+      8
+    ],
+    [
+      6,
+      6,
+      9
+    ],
+    [
+      6,
+      9,
+      6
+    ],
+    [
+      8,
+      5,
+      8
+    ],
+    [
+      8,
+      8,
+      5
+    ],
+    [
+      9,
+      6,
+      6
+    ]
+  ],
+  "case_index": 1,
+  "checker": {
+    "binary_sha256": "2a92f76b682bc64ab76ebd1d23f188e66ff138cf7f8172f80ec7ea94ecc5389a",
+    "output_path": "artifacts/sat/v27_subcases/case_1_pattern_1.check.txt",
+    "output_sha256": "d07ca5ec3ca5a1bf8ce1fbeffacb75c6110cb1a2fb3b371bd3bb71171f6fcdfe",
+    "source_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+    "verified": true
+  },
+  "completed_at_utc": "2026-08-12T07:28:29.758396+00:00",
+  "formula": {
+    "clauses": 350098,
+    "path": "artifacts/sat/v27_subcases/case_1_pattern_1.cnf",
+    "sha256": "aa277e19355ef368ce56674b1d7682364f2e094cb08bf3b33a6c5fc2a66ea427",
+    "variables": 41958
+  },
+  "instance": "SDS(27,25,16,[27])",
+  "pattern": [
+    6,
+    6,
+    9
+  ],
+  "pattern_index": 1,
+  "proof": {
+    "bytes": 3870284,
+    "path": "artifacts/sat/v27_subcases/case_1_pattern_1.drat",
+    "sha256": "6c2e31ec8d0d5d4809de7ec038b8c36c23969ac2803bd330074916791d11c755"
+  },
+  "result": "UNSAT",
+  "schema": "v27-certified-sat-subcase-v1",
+  "solve_seconds": 0.540285625,
+  "solver_stats": {
+    "conflicts": 539,
+    "decisions": 700,
+    "propagations": 1897328,
+    "restarts": 2
+  }
+}

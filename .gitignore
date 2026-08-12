@@ -2,6 +2,7 @@
 *.pyc
 .DS_Store
 sources/signed-difference-sets/
+sources/novelty-farev-matematica/
 .venv/
 tools/drat-trim-src/
 build/

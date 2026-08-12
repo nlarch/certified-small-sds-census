@@ -1,0 +1,22 @@
+{
+  "bounded_integral_patterns": 64,
+  "completed_at_utc": "2026-08-12T07:40:31.602137+00:00",
+  "environment": {
+    "platform": "macOS-26.3-arm64-arm-64bit",
+    "python": "3.9.6"
+  },
+  "full_vectors_tested": 2207744,
+  "instance": "SDS(32,28,12,[2,2,8])",
+  "mathematical_argument": [
+    "The full real-character quotient is C2^3 with eight size-four cells.",
+    "All 2^7 nonprincipal +/-4 spectra are inverse-Walsh transformed; exactly 64 yield bounded integral cell sums.",
+    "Every four-coefficient preimage of each cell sum is explicitly generated, with exact composition 24 positive, 4 negative, 4 zero.",
+    "Exactly 56 patterns admit 2207744 full vectors; every vector is checked against all full autocorrelations."
+  ],
+  "patterns_with_exact_composition": 56,
+  "result": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+  "runtime_seconds": 25.345607958,
+  "schema": "v32-28-12-c2c2c8-walsh-exhaustion-v1",
+  "solutions": [],
+  "spectra_tested": 128
+}

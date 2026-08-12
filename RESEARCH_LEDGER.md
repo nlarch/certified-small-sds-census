@@ -423,3 +423,119 @@ shasum -a 256 artifacts/snapshot/*.json artifacts/runs/order9_exhaustion.json
   cell patterns for the remaining even-order groups, then benchmark SAT on one
   near-miss from each of orders 28, 32, and 36. In parallel, use the order-nine
   fiber survivors to partition the unresolved `C_3 x C_9` cases.
+
+## 2026-08-12 — Certified SAT and quotient escalation (38 → 57 resolved)
+
+- **Order 28:** complete Walsh-pattern splitting produced 12 exact CNFs for
+  the remaining three `C_2 x C_14` entries. All traces passed forward DRAT
+  checking. Aggregate `artifacts/runs/v28_certified_sat.json` —
+  `b9af8d377839153863ace8d55a83ea728c86761630c43dd6dd2dd3f5a3aa9169`
+  at generation time (the census records the final file hash).
+- **Additional constructions:** exact SAT found and both validators accepted
+  `SDS(32,20,4,[4,8])`, `SDS(32,28,12,[4,8])`, and
+  `SDS(36,11,2,[3,12])`. Standalone witness hashes are respectively
+  `d22db64868c4632dde42cf06c2f8ad4f36378cec7a8b62f77fa39f022f362540`,
+  `b3d6206389fd754c1e796f57bcc29652fbeec87ceb4a47e47281fad60adaf72b`,
+  and `6026d2446cd20368ab91bb2b8c3dad327fe374b639f74a77230680586598f268`.
+- **Order 27 SAT:** 24 symmetry-complete exact subcases resolved cyclic
+  `(17,8)` and all three `(25,16)` entries as nonexistent. Aggregate
+  `artifacts/runs/v27_certified_sat.json` —
+  `5a98b9a9b38b9adc6ea5c0bf5508576a2beb698a077a492d6c5c540b50eb4ad3`.
+- **Order 32 dense character exhaustions:** full-rank Walsh enumeration
+  resolved `(28,12,[2,2,2,4])`; rank-three enumeration checked 2,207,744
+  vectors and resolved `(28,12,[2,2,8])`. The latter was rerun; all
+  deterministic fields agreed (timestamps/runtimes excluded).
+- **Order 36 `(29,20)`:** combined parity and order-three quotients reduce
+  `C_3 x C_12` to two normalized orbits, `C_2 x C_18` to two, and `C_6^2`
+  to four. All eight traces independently verify. Aggregates:
+  `v36_29_20_c3x12_certified_sat.json` —
+  `4586bd67a05e966c9b2dd83d2510f68d7caf4dd0fd7a3444cb6080c97b8af024`;
+  `v36_29_20_even_certified_sat.json` —
+  `be5aa592b54ee2e5946568ecbc578a4e256b2b404c78e104e787791a7043be83`.
+- **Order 36 `(29,4)`:** exhaustive combined quotients have 144 and 420
+  bounded survivors before full quotient autocorrelation, respectively, for
+  `C_2 x C_18` and `C_3 x C_12`; both leave zero solutions and pass a separate
+  mixed-radix verifier. `C_6^2` has one affine `C_3^2` quotient orbit and its
+  exact CNF has a checked 23.4 MB DRAT trace. Artifacts:
+  `v36_29_4_combined_quotient_exhaustion.json` —
+  `416ca62582a54b9d3b398436b36ccfbd239db1c48b113ed385329110c98b99e5`;
+  `v36_29_4_c6x6_certified_sat.json` —
+  `013e11fd7bb8e7312d1e9d594d58d569a023b17915b4a4af146c779ef6485c98`.
+- **Failure classification:** raw rank-one SAT attempts that reached conflict
+  caps remained `NO_DECISION`. Adding independent quotient marginals changed
+  the representation and converted five v=36 instances into small checked
+  branches. No raw `UNSAT` was promoted.
+
+## 2026-08-12 — Complete order-27 quotient classification (57 → 63 resolved)
+
+- **Projection:** quotienting either group through a kernel of order three
+  produces a `C_3^2` cell-sum vector with identity correlation `k+2lambda`
+  and nonidentity correlation `3lambda`.
+- **Results:** `(22,9)` has no quotient vector. Each of `(17,4)` and `(22,3)`
+  has 144 quotient vectors: one `AGL(2,3)` orbit for `C_3^3`, or 16 complete
+  translation orbits for `C_3 x C_9`. Exact refinement of all representatives
+  checked 6,246,072 ternary assignments and found zero full solutions.
+- **Evidence:** `artifacts/runs/v27_remaining_quotient_exhaustion.json` —
+  `442c3d80c64a9481615037f8134dfb5e3d45db121ace7b9f405be082403b8b55`.
+  `scripts/verify_v27_remaining_quotients.py` independently rebuilds the
+  quotient vectors by multiset composition, reconstructs every orbit cover,
+  uses separate mixed-radix correlation, and repeated all refinements: six
+  PASS results.
+- **Decision:** all six remaining v=27 entries are certified nonexistent.
+
+## 2026-08-12 — Complete order-32 frontier (63 → 68 resolved)
+
+- **Cyclic quotient ladder:** exhaustive `C8 → C16 → C32` refinement leaves
+  zero full solutions for both `(20,4)` and `(28,12)`. The sparse case checks
+  12 normalized-parent C16 survivors and 248,832 final refinements; the dense
+  case checks four survivors and 1,024 refinements.
+- **Product quotient ladder:** for `SDS(32,28,12,[2,16])`, all eight
+  translation-normalized `C_2 x C_4` quotient orbits refine to 38 surviving
+  `C_2 x C_8` vectors; all 21,080 final refinements fail.
+- **Elementary group:** writing `f=1-1_Z-2*1_N` forces four zeros and four
+  negatives. `AGL(5,2)` has exactly two four-point-set types (affine plane or
+  affine-independent). Each representative has 20,475 disjoint negative
+  supports; Walsh checking leaves zero solutions.
+- **Construction:** a quotient refinement produced
+  `SDS(32,20,4,[2,16])`; both validators accept it. Witness
+  `artifacts/witnesses/sds_32_20_4_2_16.json` —
+  `4ac02b48513f14385bffd574a2b531d46223375baf7cdc3e398be7f70a433eff`.
+- **Symmetry bug caught before acceptance:** an intermediate implementation
+  attempted to quotient a normalized-parent second-stage solution set by the
+  full translation group. The assertion that the orbit remained in that
+  slice failed. The extra quotient was removed; every second-stage survivor
+  is now refined explicitly. This increased work while restoring a direct
+  coverage proof.
+- **Evidence:** `artifacts/runs/v32_remaining_quotient_exhaustion.json` —
+  `2870150476387abadaf39792d254455a85cd2321a85011c6b2719a756001b1ab`.
+  `scripts/verify_v32_remaining_quotients.py` uses multiset enumeration,
+  separate mixed-radix autocorrelation, explicit orbit reconstruction, and
+  repeats every final refinement: four PASS results.
+
+## 2026-08-12 — Final audit and corrected novelty classification
+
+- **Census:** `artifacts/census/current_census.json` —
+  `11cd6bed9b7dcc1c23c66257f0765f2827c8aaefaf944ae4977bf6073cf08d9f`;
+  68/68 resolved, 16 EXIST, 52 NONEXISTENT.
+- **Integrity:** all 68 evidence hashes match; all 16 standalone witnesses
+  pass both validators; 57 CNF/proof/checker subcases have intact hashes and
+  checker outputs containing `s VERIFIED`; validator tests pass 3/3.
+- **Late prior-art discovery:** global GitHub code search found
+  `farev/Matematica`, with exact SDS results first committed on 2026-08-09.
+  Its exhaustive decisions plus character closure table cover 58 target
+  entries. Entry-by-entry comparison has zero disagreements (10 existence,
+  48 nonexistence). These 58 are therefore independent replications, not
+  novelty claims.
+- **Novelty-supported remainder:** the prior project does not resolve the
+  seven `(32,20,4)` entries or the three `(36,29,4)` entries. Exact parameter,
+  alternate group notation, global GitHub code, unchanged upstream
+  branch/issues, arXiv-source, and citation-index screens found no earlier
+  exact resolution. Six are constructions and four are certified negatives.
+  This supports novelty but cannot prove universal absence of prior work.
+- **Artifact:** `artifacts/novelty/novelty_screen_2026-08-12.json` —
+  `15b30ebad2a53005a914eb7640f766aee455d6bea30e9ced2a174de785615745`.
+- **Resources:** local CPU only; paid-compute cost €0. Accepted artifacts use
+  approximately 1.1 GB, chiefly DRAT traces. No outreach, push, publication,
+  or external mutation occurred.
+- **Terminal decision:** the primary objective is complete under the frozen
+  68-entry counting convention and evidence boundary.

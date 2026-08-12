@@ -1,0 +1,521 @@
+{
+  "cases": [
+    {
+      "build_seconds": 0.006972749999999972,
+      "encoding": "seqcounter",
+      "encoding_metadata": {
+        "augmentation_sign_normalized_nonnegative": true,
+        "clauses": 1878,
+        "encoding": "seqcounter",
+        "product_variables": 80,
+        "translation_fixed_negative_identity": true,
+        "variables": 906
+      },
+      "expected_from_independent_baseline": "SAT",
+      "formula_path": "artifacts/sat/sds_5_4_-1_5_seqcounter.cnf",
+      "formula_sha256": "9c0c0afb6be126dee04bed8a70cc3086d157df30ce986ba6470b39ea576ddd5d",
+      "instance": "SDS(5,4,-1,[5])",
+      "proof_status": "NOT_REQUESTED",
+      "result": "SAT",
+      "solve_seconds": 0.0025506250000000286,
+      "solver": "cadical195 via python-sat 1.9.dev13",
+      "solver_stats": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 127,
+        "restarts": 0
+      },
+      "validation": {
+        "coefficient_vector": [
+          -1,
+          1,
+          1,
+          -1,
+          0
+        ],
+        "independent": {
+          "autocorrelation": [
+            4,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "coefficient_sum": 0,
+          "errors": [],
+          "mismatches": {},
+          "support": 4,
+          "valid": true,
+          "validator": "independent_mixed_radix_v1"
+        },
+        "reference": {
+          "autocorrelation": [
+            4,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "coefficient_sum": 0,
+          "errors": [],
+          "mismatches": {},
+          "support": 4,
+          "valid": true,
+          "validator": "reference_tuple_dictionary_v1"
+        }
+      }
+    },
+    {
+      "build_seconds": 0.0049511669999999786,
+      "encoding": "totalizer",
+      "encoding_metadata": {
+        "augmentation_sign_normalized_nonnegative": true,
+        "clauses": 2570,
+        "encoding": "totalizer",
+        "product_variables": 80,
+        "translation_fixed_negative_identity": true,
+        "variables": 842
+      },
+      "expected_from_independent_baseline": "SAT",
+      "formula_path": "artifacts/sat/sds_5_4_-1_5_totalizer.cnf",
+      "formula_sha256": "8a55d0b84facf32745e7897d52aa5b725407d888911815be3ed57b7863723b7f",
+      "instance": "SDS(5,4,-1,[5])",
+      "proof_status": "NOT_REQUESTED",
+      "result": "SAT",
+      "solve_seconds": 0.0013604999999999867,
+      "solver": "cadical195 via python-sat 1.9.dev13",
+      "solver_stats": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 133,
+        "restarts": 0
+      },
+      "validation": {
+        "coefficient_vector": [
+          -1,
+          1,
+          1,
+          -1,
+          0
+        ],
+        "independent": {
+          "autocorrelation": [
+            4,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "coefficient_sum": 0,
+          "errors": [],
+          "mismatches": {},
+          "support": 4,
+          "valid": true,
+          "validator": "independent_mixed_radix_v1"
+        },
+        "reference": {
+          "autocorrelation": [
+            4,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "coefficient_sum": 0,
+          "errors": [],
+          "mismatches": {},
+          "support": 4,
+          "valid": true,
+          "validator": "reference_tuple_dictionary_v1"
+        }
+      }
+    },
+    {
+      "build_seconds": 0.025026707999999953,
+      "encoding": "seqcounter",
+      "encoding_metadata": {
+        "augmentation_sign_normalized_nonnegative": true,
+        "clauses": 11370,
+        "encoding": "seqcounter",
+        "product_variables": 288,
+        "translation_fixed_negative_identity": true,
+        "variables": 5554
+      },
+      "expected_from_independent_baseline": "SAT",
+      "formula_path": "artifacts/sat/sds_9_8_-1_3_3_seqcounter.cnf",
+      "formula_sha256": "242fac9ea606b5a7ef4eb369765d6e57a99540f6246a416123e9b03866f49590",
+      "instance": "SDS(9,8,-1,[3,3])",
+      "proof_status": "NOT_REQUESTED",
+      "result": "SAT",
+      "solve_seconds": 0.0073827499999999935,
+      "solver": "cadical195 via python-sat 1.9.dev13",
+      "solver_stats": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 379,
+        "restarts": 0
+      },
+      "validation": {
+        "coefficient_vector": [
+          -1,
+          1,
+          1,
+          1,
+          1,
+          -1,
+          -1,
+          0,
+          -1
+        ],
+        "independent": {
+          "autocorrelation": [
+            8,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "coefficient_sum": 0,
+          "errors": [],
+          "mismatches": {},
+          "support": 8,
+          "valid": true,
+          "validator": "independent_mixed_radix_v1"
+        },
+        "reference": {
+          "autocorrelation": [
+            8,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "coefficient_sum": 0,
+          "errors": [],
+          "mismatches": {},
+          "support": 8,
+          "valid": true,
+          "validator": "reference_tuple_dictionary_v1"
+        }
+      }
+    },
+    {
+      "build_seconds": 0.0251991250000001,
+      "encoding": "totalizer",
+      "encoding_metadata": {
+        "augmentation_sign_normalized_nonnegative": true,
+        "clauses": 14242,
+        "encoding": "totalizer",
+        "product_variables": 288,
+        "translation_fixed_negative_identity": true,
+        "variables": 3430
+      },
+      "expected_from_independent_baseline": "SAT",
+      "formula_path": "artifacts/sat/sds_9_8_-1_3_3_totalizer.cnf",
+      "formula_sha256": "112b8a5e72023ead6e0d3be06283d18bae30fd9c8b25db85367e744b86627a2e",
+      "instance": "SDS(9,8,-1,[3,3])",
+      "proof_status": "NOT_REQUESTED",
+      "result": "SAT",
+      "solve_seconds": 0.00701358299999999,
+      "solver": "cadical195 via python-sat 1.9.dev13",
+      "solver_stats": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 283,
+        "restarts": 0
+      },
+      "validation": {
+        "coefficient_vector": [
+          -1,
+          1,
+          1,
+          1,
+          1,
+          -1,
+          -1,
+          0,
+          -1
+        ],
+        "independent": {
+          "autocorrelation": [
+            8,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "coefficient_sum": 0,
+          "errors": [],
+          "mismatches": {},
+          "support": 8,
+          "valid": true,
+          "validator": "independent_mixed_radix_v1"
+        },
+        "reference": {
+          "autocorrelation": [
+            8,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "coefficient_sum": 0,
+          "errors": [],
+          "mismatches": {},
+          "support": 8,
+          "valid": true,
+          "validator": "reference_tuple_dictionary_v1"
+        }
+      }
+    },
+    {
+      "build_seconds": 0.016725042000000023,
+      "encoding": "seqcounter",
+      "encoding_metadata": {
+        "augmentation_sign_normalized_nonnegative": true,
+        "clauses": 11338,
+        "encoding": "seqcounter",
+        "product_variables": 288,
+        "translation_fixed_negative_identity": true,
+        "variables": 5538
+      },
+      "expected_from_independent_baseline": "UNSAT",
+      "formula_path": "artifacts/sat/sds_9_8_1_9_seqcounter.cnf",
+      "formula_sha256": "a7756866694936b0ffd060c6e55acd972b06264fe5d96feac45a82ae65d3268f",
+      "instance": "SDS(9,8,1,[9])",
+      "proof_status": "UNSAT_UNCERTIFIED",
+      "result": "UNSAT",
+      "solve_seconds": 0.0076930410000000116,
+      "solver": "cadical195 via python-sat 1.9.dev13",
+      "solver_stats": {
+        "conflicts": 46,
+        "decisions": 95,
+        "propagations": 60422,
+        "restarts": 0
+      },
+      "validation": null
+    },
+    {
+      "build_seconds": 0.021832750000000067,
+      "encoding": "totalizer",
+      "encoding_metadata": {
+        "augmentation_sign_normalized_nonnegative": true,
+        "clauses": 14242,
+        "encoding": "totalizer",
+        "product_variables": 288,
+        "translation_fixed_negative_identity": true,
+        "variables": 3430
+      },
+      "expected_from_independent_baseline": "UNSAT",
+      "formula_path": "artifacts/sat/sds_9_8_1_9_totalizer.cnf",
+      "formula_sha256": "83b9c048fdc9fff0ec9374701d0b1c0e0154e5574577866819abb93205b8c05a",
+      "instance": "SDS(9,8,1,[9])",
+      "proof_status": "UNSAT_UNCERTIFIED",
+      "result": "UNSAT",
+      "solve_seconds": 0.00913150000000007,
+      "solver": "cadical195 via python-sat 1.9.dev13",
+      "solver_stats": {
+        "conflicts": 105,
+        "decisions": 215,
+        "propagations": 61735,
+        "restarts": 13
+      },
+      "validation": null
+    },
+    {
+      "build_seconds": 0.016212167000000055,
+      "encoding": "seqcounter",
+      "encoding_metadata": {
+        "augmentation_sign_normalized_nonnegative": true,
+        "clauses": 11338,
+        "encoding": "seqcounter",
+        "product_variables": 288,
+        "translation_fixed_negative_identity": true,
+        "variables": 5538
+      },
+      "expected_from_independent_baseline": "UNSAT",
+      "formula_path": "artifacts/sat/sds_9_8_1_3_3_seqcounter.cnf",
+      "formula_sha256": "fd68cc1a4e71efe68d37afdb9899d361ce2cd831497aa073e254fe3a2f71a987",
+      "instance": "SDS(9,8,1,[3,3])",
+      "proof_status": "UNSAT_UNCERTIFIED",
+      "result": "UNSAT",
+      "solve_seconds": 0.008196874999999992,
+      "solver": "cadical195 via python-sat 1.9.dev13",
+      "solver_stats": {
+        "conflicts": 47,
+        "decisions": 90,
+        "propagations": 71017,
+        "restarts": 0
+      },
+      "validation": null
+    },
+    {
+      "build_seconds": 0.021168999999999993,
+      "encoding": "totalizer",
+      "encoding_metadata": {
+        "augmentation_sign_normalized_nonnegative": true,
+        "clauses": 14242,
+        "encoding": "totalizer",
+        "product_variables": 288,
+        "translation_fixed_negative_identity": true,
+        "variables": 3430
+      },
+      "expected_from_independent_baseline": "UNSAT",
+      "formula_path": "artifacts/sat/sds_9_8_1_3_3_totalizer.cnf",
+      "formula_sha256": "90fddde4d3d35f5e87d99e23b5d1d477708c8d26d3e43f57479e5264e3a36298",
+      "instance": "SDS(9,8,1,[3,3])",
+      "proof_status": "UNSAT_UNCERTIFIED",
+      "result": "UNSAT",
+      "solve_seconds": 0.008850000000000025,
+      "solver": "cadical195 via python-sat 1.9.dev13",
+      "solver_stats": {
+        "conflicts": 71,
+        "decisions": 131,
+        "propagations": 48642,
+        "restarts": 8
+      },
+      "validation": null
+    },
+    {
+      "build_seconds": 0.3482641249999999,
+      "encoding": "seqcounter",
+      "encoding_metadata": {
+        "augmentation_sign_normalized_nonnegative": true,
+        "clauses": 219201,
+        "encoding": "seqcounter",
+        "product_variables": 2208,
+        "translation_fixed_negative_identity": true,
+        "variables": 108532
+      },
+      "expected_from_independent_baseline": null,
+      "formula_path": "artifacts/sat/sds_24_18_2_2_12_seqcounter.cnf",
+      "formula_sha256": "b1040ab2979acd64ef463c3d0eb3f89aafd21fae6071e6251e8371f3c01273fc",
+      "instance": "SDS(24,18,2,[2,12])",
+      "proof_status": "UNSAT_UNCERTIFIED",
+      "result": "UNSAT",
+      "solve_seconds": 1695.923739375,
+      "solver": "cadical195 via python-sat 1.9.dev13",
+      "solver_stats": {
+        "conflicts": 4568085,
+        "decisions": 6331069,
+        "propagations": 14712781151,
+        "restarts": 115104
+      },
+      "validation": null
+    },
+    {
+      "build_seconds": 0.5532471670001087,
+      "encoding": "totalizer",
+      "encoding_metadata": {
+        "augmentation_sign_normalized_nonnegative": true,
+        "clauses": 247451,
+        "encoding": "totalizer",
+        "product_variables": 2208,
+        "translation_fixed_negative_identity": true,
+        "variables": 32144
+      },
+      "expected_from_independent_baseline": null,
+      "formula_path": "artifacts/sat/sds_24_18_2_2_12_totalizer.cnf",
+      "formula_sha256": "a5ad13c1795d91b809a323a54494355c32d6078e5a551f963d0c4e9400ea3f32",
+      "instance": "SDS(24,18,2,[2,12])",
+      "proof_status": "UNSAT_UNCERTIFIED",
+      "result": "UNSAT",
+      "solve_seconds": 419.0961327089999,
+      "solver": "cadical195 via python-sat 1.9.dev13",
+      "solver_stats": {
+        "conflicts": 2531858,
+        "decisions": 4333857,
+        "propagations": 2849523351,
+        "restarts": 100468
+      },
+      "validation": null
+    },
+    {
+      "build_seconds": 0.36641645800000333,
+      "encoding": "seqcounter",
+      "encoding_metadata": {
+        "augmentation_sign_normalized_nonnegative": true,
+        "clauses": 219201,
+        "encoding": "seqcounter",
+        "product_variables": 2208,
+        "translation_fixed_negative_identity": true,
+        "variables": 108532
+      },
+      "expected_from_independent_baseline": null,
+      "formula_path": "artifacts/sat/sds_24_18_2_2_2_6_seqcounter.cnf",
+      "formula_sha256": "0d4ed2b9e12f49ffd4f46dd3aa37dedfed8e6f35fc0806e0c9d5bdb67be11766",
+      "instance": "SDS(24,18,2,[2,2,6])",
+      "proof_status": "UNSAT_UNCERTIFIED",
+      "result": "UNSAT",
+      "solve_seconds": 577.4445370830003,
+      "solver": "cadical195 via python-sat 1.9.dev13",
+      "solver_stats": {
+        "conflicts": 2205115,
+        "decisions": 3472176,
+        "propagations": 7044843743,
+        "restarts": 90759
+      },
+      "validation": null
+    },
+    {
+      "build_seconds": 0.5667596250000315,
+      "encoding": "totalizer",
+      "encoding_metadata": {
+        "augmentation_sign_normalized_nonnegative": true,
+        "clauses": 247451,
+        "encoding": "totalizer",
+        "product_variables": 2208,
+        "translation_fixed_negative_identity": true,
+        "variables": 32144
+      },
+      "expected_from_independent_baseline": null,
+      "formula_path": "artifacts/sat/sds_24_18_2_2_2_6_totalizer.cnf",
+      "formula_sha256": "42ebbfc734c6d5b7f3208eebb8df0259f55587034fa9a78a1b5784470dfb9750",
+      "instance": "SDS(24,18,2,[2,2,6])",
+      "proof_status": "UNSAT_UNCERTIFIED",
+      "result": "UNSAT",
+      "solve_seconds": 41.15500466600042,
+      "solver": "cadical195 via python-sat 1.9.dev13",
+      "solver_stats": {
+        "conflicts": 328777,
+        "decisions": 537836,
+        "propagations": 413420205,
+        "restarts": 8705
+      },
+      "validation": null
+    }
+  ],
+  "command": ".venv/bin/python scripts/run_sat_campaign.py --output artifacts/runs/sat_campaign.json",
+  "completed_at_utc": "2026-08-12T07:09:20.931323+00:00",
+  "encoding_correctness_argument": [
+    "Exclusive p_g and n_g variables encode coefficients in {0,+1,-1}; exact p/n counts enforce support and the chosen augmentation sign.",
+    "Each product auxiliary is equivalent to its two input literals by all three Tseitin clauses.",
+    "For every nonidentity shift, the signed autocorrelation is same-sign products minus cross-sign products.",
+    "With exactly 2v cross-product occurrences, equality to lambda is equivalent to the unweighted cardinality equality sum(same)+sum(not cross)=lambda+2v.",
+    "The identity equation follows from coefficient exclusivity and exact support.",
+    "Global sign selects nonnegative augmentation, and translation moves a negative coefficient to identity; both preserve the full defining equation."
+  ],
+  "environment": {
+    "platform": "macOS-26.3-arm64-arm-64bit",
+    "python": "3.9.6"
+  },
+  "schema": "signed-difference-set-sat-campaign-v1",
+  "started_at_utc": "2026-08-12T00:04:45.227536+00:00",
+  "warning": "An UNSAT result in this report is not accepted as nonexistence unless a separately preserved proof passes an independent checker."
+}

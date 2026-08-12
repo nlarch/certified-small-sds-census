@@ -1,0 +1,62 @@
+
+c parsing input formula with 80164 variables and 816882 clauses
+
+c WARNING: deleted clause on proof line 922177 does not occur: [0] -79225 79218 0
+
+c WARNING: deleted clause on proof line 922200 does not occur: [0] -79257 79250 0
+
+c WARNING: deleted clause on proof line 922301 does not occur: [0] -79459 79452 0
+
+c WARNING: deleted clause on proof line 922324 does not occur: [0] -79491 79484 0
+
+c WARNING: deleted clause on proof line 959396 does not occur: [0] -79673 79666 0
+
+c WARNING: deleted clause on proof line 980152 does not occur: [0] -80121 80114 0
+
+c WARNING: deleted clause on proof line 980164 does not occur: [0] -80153 80146 0
+
+c WARNING: deleted clause on proof line 1043530 does not occur: [0] 40 79684 0
+
+c WARNING: deleted clause on proof line 1043580 does not occur: [0] 38 79908 0
+
+c WARNING: deleted clause on proof line 1065273 does not occur: [0] -79674 79667 0
+
+c WARNING: deleted clause on proof line 1108703 does not occur: [0] -80122 80115 0
+
+c WARNING: deleted clause on proof line 1108711 does not occur: [0] 42 80132 0
+
+c WARNING: deleted clause on proof line 1317536 does not occur: [0] -24 -23 -22 -21 -20 -19 -6 -4 -2 38 40 42 55 56 57 58 59 60 0
+
+c WARNING: deleted clause on proof line 1317664 does not occur: [0] 64 79224 0
+
+c WARNING: deleted clause on proof line 1317908 does not occur: [0] -79705 79698 0
+
+c WARNING: deleted clause on proof line 1317909 does not occur: [0] -79706 79699 0
+
+c WARNING: deleted clause on proof line 1317919 does not occur: [0] -4 79716 0
+
+c WARNING: deleted clause on proof line 1317973 does not occur: [0] -2 79940 0
+
+c WARNING: deleted clause on proof line 1318157 does not occur: [0] 48 80130 0
+
+c WARNING: deleted clause on proof line 1318175 does not occur: [0] -80154 80147 0
+
+c WARNING: deleted clause on proof line 1318183 does not occur: [0] -12 80162 0
+
+c WARNING: deleted clause on proof line 1318184 does not occur: [0] -6 80164 0
+
+c finished parsing
+
+c start forward verification
+
+c 24263 of 816882 clauses in core                            
+
+c 3304 of 3726 lemmas in core using 772112 resolution steps
+
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+
+c optimized proofs are not supported for forward checking
+
+s VERIFIED
+
+c verification time: 5.303 seconds

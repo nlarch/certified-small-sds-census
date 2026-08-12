@@ -1,0 +1,18 @@
+{
+  "as_of": "2026-08-12",
+  "census_entries": 68,
+  "census_path": "artifacts/census/current_census.json",
+  "census_sha256": "11cd6bed9b7dcc1c23c66257f0765f2827c8aaefaf944ae4977bf6073cf08d9f",
+  "checked_sat_subcases_integrity_audited": 57,
+  "independently_replicated": 58,
+  "novelty_path": "artifacts/novelty/novelty_screen_2026-08-12.json",
+  "novelty_sha256": "15b30ebad2a53005a914eb7640f766aee455d6bea30e9ced2a174de785615745",
+  "novelty_supported": 10,
+  "outcomes": {
+    "EXISTS": 16,
+    "NONEXISTENT": 52
+  },
+  "schema": "certified-small-sds-final-audit-v1",
+  "standalone_witnesses_dual_validated": 16,
+  "status": "PASS"
+}

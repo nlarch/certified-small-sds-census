@@ -1,0 +1,75 @@
+{
+  "cases": [
+    {
+      "build_seconds": 0.360150041,
+      "encoding": "seqcounter",
+      "encoding_metadata": {
+        "augmentation_sign_normalized_nonnegative": true,
+        "clauses": 219201,
+        "encoding": "seqcounter",
+        "product_variables": 2208,
+        "translation_fixed_negative_identity": true,
+        "variables": 108532
+      },
+      "expected_from_independent_baseline": null,
+      "formula_path": "artifacts/sat/sds_24_18_2_2_12_seqcounter.cnf",
+      "formula_sha256": "b1040ab2979acd64ef463c3d0eb3f89aafd21fae6071e6251e8371f3c01273fc",
+      "instance": "SDS(24,18,2,[2,12])",
+      "proof_status": "UNSAT_UNCERTIFIED",
+      "result": "UNSAT",
+      "solve_seconds": 1735.465107083,
+      "solver": "cadical195 via python-sat 1.9.dev13",
+      "solver_stats": {
+        "conflicts": 4568085,
+        "decisions": 6331069,
+        "propagations": 14712781151,
+        "restarts": 115104
+      },
+      "validation": null
+    },
+    {
+      "build_seconds": 0.43095020800001294,
+      "encoding": "seqcounter",
+      "encoding_metadata": {
+        "augmentation_sign_normalized_nonnegative": true,
+        "clauses": 219201,
+        "encoding": "seqcounter",
+        "product_variables": 2208,
+        "translation_fixed_negative_identity": true,
+        "variables": 108532
+      },
+      "expected_from_independent_baseline": null,
+      "formula_path": "artifacts/sat/sds_24_18_2_2_2_6_seqcounter.cnf",
+      "formula_sha256": "0d4ed2b9e12f49ffd4f46dd3aa37dedfed8e6f35fc0806e0c9d5bdb67be11766",
+      "instance": "SDS(24,18,2,[2,2,6])",
+      "proof_status": "UNSAT_UNCERTIFIED",
+      "result": "UNSAT",
+      "solve_seconds": 627.5568255419998,
+      "solver": "cadical195 via python-sat 1.9.dev13",
+      "solver_stats": {
+        "conflicts": 2205115,
+        "decisions": 3472176,
+        "propagations": 7044843743,
+        "restarts": 90759
+      },
+      "validation": null
+    }
+  ],
+  "command": ".venv/bin/python scripts/run_sat_campaign.py --scope v24 --encoding seqcounter --output artifacts/runs/sat_v24_seqcounter.json",
+  "completed_at_utc": "2026-08-12T03:53:34.794966+00:00",
+  "encoding_correctness_argument": [
+    "Exclusive p_g and n_g variables encode coefficients in {0,+1,-1}; exact p/n counts enforce support and the chosen augmentation sign.",
+    "Each product auxiliary is equivalent to its two input literals by all three Tseitin clauses.",
+    "For every nonidentity shift, the signed autocorrelation is same-sign products minus cross-sign products.",
+    "With exactly 2v cross-product occurrences, equality to lambda is equivalent to the unweighted cardinality equality sum(same)+sum(not cross)=lambda+2v.",
+    "The identity equation follows from coefficient exclusivity and exact support.",
+    "Global sign selects nonnegative augmentation, and translation moves a negative coefficient to identity; both preserve the full defining equation."
+  ],
+  "environment": {
+    "platform": "macOS-26.3-arm64-arm-64bit",
+    "python": "3.9.6"
+  },
+  "schema": "signed-difference-set-sat-campaign-v1",
+  "started_at_utc": "2026-08-12T03:53:34.757710+00:00",
+  "warning": "An UNSAT result in this report is not accepted as nonexistence unless a separately preserved proof passes an independent checker."
+}

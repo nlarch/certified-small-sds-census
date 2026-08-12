@@ -1,0 +1,40 @@
+
+c parsing input formula with 79604 variables and 814936 clauses
+
+c WARNING: deleted clause on proof line 924330 does not occur: [0] -79123 79116 0
+
+c WARNING: deleted clause on proof line 924353 does not occur: [0] -79155 79148 0
+
+c WARNING: deleted clause on proof line 924480 does not occur: [0] -79345 79343 0
+
+c WARNING: deleted clause on proof line 924503 does not occur: [0] -79377 79375 0
+
+c WARNING: deleted clause on proof line 924634 does not occur: [0] -79571 79564 0
+
+c WARNING: deleted clause on proof line 924657 does not occur: [0] -79603 79596 0
+
+c WARNING: deleted clause on proof line 1012679 does not occur: [0] 48 79570 0
+
+c WARNING: deleted clause on proof line 1012680 does not occur: [0] -79572 79565 0
+
+c WARNING: deleted clause on proof line 1012681 does not occur: [0] 42 79572 0
+
+c WARNING: deleted clause on proof line 1046891 does not occur: [0] -79124 79117 0
+
+c WARNING: deleted clause on proof line 1046892 does not occur: [0] 40 79124 0
+
+c finished parsing
+
+c start forward verification
+
+c 37057 of 814936 clauses in core                            
+
+c 19235 of 21311 lemmas in core using 4241609 resolution steps
+
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+
+c optimized proofs are not supported for forward checking
+
+s VERIFIED
+
+c verification time: 10.583 seconds

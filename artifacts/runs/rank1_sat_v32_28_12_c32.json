@@ -1,0 +1,62 @@
+{
+  "command": ".venv/bin/python scripts/search_rank1_walsh_sat.py --name SDS(32,28,12,[32]) --conflicts 100000 --tag v32_28_12_c32",
+  "completed_at_utc": "2026-08-12T07:20:03.490800+00:00",
+  "environment": {
+    "platform": "macOS-26.3-arm64-arm-64bit",
+    "python": "3.9.6"
+  },
+  "instances": [
+    {
+      "best_objective": null,
+      "best_vector": null,
+      "composition_positive_negative_zero": [
+        24,
+        4,
+        4
+      ],
+      "evidence_warning": "UNKNOWN or raw UNSAT attempts do not resolve the entry.",
+      "instance": "SDS(32,28,12,[32])",
+      "restarts_completed": 2,
+      "result": "NO_DECISION",
+      "runs": [
+        {
+          "answer": "UNKNOWN",
+          "conflict_budget": 100000,
+          "pattern": [
+            8,
+            12
+          ],
+          "pattern_index": 0,
+          "solve_seconds": 13.101868292,
+          "solver_stats": {
+            "conflicts": 100000,
+            "decisions": 161736,
+            "propagations": 335764140,
+            "restarts": 410
+          }
+        },
+        {
+          "answer": "UNKNOWN",
+          "conflict_budget": 100000,
+          "pattern": [
+            12,
+            8
+          ],
+          "pattern_index": 1,
+          "solve_seconds": 15.445954583999999,
+          "solver_stats": {
+            "conflicts": 100000,
+            "decisions": 142823,
+            "propagations": 370525884,
+            "restarts": 368
+          }
+        }
+      ],
+      "runtime_seconds": 28.547822875999998,
+      "seed_offset": null,
+      "steps_per_restart": 0,
+      "validation": null
+    }
+  ],
+  "schema": "rank1-walsh-sat-search-v1"
+}

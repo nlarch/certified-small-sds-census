@@ -1,0 +1,75 @@
+{
+  "result_derivation": [
+    "Projection to a quotient with kernel K turns the identity correlation into k+(|K|-1)lambda and every nonidentity quotient correlation into |K|lambda.",
+    "Translations normalize the unique real and order-three exceptional fibers independently by the C6 = C2 x C3 Chinese-remainder decomposition.",
+    "Every bounded integral quotient vector satisfying the normalized marginals and zero-shift norm is enumerated, then every remaining quotient autocorrelation is checked."
+  ],
+  "results": [
+    {
+      "candidates_after_marginals_and_norm": 144,
+      "cell_bound": [
+        -3,
+        3
+      ],
+      "full_quotient_solutions": 0,
+      "instance": "SDS(36,29,4,[2,18])",
+      "kernel_order": 3,
+      "nonzero_shift_correlation": 12,
+      "normalized_order3_marginal": [
+        1,
+        6,
+        6
+      ],
+      "normalized_real_marginal": [
+        7,
+        2,
+        2,
+        2
+      ],
+      "quotient": "C2^2 x C3",
+      "result": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+      "row_option_counts": {
+        "2": 33,
+        "7": 6
+      },
+      "zero_shift_correlation": 37
+    },
+    {
+      "c3x3_projection_affine_orbits": 1,
+      "c3x3_projection_candidates_after_sum_and_norm": 106353,
+      "c3x3_projection_solutions": 9,
+      "candidates_after_marginals_and_norm": 420,
+      "cell_bound": [
+        -2,
+        2
+      ],
+      "column_option_counts": {
+        "-3": 2,
+        "2": 3
+      },
+      "full_quotient_solutions": 0,
+      "instance": "SDS(36,29,4,[3,12])",
+      "kernel_order": 2,
+      "nonzero_shift_correlation": 8,
+      "normalized_c3x3_marginal": [
+        -3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "normalized_real_marginal": [
+        4,
+        9
+      ],
+      "quotient": "C2 x C3^2",
+      "result": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+      "zero_shift_correlation": 33
+    }
+  ],
+  "schema": "v36-29-4-combined-quotient-exhaustion-v1"
+}

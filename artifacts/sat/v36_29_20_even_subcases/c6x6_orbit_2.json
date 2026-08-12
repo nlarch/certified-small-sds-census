@@ -1,0 +1,53 @@
+{
+  "checker": {
+    "binary_sha256": "2a92f76b682bc64ab76ebd1d23f188e66ff138cf7f8172f80ec7ea94ecc5389a",
+    "output_path": "artifacts/sat/v36_29_20_even_subcases/c6x6_orbit_2.check.txt",
+    "output_sha256": "3a1ff1da234118b30836236022086eaa30fc7e7a8b8fbbbd0aad7215f1d85592",
+    "source_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+    "verified": true
+  },
+  "completed_at_utc": "2026-08-12T07:54:27.763234+00:00",
+  "formula": {
+    "clauses": 816882,
+    "path": "artifacts/sat/v36_29_20_even_subcases/c6x6_orbit_2.cnf",
+    "sha256": "7bb3ea701e7694054d74ab719452ee4c548fd585e11d28ebd79a6c655c8c7b96",
+    "variables": 80164
+  },
+  "group_tag": "c6x6",
+  "instance": "SDS(36,29,20,[6,6])",
+  "orbit_index": 2,
+  "order3_patterns": [
+    [
+      11,
+      8,
+      8
+    ],
+    [
+      7,
+      10,
+      10
+    ]
+  ],
+  "proof": {
+    "bytes": 11936048,
+    "path": "artifacts/sat/v36_29_20_even_subcases/c6x6_orbit_2.drat",
+    "sha256": "e10434e2aaa8cbb438be0a37467a09cdde8b3eb30f19e87ee6c4a9e9c711d2c3"
+  },
+  "real_pattern": [
+    9,
+    6,
+    6,
+    6
+  ],
+  "result": "UNSAT",
+  "schema": "v36-29-20-even-subcase-v1",
+  "solve_seconds": 5.394208708000001,
+  "solver_stats": {
+    "conflicts": 3725,
+    "decisions": 5169,
+    "propagations": 21247447,
+    "restarts": 17
+  },
+  "translation_fixed_negative_identity": false,
+  "translation_normalized_by_quotient_patterns": true
+}

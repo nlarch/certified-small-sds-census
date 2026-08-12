@@ -1,0 +1,68 @@
+{
+  "all_patterns": [
+    [
+      2,
+      5,
+      5,
+      5
+    ],
+    [
+      5,
+      5,
+      2,
+      5
+    ],
+    [
+      5,
+      2,
+      5,
+      5
+    ],
+    [
+      5,
+      5,
+      5,
+      2
+    ]
+  ],
+  "case_index": 1,
+  "checker": {
+    "binary_sha256": "2a92f76b682bc64ab76ebd1d23f188e66ff138cf7f8172f80ec7ea94ecc5389a",
+    "command": "tools/drat-trim-src/drat-trim artifacts/sat/v28_subcases/case_1_pattern_2.cnf artifacts/sat/v28_subcases/case_1_pattern_2.drat -f",
+    "output_path": "artifacts/sat/v28_subcases/case_1_pattern_2.check.txt",
+    "output_sha256": "a6a10523363f358f3ed6e921023719abf8426d3f3e1a67b9d9a5866f8030fd3f",
+    "source_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+    "verified": true
+  },
+  "completed_at_utc": "2026-08-12T07:14:25.383144+00:00",
+  "formula": {
+    "clauses": 389005,
+    "path": "artifacts/sat/v28_subcases/case_1_pattern_2.cnf",
+    "sha256": "62413cc02c7b9976eaa2f09dbf6c05e8377ec93d73997ee0dc0857e2a6aea6ad",
+    "variables": 45392
+  },
+  "instance": "SDS(28,19,10,[2,14])",
+  "pattern": [
+    5,
+    2,
+    5,
+    5
+  ],
+  "pattern_index": 2,
+  "proof": {
+    "bytes": 6565763,
+    "format": "ASCII DRAT/DRUP",
+    "path": "artifacts/sat/v28_subcases/case_1_pattern_2.drat",
+    "sha256": "444da06140eb454ed8e926272c479082599c53ef7cd28f949e82827a1e59719b"
+  },
+  "result": "UNSAT",
+  "schema": "v28-certified-sat-subcase-v1",
+  "solve_seconds": 0.780807625,
+  "solver": "Glucose4 via python-sat 1.9.dev13",
+  "solver_stats": {
+    "conflicts": 1168,
+    "decisions": 1583,
+    "propagations": 2929525,
+    "restarts": 1
+  }
+}

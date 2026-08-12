@@ -1,0 +1,150 @@
+{
+  "all_two_orbit_proofs_checked": true,
+  "completed_at_utc": "2026-08-12T07:49:47.198622+00:00",
+  "completeness_argument": [
+    "The parity character has value +/-3, so its two size-18 fiber sums are 12 and 15.",
+    "The order-three character equations have exactly two translation orbits, represented by (7,10,10) and (8,8,11).",
+    "Translations in the C12 and C3 factors independently normalize the parity ordering and order-three orbit; the CNFs therefore omit the negative-at-identity translation clause.",
+    "Each normalized CNF retains the exact coefficient-domain, composition, and every nonidentity autocorrelation equation.",
+    "Both UNSAT traces pass independent forward DRAT checking."
+  ],
+  "independent_order3_enumeration": {
+    "equations": [
+      "sum=27",
+      "sum_of_squares=249",
+      "cyclic_cross_sum=240"
+    ],
+    "ordered_solution_count": 6,
+    "range": [
+      -12,
+      12
+    ],
+    "solution_multisets": [
+      [
+        7,
+        10,
+        10
+      ],
+      [
+        8,
+        8,
+        11
+      ]
+    ]
+  },
+  "instance": "SDS(36,29,20,[3,12])",
+  "result": "NONEXISTENT_BY_CHECKED_SAT_PROOFS",
+  "schema": "v36-29-20-c3x12-certified-v1",
+  "subcases": [
+    {
+      "all_order3_orbit_representatives": [
+        [
+          7,
+          10,
+          10
+        ],
+        [
+          8,
+          8,
+          11
+        ]
+      ],
+      "checker": {
+        "binary_sha256": "2a92f76b682bc64ab76ebd1d23f188e66ff138cf7f8172f80ec7ea94ecc5389a",
+        "output_path": "artifacts/sat/v36_29_20_c3x12_subcases/orbit_0.check.txt",
+        "output_sha256": "cd175d89305388a61f6623c4f0830cceed88a5efe7d7acf54a9069600fa26886",
+        "source_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+        "verified": true
+      },
+      "completed_at_utc": "2026-08-12T07:49:47.198622+00:00",
+      "formula": {
+        "clauses": 816814,
+        "path": "artifacts/sat/v36_29_20_c3x12_subcases/orbit_0.cnf",
+        "sha256": "5157b3c386b2f46f639469294681d2ccef38ac62e06a4e5b980952256d447407",
+        "variables": 79900
+      },
+      "instance": "SDS(36,29,20,[3,12])",
+      "orbit_index": 0,
+      "order3_pattern": [
+        7,
+        10,
+        10
+      ],
+      "proof": {
+        "bytes": 74768718,
+        "path": "artifacts/sat/v36_29_20_c3x12_subcases/orbit_0.drat",
+        "sha256": "40202281bce3884c94b7cbb5f17939e7c1556a0ba2681aac93888814f8a26496"
+      },
+      "real_pattern": [
+        12,
+        15
+      ],
+      "result": "UNSAT",
+      "schema": "v36-29-20-c3x12-subcase-v1",
+      "solve_seconds": 58.048032375,
+      "solver_stats": {
+        "conflicts": 214654,
+        "decisions": 267991,
+        "propagations": 966276005,
+        "restarts": 938
+      },
+      "translation_fixed_negative_identity": false,
+      "translation_normalized_by_quotient_patterns": true
+    },
+    {
+      "all_order3_orbit_representatives": [
+        [
+          7,
+          10,
+          10
+        ],
+        [
+          8,
+          8,
+          11
+        ]
+      ],
+      "checker": {
+        "binary_sha256": "2a92f76b682bc64ab76ebd1d23f188e66ff138cf7f8172f80ec7ea94ecc5389a",
+        "output_path": "artifacts/sat/v36_29_20_c3x12_subcases/orbit_1.check.txt",
+        "output_sha256": "66a7f53e13157fd9bb4823b1dbfeff0095d765dcf358049b573a16588b0d3872",
+        "source_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+        "verified": true
+      },
+      "completed_at_utc": "2026-08-12T07:48:10.037239+00:00",
+      "formula": {
+        "clauses": 816426,
+        "path": "artifacts/sat/v36_29_20_c3x12_subcases/orbit_1.cnf",
+        "sha256": "8aab7c64d666311b96e439aa383b47732d6c627d47c0e3332ae056d13bbfbc1a",
+        "variables": 79788
+      },
+      "instance": "SDS(36,29,20,[3,12])",
+      "orbit_index": 1,
+      "order3_pattern": [
+        8,
+        8,
+        11
+      ],
+      "proof": {
+        "bytes": 42302675,
+        "path": "artifacts/sat/v36_29_20_c3x12_subcases/orbit_1.drat",
+        "sha256": "e98d6227ea6a7a4e0e030a5e27884099bf287df9fb603cb056de868ae497a3c3"
+      },
+      "real_pattern": [
+        12,
+        15
+      ],
+      "result": "UNSAT",
+      "schema": "v36-29-20-c3x12-subcase-v1",
+      "solve_seconds": 24.647311000000002,
+      "solver_stats": {
+        "conflicts": 113493,
+        "decisions": 146395,
+        "propagations": 442028331,
+        "restarts": 387
+      },
+      "translation_fixed_negative_identity": false,
+      "translation_normalized_by_quotient_patterns": true
+    }
+  ]
+}

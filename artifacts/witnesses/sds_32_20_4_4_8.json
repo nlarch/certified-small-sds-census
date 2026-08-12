@@ -1,0 +1,221 @@
+{
+  "coefficient_order": "lexicographic direct-product coordinates; last coordinate varies fastest",
+  "coefficient_sum": 12,
+  "coefficient_vector": [
+    -1,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    0,
+    1,
+    1,
+    0,
+    -1,
+    1,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    -1,
+    1,
+    0,
+    1,
+    -1,
+    1,
+    1
+  ],
+  "discovery": {
+    "restarts_completed": 1,
+    "run_path": "artifacts/runs/rank1_sat_v32_20_4_c4xc8.json",
+    "run_sha256": "6852686ac46b013226b9cec3d164824edab5db1efaf84d8a52b6a4bfdd6129f7",
+    "seed_offset": null,
+    "steps_per_restart": 0
+  },
+  "frozen_at_utc": "2026-08-12T07:16:42.326340+00:00",
+  "group_invariant_factors": [
+    4,
+    8
+  ],
+  "independent_validation": {
+    "autocorrelation": [
+      20,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "coefficient_sum": 12,
+    "errors": [],
+    "mismatches": {},
+    "support": 20,
+    "valid": true,
+    "validator": "independent_mixed_radix_v1"
+  },
+  "instance": "SDS(32,20,4,[4,8])",
+  "negative_set": [
+    [
+      0,
+      0
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      5
+    ]
+  ],
+  "positive_set": [
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      3,
+      7
+    ]
+  ],
+  "reference_validation": {
+    "autocorrelation": [
+      20,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "coefficient_sum": 12,
+    "errors": [],
+    "mismatches": {},
+    "support": 20,
+    "valid": true,
+    "validator": "reference_tuple_dictionary_v1"
+  },
+  "schema": "signed-difference-set-witness-v1",
+  "support": 20
+}
