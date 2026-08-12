@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import hashlib
+import gzip
 import json
 import shutil
 import tarfile
@@ -15,6 +16,8 @@ ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / "dist"
 PACKAGE_NAME = "certified-small-sds-v1.0-lightweight"
 PACKAGE = DIST / PACKAGE_NAME
+FROZEN_TIMESTAMP = 1786526559
+ZIP_TIMESTAMP = (2026, 8, 12, 9, 22, 40)
 
 FILES = [
     "LICENSE",
@@ -85,12 +88,24 @@ def main() -> None:
     for path in (tar_path, zip_path):
         if path.exists():
             path.unlink()
-    with tarfile.open(tar_path, "w:gz", format=tarfile.PAX_FORMAT) as archive:
-        archive.add(PACKAGE, arcname=PACKAGE_NAME)
+    def normalize(member: tarfile.TarInfo) -> tarfile.TarInfo:
+        member.uid = member.gid = 0
+        member.uname = member.gname = ""
+        member.mtime = FROZEN_TIMESTAMP
+        return member
+
+    with tar_path.open("wb") as raw:
+        with gzip.GzipFile(filename="", mode="wb", fileobj=raw, compresslevel=9, mtime=0) as compressed:
+            with tarfile.open(fileobj=compressed, mode="w", format=tarfile.PAX_FORMAT) as archive:
+                archive.add(PACKAGE, arcname=PACKAGE_NAME, filter=normalize)
     with zipfile.ZipFile(zip_path, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
         for path in sorted(PACKAGE.rglob("*")):
             if path.is_file():
-                archive.write(path, Path(PACKAGE_NAME) / path.relative_to(PACKAGE))
+                relative = str(Path(PACKAGE_NAME) / path.relative_to(PACKAGE))
+                info = zipfile.ZipInfo(relative, ZIP_TIMESTAMP)
+                info.compress_type = zipfile.ZIP_DEFLATED
+                info.external_attr = 0o100644 << 16
+                archive.writestr(info, path.read_bytes(), compress_type=zipfile.ZIP_DEFLATED, compresslevel=9)
 
     archive_sums = DIST / f"{PACKAGE_NAME}.SHA256SUMS"
     archive_sums.write_text(

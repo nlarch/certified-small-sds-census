@@ -1,8 +1,8 @@
 # Zenodo deposition checklist for v1.0 proof traces
 
-No upload has been performed by this file or by the release-preparation
-scripts. Complete these steps only after the final local audit has passed and
-the author has approved the public metadata.
+DOI `10.5281/zenodo.21901581` was registered when the Zenodo dataset was
+published on August 12, 2026. The release-preparation scripts themselves do
+not perform uploads.
 
 ## File to deposit
 
@@ -19,6 +19,9 @@ the deposition description. The archive contains all 241 files under
 records, and 57 checker-output files. Exactly 57 formula/proof pairs are
 accepted by the final census; the remaining formulas are retained for complete
 research provenance.
+
+Current deterministic archive: 242,173,862 bytes; SHA-256
+`d982b6b5c62b49588e772563ef53161084425ae89b1812672910bf05f1479231`.
 
 ## Proposed metadata
 
@@ -37,11 +40,11 @@ research provenance.
 - Keywords: signed difference sets; combinatorial designs; SAT; DRAT;
   computer-assisted proof
 
-## After Zenodo reserves a DOI
+## Reserved DOI integration
 
 Before publishing the deposition:
 
-1. Insert the reserved DOI and record URL in `CITATION.cff`, the paper's data
+1. Confirm the reserved DOI and record URL in `CITATION.cff`, the paper's data
    availability section, and the lightweight package README.
 2. Re-render and visually inspect the PDF.
 3. Rebuild both archives so their manifests cover the DOI-bearing files.

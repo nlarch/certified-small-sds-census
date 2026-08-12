@@ -378,8 +378,9 @@ archival storage. It contains this note, all 16 positive witnesses from the
 broader census, both validators, unit tests, the final quotient artifacts and
 their regenerating checkers, the census manifest, licensing information, and
 a SHA-256 manifest. It intentionally omits the 1.1 GB of CNF and DRAT files.
-Those large traces are to be archived separately with stable hashes and a DOI;
-the package manifest provides the link once the archival record exists.
+Those large traces are archived separately at Zenodo under DOI
+`10.5281/zenodo.21901581`, with file-level and archive hashes in the package
+manifest.
 
 A minimal positive audit uses only the Python standard library:
 
@@ -474,3 +475,6 @@ DOI: 10.1007/978-3-319-09284-3_31.
 
 [5] Certified Census of Small Signed Difference Sets, machine-readable
 census, witnesses, quotient artifacts, and audit logs, version 1.0.
+
+[6] N. Masselot, "Certified Small Signed Difference Sets: CNF and DRAT Proof
+Archive," Zenodo, version 1.0. DOI: 10.5281/zenodo.21901581.

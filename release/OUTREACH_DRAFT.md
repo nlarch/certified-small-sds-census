@@ -18,7 +18,8 @@ snapshot:
 The review package contains a 10-page note, six explicit order-32 witnesses,
 two independent full-coordinate validators, regenerating quotient checks, and
 a clean-environment audit of the exact CNF/DRAT certificates. The large traces
-are archived separately at [ZENODO DOI], with hashes in the package.
+are archived separately at DOI `10.5281/zenodo.21901581`, with hashes in the
+package.
 
 Would you be willing to do a bounded review focused on (i) the theorem
 framing, (ii) the completeness of the quotient reductions, and (iii) whether
@@ -36,6 +37,6 @@ Nicolas Masselot
 
 ---
 
-Before sending, replace both bracketed placeholders, verify access from a
+Before sending, replace the remaining bracketed placeholder, verify access from a
 signed-out browser, attach no gigabyte-scale files, and tailor the salutation
 and one sentence of context to each recipient.

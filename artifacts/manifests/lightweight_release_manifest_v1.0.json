@@ -2,14 +2,14 @@
   "payload_file_count": 40,
   "schema": "certified-small-sds-lightweight-release-manifest-v1",
   "tar_gz": {
-    "bytes": 263090,
+    "bytes": 261615,
     "path": "certified-small-sds-v1.0-lightweight.tar.gz",
-    "sha256": "d2b31552718b47a25d3af4f825850319fb1ec04f0fa12fa26f05170b49640dc9"
+    "sha256": "7e063c257aa00fbd67d58b77097f1ee1056ef1a911c92ddb5b583a62f6688bfe"
   },
   "version": "1.0",
   "zip": {
-    "bytes": 278450,
+    "bytes": 278628,
     "path": "certified-small-sds-v1.0-lightweight.zip",
-    "sha256": "96e4f7427a320071c7ff654993d8a864d199161eb50cd5d590e9732652715ab5"
+    "sha256": "11ee92875cef74f97d01894d054e69278bbadafa0682f8f2282f3802b101233c"
   }
 }

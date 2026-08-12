@@ -20,10 +20,10 @@ before execution.
 
 ## Archival and repository release
 
-- [ ] Reserve a Zenodo DOI for the trace dataset.
-- [ ] Add the reserved DOI and record URL to the paper, `CITATION.cff`, and
+- [x] Reserve Zenodo DOI `10.5281/zenodo.21901581` for the trace dataset.
+- [x] Add the reserved DOI and record URL to the paper, `CITATION.cff`, and
   package README; rebuild and re-verify both archives.
-- [ ] Upload the trace archive, compare its size and SHA-256, then publish the
+- [x] Upload the trace archive, compare its size and SHA-256, then publish the
   Zenodo record.
 - [ ] Commit the final DOI-bearing release state on a `main` branch.
 - [ ] Create and push tag `v1.0` and publish a GitHub release with the

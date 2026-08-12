@@ -123,9 +123,9 @@ report is `artifacts/audit/drat_clean_environment_2026-08-12.json` (SHA-256
 and the unabridged journal has SHA-256
 `1b708e833dd8ca522245ad809c0c0a58b16e99dc8d3a6050ded7eab8c37ff0a2`.
 
-The 1.1 GB proof directory has also been packaged locally as a 242,210,838-byte
+The 1.1 GB proof directory has also been packaged locally as a 242,173,862-byte
 Zenodo-ready archive with SHA-256
-`364d658277f227838039d3c5b408f6471e3619cc44e956f8449d5d92771cec99`.
+`d982b6b5c62b49588e772563ef53161084425ae89b1812672910bf05f1479231`.
 It has not been uploaded. A separate lightweight package contains the paper,
 all 16 witnesses, both validators, compact quotient artifacts, regenerating
 checks, licenses, disclosure, and file-level hashes.

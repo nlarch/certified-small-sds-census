@@ -165,6 +165,9 @@ The complete clean-environment DRAT rerun is recorded in
 with its unabridged journal beside it. A freshly compiled checker verified all
 57 proof pairs in a pinned Debian container.
 
+The separate formula and proof archive is deposited at Zenodo under registered
+DOI [`10.5281/zenodo.21901581`](https://doi.org/10.5281/zenodo.21901581).
+
 ## Rebuild the frozen inputs
 
 The upstream and prior-art repositories are intentionally ignored by the

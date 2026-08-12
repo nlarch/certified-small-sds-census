@@ -11,6 +11,7 @@ version: 1.0.0
 date-released: 2026-08-12
 repository-code: https://github.com/NicolasMasselot/certified-small-sds-census
 url: https://github.com/NicolasMasselot/certified-small-sds-census
+doi: 10.5281/zenodo.21901581
 license: MIT
 keywords:
   - signed difference sets

@@ -4,9 +4,9 @@
 from __future__ import annotations
 
 import hashlib
+import gzip
 import json
 import tarfile
-from datetime import datetime, timezone
 from pathlib import Path
 
 
@@ -15,6 +15,7 @@ SOURCE = ROOT / "artifacts" / "sat"
 DIST = ROOT / "dist"
 ARCHIVE_NAME = "certified-small-sds-drat-traces-v1.0.tar.gz"
 MANIFEST_PATH = ROOT / "artifacts" / "manifests" / "trace_archive_manifest_v1.0.json"
+FROZEN_TIMESTAMP = 1786526559
 
 
 def sha256(path: Path) -> str:
@@ -38,7 +39,7 @@ def main() -> None:
     manifest = {
         "schema": "certified-small-sds-trace-archive-manifest-v1",
         "version": "1.0",
-        "created_at_utc": datetime.now(timezone.utc).isoformat(),
+        "created_at_utc": "2026-08-12T09:22:39.796475+00:00",
         "source_directory": "artifacts/sat",
         "file_count": len(records),
         "total_uncompressed_bytes": sum(item["bytes"] for item in records),
@@ -52,9 +53,21 @@ def main() -> None:
     archive = DIST / ARCHIVE_NAME
     if archive.exists():
         archive.unlink()
-    with tarfile.open(archive, "w:gz", compresslevel=6, format=tarfile.PAX_FORMAT) as output:
-        output.add(SOURCE, arcname="artifacts/sat")
-        output.add(MANIFEST_PATH, arcname=str(MANIFEST_PATH.relative_to(ROOT)))
+    def normalize(member: tarfile.TarInfo) -> tarfile.TarInfo:
+        member.uid = member.gid = 0
+        member.uname = member.gname = ""
+        member.mtime = FROZEN_TIMESTAMP
+        return member
+
+    with archive.open("wb") as raw:
+        with gzip.GzipFile(filename="", mode="wb", fileobj=raw, compresslevel=6, mtime=0) as compressed:
+            with tarfile.open(fileobj=compressed, mode="w", format=tarfile.PAX_FORMAT) as output:
+                output.add(SOURCE, arcname="artifacts/sat", filter=normalize)
+                output.add(
+                    MANIFEST_PATH,
+                    arcname=str(MANIFEST_PATH.relative_to(ROOT)),
+                    filter=normalize,
+                )
     archive_record = {
         "archive": archive.name,
         "archive_bytes": archive.stat().st_size,

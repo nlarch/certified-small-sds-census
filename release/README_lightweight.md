@@ -7,8 +7,8 @@ quotient artifacts and regenerating checkers.
 
 The 1.1 GB CNF/DRAT archive is deliberately not duplicated here. Its full
 clean-environment audit report and journal are included under
-`artifacts/audit/`; the separate archive location and DOI should be added to
-the release record after Zenodo deposition.
+`artifacts/audit/`. The separate archive is published under Zenodo DOI
+`10.5281/zenodo.21901581` (`https://doi.org/10.5281/zenodo.21901581`).
 
 ## Quick verification
 
