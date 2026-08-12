@@ -25,15 +25,15 @@ before execution.
   package README; rebuild and re-verify both archives.
 - [x] Upload the trace archive, compare its size and SHA-256, then publish the
   Zenodo record.
-- [ ] Commit the final DOI-bearing release state on a `main` branch.
-- [ ] Create and push tag `v1.0` and publish a GitHub release with the
+- [x] Commit the final DOI-bearing release state on a `main` branch.
+- [x] Create and push tag `v1.0` and publish a GitHub release with the
   lightweight package as an asset.
-- [ ] Make the repository public, or grant explicit access to named reviewers,
+- [x] Make the repository public, or grant explicit access to named reviewers,
   and verify the link from a signed-out browser.
 
 ## Review and publication
 
-- [ ] Send the prepared private-review message to Arévalo and Gordon only
+- [x] Send the prepared private-review message to Arévalo and Gordon only
   after they can access the materials.
 - [ ] Record corrections and reviewer feedback; issue a maintenance release if
   any artifact or statement changes.

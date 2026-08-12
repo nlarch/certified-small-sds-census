@@ -1,9 +1,14 @@
-# Draft specialist-review message - not sent
+# Specialist-review outreach record
+
+Sent separately on August 12, 2026, from Nicolas Masselot's institutional
+address to Fabian Arévalo and Daniel Gordon. Gmail's Sent view confirmed both
+messages. No attachments were included; each message linked to the public
+repository, the `v1.0` release, the paper, and the Zenodo record.
 
 **Subject:** Request for a bounded check of two signed-difference-set
 classifications
 
-Dear Professor [Arévalo / Gordon],
+Dear [Fabian / Daniel],
 
 I am preparing a short note on two computer-assisted classification results
 for signed difference sets, relative to the April 24, 2026 La Jolla repository
@@ -25,7 +30,8 @@ Would you be willing to do a bounded review focused on (i) the theorem
 framing, (ii) the completeness of the quotient reductions, and (iii) whether
 you know an earlier exact resolution of any of the ten entries? I would be
 grateful for either confirmation or a short list of concrete concerns. The
-materials are at [PUBLIC REPOSITORY OR EXPLICIT-ACCESS LINK].
+materials are at
+<https://github.com/NicolasMasselot/certified-small-sds-census>.
 
 OpenAI Codex was used extensively for code, experiments, organization, and
 drafting. No model output is treated as evidence; the acceptance boundary and
@@ -35,8 +41,6 @@ Best regards,
 
 Nicolas Masselot
 
----
-
-Before sending, replace the remaining bracketed placeholder, verify access from a
-signed-out browser, attach no gigabyte-scale files, and tailor the salutation
-and one sentence of context to each recipient.
+The sent messages were tailored separately: Arévalo's note mentioned the
+independent overlap with `farev/Matematica`; Gordon's note identified the La
+Jolla Covering Repository as the baseline. Both used the subject above.
