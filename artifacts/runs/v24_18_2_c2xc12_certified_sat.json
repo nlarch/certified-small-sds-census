@@ -1,0 +1,299 @@
+{
+  "all_proofs_independently_checked": true,
+  "completed_at_utc": "2026-08-12T00:29:55.866778+00:00",
+  "completeness_argument": [
+    "The real-character quotient of C2 x C12 is C2^2, with four parity cosets of size six.",
+    "The principal character is normalized to +8; each of three nonprincipal real characters must be +4 or -4.",
+    "All 2^3=8 sign patterns are inverse-Walsh transformed, yielding exactly the eight recorded parity-cell sum patterns.",
+    "Each subcase CNF represents the coefficient domain, exact positive/negative counts, every full autocorrelation equation, and one of those parity patterns.",
+    "All eight formulas are UNSAT and every emitted proof passes the independent drat-trim checker.",
+    "Therefore no signed (24,18,2)-difference set exists in the exact group C2 x C12."
+  ],
+  "encoding_validation": "The same two CNF encodings reproduce exhaustive SAT/UNSAT baselines at orders 5 and 9; see artifacts/runs/sat_baselines.json.",
+  "instance": "SDS(24,18,2,[2,12])",
+  "result": "NONEXISTENT_BY_CHECKED_SAT_PROOFS",
+  "schema": "v24-c2c12-certified-nonexistence-v1",
+  "subcase_count": 8,
+  "subcases": [
+    {
+      "checker": {
+        "binary_path": "tools/drat-trim-src/drat-trim",
+        "binary_sha256": "2a92f76b682bc64ab76ebd1d23f188e66ff138cf7f8172f80ec7ea94ecc5389a",
+        "command": "tools/drat-trim-src/drat-trim artifacts/sat/v24_c2c12_subcases/pattern_0.cnf artifacts/sat/v24_c2c12_subcases/pattern_0.drat -f",
+        "exit_code": 0,
+        "mode": "forward verification (lower memory)",
+        "name": "drat-trim",
+        "output_path": "artifacts/sat/v24_c2c12_subcases/pattern_0.check.txt",
+        "output_sha256": "e0c830311b9643603f7de53a1e1f6d201875fc397b9480988237b56b81648d3a",
+        "source_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+        "source_repository": "https://github.com/marijnheule/drat-trim",
+        "verified": true
+      },
+      "formula": {
+        "clauses": 248339,
+        "path": "artifacts/sat/v24_c2c12_subcases/pattern_0.cnf",
+        "sha256": "59c52eea75f97316272b7c2746b758c65bed2f3fdab760db059ac836de12f2ec",
+        "variables": 32496
+      },
+      "pattern": [
+        -1,
+        3,
+        3,
+        3
+      ],
+      "pattern_index": 0,
+      "proof": {
+        "bytes": 28371774,
+        "format": "ASCII DRAT/DRUP emitted by Glucose4",
+        "path": "artifacts/sat/v24_c2c12_subcases/pattern_0.drat",
+        "sha256": "61eed478374a98670771aa0869878abf1ba81f3af615c199b0ba16a0cc394fee"
+      },
+      "solve_seconds": 24.1402375
+    },
+    {
+      "checker": {
+        "binary_path": "tools/drat-trim-src/drat-trim",
+        "binary_sha256": "2a92f76b682bc64ab76ebd1d23f188e66ff138cf7f8172f80ec7ea94ecc5389a",
+        "command": "tools/drat-trim-src/drat-trim artifacts/sat/v24_c2c12_subcases/pattern_1.cnf artifacts/sat/v24_c2c12_subcases/pattern_1.drat -f",
+        "exit_code": 0,
+        "mode": "forward verification (lower memory)",
+        "name": "drat-trim",
+        "output_path": "artifacts/sat/v24_c2c12_subcases/pattern_1.check.txt",
+        "output_sha256": "d8c955dbbdde9d9d2073dcbda6e0660dd01aaed8b1ec0154d7616270192754af",
+        "source_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+        "source_repository": "https://github.com/marijnheule/drat-trim",
+        "verified": true
+      },
+      "formula": {
+        "clauses": 248229,
+        "path": "artifacts/sat/v24_c2c12_subcases/pattern_1.cnf",
+        "sha256": "0ac28450a51c8c20cded738cbfa4161756ae92d261974942b129ec60aa810e48",
+        "variables": 32452
+      },
+      "pattern": [
+        1,
+        1,
+        1,
+        5
+      ],
+      "pattern_index": 1,
+      "proof": {
+        "bytes": 11079164,
+        "format": "ASCII DRAT/DRUP emitted by Glucose4",
+        "path": "artifacts/sat/v24_c2c12_subcases/pattern_1.drat",
+        "sha256": "92a3ea567d3eb554ae394ced1bda5cac8d057ae6a327e300afd6154ed9a5c8fc"
+      },
+      "solve_seconds": 5.53893275
+    },
+    {
+      "checker": {
+        "binary_path": "tools/drat-trim-src/drat-trim",
+        "binary_sha256": "2a92f76b682bc64ab76ebd1d23f188e66ff138cf7f8172f80ec7ea94ecc5389a",
+        "command": "tools/drat-trim-src/drat-trim artifacts/sat/v24_c2c12_subcases/pattern_2.cnf artifacts/sat/v24_c2c12_subcases/pattern_2.drat -f",
+        "exit_code": 0,
+        "mode": "forward verification (lower memory)",
+        "name": "drat-trim",
+        "output_path": "artifacts/sat/v24_c2c12_subcases/pattern_2.check.txt",
+        "output_sha256": "256995eda7b85bd7bded2d3e2e7c3c62a65f5a55cbd703be34b06c89062a1260",
+        "source_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+        "source_repository": "https://github.com/marijnheule/drat-trim",
+        "verified": true
+      },
+      "formula": {
+        "clauses": 248229,
+        "path": "artifacts/sat/v24_c2c12_subcases/pattern_2.cnf",
+        "sha256": "d19aab81eb16af56bff3dd5849493b762701be311e924ea905e14aa4c8ca9f30",
+        "variables": 32452
+      },
+      "pattern": [
+        1,
+        5,
+        1,
+        1
+      ],
+      "pattern_index": 2,
+      "proof": {
+        "bytes": 12387555,
+        "format": "ASCII DRAT/DRUP emitted by Glucose4",
+        "path": "artifacts/sat/v24_c2c12_subcases/pattern_2.drat",
+        "sha256": "dc2c5b0c46b63d40150c98456a37580c963e79d672bcf49cd066b481c654967d"
+      },
+      "solve_seconds": 6.350726875
+    },
+    {
+      "checker": {
+        "binary_path": "tools/drat-trim-src/drat-trim",
+        "binary_sha256": "2a92f76b682bc64ab76ebd1d23f188e66ff138cf7f8172f80ec7ea94ecc5389a",
+        "command": "tools/drat-trim-src/drat-trim artifacts/sat/v24_c2c12_subcases/pattern_3.cnf artifacts/sat/v24_c2c12_subcases/pattern_3.drat -f",
+        "exit_code": 0,
+        "mode": "forward verification (lower memory)",
+        "name": "drat-trim",
+        "output_path": "artifacts/sat/v24_c2c12_subcases/pattern_3.check.txt",
+        "output_sha256": "510932920d03962f1e513c070f6f949c7a92a1b38ef6c00461fcf709c555477c",
+        "source_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+        "source_repository": "https://github.com/marijnheule/drat-trim",
+        "verified": true
+      },
+      "formula": {
+        "clauses": 248339,
+        "path": "artifacts/sat/v24_c2c12_subcases/pattern_3.cnf",
+        "sha256": "a25df1147e4f17931a42e83b2579f66eecdd9f52bb62cc6a9e0fe15965353b83",
+        "variables": 32496
+      },
+      "pattern": [
+        3,
+        3,
+        -1,
+        3
+      ],
+      "pattern_index": 3,
+      "proof": {
+        "bytes": 11272571,
+        "format": "ASCII DRAT/DRUP emitted by Glucose4",
+        "path": "artifacts/sat/v24_c2c12_subcases/pattern_3.drat",
+        "sha256": "a6774c524aecedf7eafee23e4ad16a2a360e76e19df2c88bec4d27ea5c711feb"
+      },
+      "solve_seconds": 7.203641791
+    },
+    {
+      "checker": {
+        "binary_path": "tools/drat-trim-src/drat-trim",
+        "binary_sha256": "2a92f76b682bc64ab76ebd1d23f188e66ff138cf7f8172f80ec7ea94ecc5389a",
+        "command": "tools/drat-trim-src/drat-trim artifacts/sat/v24_c2c12_subcases/pattern_4.cnf artifacts/sat/v24_c2c12_subcases/pattern_4.drat -f",
+        "exit_code": 0,
+        "mode": "forward verification (lower memory)",
+        "name": "drat-trim",
+        "output_path": "artifacts/sat/v24_c2c12_subcases/pattern_4.check.txt",
+        "output_sha256": "d58122511eaf5e316daebe27549ed2e24b45a9ae82a1d6ab1e1d749f47ef21cd",
+        "source_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+        "source_repository": "https://github.com/marijnheule/drat-trim",
+        "verified": true
+      },
+      "formula": {
+        "clauses": 248229,
+        "path": "artifacts/sat/v24_c2c12_subcases/pattern_4.cnf",
+        "sha256": "a87580d88cabf4353f412911c59f23f482a311418472e434b8c50b74ca082256",
+        "variables": 32452
+      },
+      "pattern": [
+        1,
+        1,
+        5,
+        1
+      ],
+      "pattern_index": 4,
+      "proof": {
+        "bytes": 10101883,
+        "format": "ASCII DRAT/DRUP emitted by Glucose4",
+        "path": "artifacts/sat/v24_c2c12_subcases/pattern_4.drat",
+        "sha256": "88025553044183908f3b3b42daea50e6f1f080c909aed33cb19bab7f6c6cfb4a"
+      },
+      "solve_seconds": 5.552257208
+    },
+    {
+      "checker": {
+        "binary_path": "tools/drat-trim-src/drat-trim",
+        "binary_sha256": "2a92f76b682bc64ab76ebd1d23f188e66ff138cf7f8172f80ec7ea94ecc5389a",
+        "command": "tools/drat-trim-src/drat-trim artifacts/sat/v24_c2c12_subcases/pattern_5.cnf artifacts/sat/v24_c2c12_subcases/pattern_5.drat -f",
+        "exit_code": 0,
+        "mode": "forward verification (lower memory)",
+        "name": "drat-trim",
+        "output_path": "artifacts/sat/v24_c2c12_subcases/pattern_5.check.txt",
+        "output_sha256": "81b6a7facdf28c003a40aa28ff9a2c55c36c57c48bf8117757e7a05895a879c1",
+        "source_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+        "source_repository": "https://github.com/marijnheule/drat-trim",
+        "verified": true
+      },
+      "formula": {
+        "clauses": 248339,
+        "path": "artifacts/sat/v24_c2c12_subcases/pattern_5.cnf",
+        "sha256": "c0840b2088e039a7e8031680c758b4d4c974a720f84aa5bde7f4584fa473dc78",
+        "variables": 32496
+      },
+      "pattern": [
+        3,
+        -1,
+        3,
+        3
+      ],
+      "pattern_index": 5,
+      "proof": {
+        "bytes": 11982011,
+        "format": "ASCII DRAT/DRUP emitted by Glucose4",
+        "path": "artifacts/sat/v24_c2c12_subcases/pattern_5.drat",
+        "sha256": "068abb47cd7e9a3c0e9f4775bc379357efcee14e6a937de7c581e6953db534a7"
+      },
+      "solve_seconds": 6.0785915
+    },
+    {
+      "checker": {
+        "binary_path": "tools/drat-trim-src/drat-trim",
+        "binary_sha256": "2a92f76b682bc64ab76ebd1d23f188e66ff138cf7f8172f80ec7ea94ecc5389a",
+        "command": "tools/drat-trim-src/drat-trim artifacts/sat/v24_c2c12_subcases/pattern_6.cnf artifacts/sat/v24_c2c12_subcases/pattern_6.drat -f",
+        "exit_code": 0,
+        "mode": "forward verification (lower memory)",
+        "name": "drat-trim",
+        "output_path": "artifacts/sat/v24_c2c12_subcases/pattern_6.check.txt",
+        "output_sha256": "2a3f8a908f45e7133ac162690a30d0d63a86a8b3d5b3e7861c88bf007fe3209c",
+        "source_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+        "source_repository": "https://github.com/marijnheule/drat-trim",
+        "verified": true
+      },
+      "formula": {
+        "clauses": 248339,
+        "path": "artifacts/sat/v24_c2c12_subcases/pattern_6.cnf",
+        "sha256": "0d84cc5dfb961e26049ddc5b86dda48fc872b90993b0978ed09175a064903d06",
+        "variables": 32496
+      },
+      "pattern": [
+        3,
+        3,
+        3,
+        -1
+      ],
+      "pattern_index": 6,
+      "proof": {
+        "bytes": 11036312,
+        "format": "ASCII DRAT/DRUP emitted by Glucose4",
+        "path": "artifacts/sat/v24_c2c12_subcases/pattern_6.drat",
+        "sha256": "00bfecff0a65c54a9c2c0c8950a8cbb48b55eff8e042d9787e8e6b53a369b216"
+      },
+      "solve_seconds": 6.124378875
+    },
+    {
+      "checker": {
+        "binary_path": "tools/drat-trim-src/drat-trim",
+        "binary_sha256": "2a92f76b682bc64ab76ebd1d23f188e66ff138cf7f8172f80ec7ea94ecc5389a",
+        "command": "tools/drat-trim-src/drat-trim artifacts/sat/v24_c2c12_subcases/pattern_7.cnf artifacts/sat/v24_c2c12_subcases/pattern_7.drat -f",
+        "exit_code": 0,
+        "mode": "forward verification (lower memory)",
+        "name": "drat-trim",
+        "output_path": "artifacts/sat/v24_c2c12_subcases/pattern_7.check.txt",
+        "output_sha256": "4c519a7fbc97e2885425d4060b55d62ab4e162b894208f849c0494fbf6358423",
+        "source_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+        "source_repository": "https://github.com/marijnheule/drat-trim",
+        "verified": true
+      },
+      "formula": {
+        "clauses": 248229,
+        "path": "artifacts/sat/v24_c2c12_subcases/pattern_7.cnf",
+        "sha256": "869a1c056b9691f0408bf0dbbe554cd37cf47221bc446994820330ffc9f50500",
+        "variables": 32452
+      },
+      "pattern": [
+        5,
+        1,
+        1,
+        1
+      ],
+      "pattern_index": 7,
+      "proof": {
+        "bytes": 1,
+        "format": "ASCII DRAT/DRUP emitted by Glucose4",
+        "path": "artifacts/sat/v24_c2c12_subcases/pattern_7.drat",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+      },
+      "solve_seconds": 0.09602029099999998
+    }
+  ]
+}

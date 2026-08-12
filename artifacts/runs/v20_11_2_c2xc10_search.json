@@ -1,0 +1,44 @@
+{
+  "command": "python3 scripts/run_v20_11_2_search.py --output artifacts/runs/v20_11_2_c2xc10_search.json",
+  "completed_at_utc": "2026-08-12T00:00:02.313509+00:00",
+  "completeness_argument": [
+    "The unreduced support-11 domain has C(20,11)*2^11=343982080 vectors.",
+    "The trivial character gives (sum a_g)^2=11+2*(20-1)=49, so global sign permits normalization to sum +7.",
+    "The normalized vector has nine +1, two -1, and nine zeros: C(20,2)*C(18,9)=9237800 assignments.",
+    "Translation preserves the defining equation. Translating either negative element to the identity gives a representative counted by 19*C(18,9)=923780; duplicates do not affect completeness.",
+    "Method B independently audits the translation quotient by checking all 9237800 normalized assignments with no translation restriction.",
+    "Global sign is a bijection to the sum -7 assignments and preserves every autocorrelation."
+  ],
+  "deterministic_enumeration": true,
+  "environment": {
+    "platform": "macOS-26.3-arm64-arm-64bit",
+    "python": "3.9.6"
+  },
+  "input": {
+    "path": "sources/signed-difference-sets/sds.json",
+    "sha256": "39bab9fce78d5c4353c22ba482ff5c3bb8b8b9931edc5ca0fc60062dfe80ca85"
+  },
+  "instance": "SDS(20,11,2,[2,10])",
+  "method_a": {
+    "assignments_tested": 923780,
+    "complete": true,
+    "name": "translation_reduced_tuple_search",
+    "runtime_seconds": 5.654841792,
+    "witness": null
+  },
+  "method_b": {
+    "assignments_tested": 9237800,
+    "complete": true,
+    "name": "full_untranslated_c2xc10_bitset_search",
+    "runtime_seconds": 20.001059333999997,
+    "witness": null
+  },
+  "result": "NONEXISTENT_BY_EXHAUSTION",
+  "schema": "v20-11-2-c2xc10-search-v1",
+  "seed": null,
+  "started_at_utc": "2026-08-11T23:59:36.567906+00:00",
+  "validations": {
+    "method_a": null,
+    "method_b": null
+  }
+}

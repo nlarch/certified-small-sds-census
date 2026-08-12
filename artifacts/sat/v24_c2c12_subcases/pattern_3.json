@@ -1,0 +1,102 @@
+{
+  "all_eight_patterns": [
+    [
+      -1,
+      3,
+      3,
+      3
+    ],
+    [
+      1,
+      1,
+      1,
+      5
+    ],
+    [
+      1,
+      5,
+      1,
+      1
+    ],
+    [
+      3,
+      3,
+      -1,
+      3
+    ],
+    [
+      1,
+      1,
+      5,
+      1
+    ],
+    [
+      3,
+      -1,
+      3,
+      3
+    ],
+    [
+      3,
+      3,
+      3,
+      -1
+    ],
+    [
+      5,
+      1,
+      1,
+      1
+    ]
+  ],
+  "checker": {
+    "binary_path": "tools/drat-trim-src/drat-trim",
+    "binary_sha256": "2a92f76b682bc64ab76ebd1d23f188e66ff138cf7f8172f80ec7ea94ecc5389a",
+    "command": "tools/drat-trim-src/drat-trim artifacts/sat/v24_c2c12_subcases/pattern_3.cnf artifacts/sat/v24_c2c12_subcases/pattern_3.drat -f",
+    "exit_code": 0,
+    "mode": "forward verification (lower memory)",
+    "name": "drat-trim",
+    "output_path": "artifacts/sat/v24_c2c12_subcases/pattern_3.check.txt",
+    "output_sha256": "510932920d03962f1e513c070f6f949c7a92a1b38ef6c00461fcf709c555477c",
+    "source_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+    "source_repository": "https://github.com/marijnheule/drat-trim",
+    "verified": true
+  },
+  "completed_at_utc": "2026-08-12T00:28:39.768124+00:00",
+  "environment": {
+    "platform": "macOS-26.3-arm64-arm-64bit",
+    "python": "3.9.6"
+  },
+  "formula": {
+    "clauses": 248339,
+    "path": "artifacts/sat/v24_c2c12_subcases/pattern_3.cnf",
+    "sha256": "a25df1147e4f17931a42e83b2579f66eecdd9f52bb62cc6a9e0fe15965353b83",
+    "variables": 32496
+  },
+  "instance": "SDS(24,18,2,[2,12])",
+  "pattern": [
+    3,
+    3,
+    -1,
+    3
+  ],
+  "pattern_index": 3,
+  "proof": {
+    "bytes": 11272571,
+    "format": "ASCII DRAT/DRUP emitted by Glucose4",
+    "path": "artifacts/sat/v24_c2c12_subcases/pattern_3.drat",
+    "sha256": "a6774c524aecedf7eafee23e4ad16a2a360e76e19df2c88bec4d27ea5c711feb"
+  },
+  "result": "UNSAT",
+  "schema": "v24-c2c12-certified-sat-subcase-v1",
+  "solve_seconds": 7.203641791,
+  "solver": "Glucose4 via python-sat 1.9.dev13",
+  "solver_stats": {
+    "conflicts": 38964,
+    "decisions": 49161,
+    "propagations": 85211442,
+    "restarts": 37
+  },
+  "started_at_utc": "2026-08-12T00:28:21.465003+00:00",
+  "validation": null
+}

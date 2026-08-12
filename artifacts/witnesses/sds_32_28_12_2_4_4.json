@@ -1,0 +1,282 @@
+{
+  "coefficient_order": "lexicographic direct-product coordinates; last coordinate varies fastest",
+  "coefficient_sum": 20,
+  "coefficient_vector": [
+    1,
+    1,
+    -1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    -1,
+    1,
+    -1,
+    -1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    1,
+    0,
+    1
+  ],
+  "discovery": {
+    "restarts_completed": 3,
+    "run_path": "artifacts/runs/v32_unresolved_local_search.json",
+    "run_sha256": "bd2066ba728127e6b8ca725f0618f12a6e658fb4e166dcf194830e18211b3024",
+    "seed_offset": 3211000,
+    "steps_per_restart": 3000
+  },
+  "frozen_at_utc": "2026-08-12T00:47:11.202089+00:00",
+  "group_invariant_factors": [
+    2,
+    4,
+    4
+  ],
+  "independent_validation": {
+    "autocorrelation": [
+      28,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12
+    ],
+    "coefficient_sum": 20,
+    "errors": [],
+    "mismatches": {},
+    "support": 28,
+    "valid": true,
+    "validator": "independent_mixed_radix_v1"
+  },
+  "instance": "SDS(32,28,12,[2,4,4])",
+  "negative_set": [
+    [
+      0,
+      0,
+      2
+    ],
+    [
+      0,
+      2,
+      3
+    ],
+    [
+      0,
+      3,
+      1
+    ],
+    [
+      0,
+      3,
+      2
+    ]
+  ],
+  "positive_set": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      3
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      0,
+      1,
+      3
+    ],
+    [
+      0,
+      2,
+      0
+    ],
+    [
+      0,
+      2,
+      1
+    ],
+    [
+      0,
+      2,
+      2
+    ],
+    [
+      0,
+      3,
+      0
+    ],
+    [
+      0,
+      3,
+      3
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      2
+    ],
+    [
+      1,
+      0,
+      3
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      3
+    ],
+    [
+      1,
+      2,
+      0
+    ],
+    [
+      1,
+      2,
+      1
+    ],
+    [
+      1,
+      2,
+      2
+    ],
+    [
+      1,
+      2,
+      3
+    ],
+    [
+      1,
+      3,
+      1
+    ],
+    [
+      1,
+      3,
+      3
+    ]
+  ],
+  "reference_validation": {
+    "autocorrelation": [
+      28,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12
+    ],
+    "coefficient_sum": 20,
+    "errors": [],
+    "mismatches": {},
+    "support": 28,
+    "valid": true,
+    "validator": "reference_tuple_dictionary_v1"
+  },
+  "schema": "signed-difference-set-witness-v1",
+  "support": 28
+}

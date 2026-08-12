@@ -1,0 +1,156 @@
+
+c parsing input formula with 32496 variables and 248339 clauses
+
+c WARNING: deleted clause on proof line 248703 does not occur: [0] -1231 1224 0
+
+c WARNING: deleted clause on proof line 255577 does not occur: [0] -29 4642 0
+
+c WARNING: deleted clause on proof line 255956 does not occur: [0] 6018 6724 0
+
+c WARNING: deleted clause on proof line 256098 does not occur: [0] -7139 7137 0
+
+c WARNING: deleted clause on proof line 256782 does not occur: [0] -29 10130 0
+
+c WARNING: deleted clause on proof line 256932 does not occur: [0] 10130 10864 0
+
+c WARNING: deleted clause on proof line 262355 does not occur: [0] -35 1874 0
+
+c WARNING: deleted clause on proof line 262519 does not occur: [0] 1874 2608 0
+
+c WARNING: deleted clause on proof line 264763 does not occur: [0] -35 12922 0
+
+c WARNING: deleted clause on proof line 265167 does not occur: [0] 14298 14948 0
+
+c WARNING: deleted clause on proof line 265324 does not occur: [0] -15363 15361 0
+
+c WARNING: deleted clause on proof line 270205 does not occur: [0] -27 1882 0
+
+c WARNING: deleted clause on proof line 272605 does not occur: [0] -31 7378 0
+
+c WARNING: deleted clause on proof line 272613 does not occur: [0] -31 7402 0
+
+c WARNING: deleted clause on proof line 272927 does not occur: [0] 7402 8080 0
+
+c WARNING: deleted clause on proof line 272948 does not occur: [0] 7378 8112 0
+
+c WARNING: deleted clause on proof line 273590 does not occur: [0] -9455 9448 0
+
+c WARNING: deleted clause on proof line 275193 does not occur: [0] -27 12882 0
+
+c WARNING: deleted clause on proof line 275384 does not occur: [0] 12882 13616 0
+
+c WARNING: deleted clause on proof line 284897 does not occur: [0] -27 32178 0
+
+c WARNING: deleted clause on proof line 286683 does not occur: [0] -33 4626 0
+
+c WARNING: deleted clause on proof line 286777 does not occur: [0] 4626 5360 0
+
+c WARNING: deleted clause on proof line 287933 does not occur: [0] -33 10162 0
+
+c WARNING: deleted clause on proof line 342140 does not occur: [0] -39 18442 0
+
+c WARNING: deleted clause on proof line 344582 does not occur: [0] -39 29394 0
+
+c WARNING: deleted clause on proof line 344684 does not occur: [0] 29394 30128 0
+
+c WARNING: deleted clause on proof line 359128 does not occur: [0] -41 21202 0
+
+c WARNING: deleted clause on proof line 359531 does not occur: [0] 22578 23148 0
+
+c WARNING: deleted clause on proof line 359738 does not occur: [0] -23563 23561 0
+
+c WARNING: deleted clause on proof line 360417 does not occur: [0] -41 26642 0
+
+c WARNING: deleted clause on proof line 360518 does not occur: [0] 26642 27376 0
+
+c WARNING: deleted clause on proof line 363679 does not occur: [0] -36 498 0
+
+c WARNING: deleted clause on proof line 363791 does not occur: [0] -1232 1225 0
+
+c WARNING: deleted clause on proof line 363792 does not occur: [0] 498 1232 0
+
+c WARNING: deleted clause on proof line 364110 does not occur: [0] 1878 2606 0
+
+c WARNING: deleted clause on proof line 364774 does not occur: [0] -5349 5342 0
+
+c WARNING: deleted clause on proof line 365882 does not occur: [0] 10158 10830 0
+
+c WARNING: deleted clause on proof line 366548 does not occur: [0] -13573 13566 0
+
+c WARNING: deleted clause on proof line 366775 does not occur: [0] -36 14302 0
+
+c WARNING: deleted clause on proof line 367372 does not occur: [0] -17655 17648 0
+
+c WARNING: deleted clause on proof line 367812 does not occur: [0] 18438 19030 0
+
+c WARNING: deleted clause on proof line 368580 does not occur: [0] -21773 21766 0
+
+c WARNING: deleted clause on proof line 369708 does not occur: [0] -25879 25872 0
+
+c WARNING: deleted clause on proof line 370123 does not occur: [0] 26718 27254 0
+
+c WARNING: deleted clause on proof line 370885 does not occur: [0] -29997 29990 0
+
+c WARNING: deleted clause on proof line 371330 does not occur: [0] 30858 31372 0
+
+c WARNING: deleted clause on proof line 383537 does not occur: [0] -44 22514 0
+
+c WARNING: deleted clause on proof line 383651 does not occur: [0] 22514 23248 0
+
+c WARNING: deleted clause on proof line 384220 does not occur: [0] -44 25342 0
+
+c WARNING: deleted clause on proof line 384764 does not occur: [0] -27669 27667 0
+
+c WARNING: deleted clause on proof line 394194 does not occur: [0] -38 17062 0
+
+c WARNING: deleted clause on proof line 394196 does not occur: [0] -14 17063 0
+
+c WARNING: deleted clause on proof line 397538 does not occur: [0] -38 30770 0
+
+c WARNING: deleted clause on proof line 397540 does not occur: [0] -14 30772 0
+
+c WARNING: deleted clause on proof line 397658 does not occur: [0] 30770 31504 0
+
+c WARNING: deleted clause on proof line 397798 does not occur: [0] 30772 31920 0
+
+c WARNING: deleted clause on proof line 404088 does not occur: [0] -7 7380 0
+
+c WARNING: deleted clause on proof line 404090 does not occur: [0] -7 7403 0
+
+c WARNING: deleted clause on proof line 404243 does not occur: [0] 7403 8496 0
+
+c WARNING: deleted clause on proof line 404244 does not occur: [0] 7380 8528 0
+
+c WARNING: deleted clause on proof line 411385 does not occur: [0] -40 19822 0
+
+c WARNING: deleted clause on proof line 411387 does not occur: [0] -16 19823 0
+
+c WARNING: deleted clause on proof line 411539 does not occur: [0] 19822 20398 0
+
+c WARNING: deleted clause on proof line 411704 does not occur: [0] 19823 20814 0
+
+c WARNING: deleted clause on proof line 411930 does not occur: [0] -21774 21767 0
+
+c WARNING: deleted clause on proof line 413476 does not occur: [0] -40 28018 0
+
+c WARNING: deleted clause on proof line 413478 does not occur: [0] -16 28020 0
+
+c WARNING: deleted clause on proof line 413659 does not occur: [0] 28018 28752 0
+
+c WARNING: deleted clause on proof line 413800 does not occur: [0] 28020 29168 0
+
+c finished parsing
+
+c start forward verification
+
+c 25211 of 248339 clauses in core                            
+
+c 33576 of 37461 lemmas in core using 5132283 resolution steps
+
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+
+c optimized proofs are not supported for forward checking
+
+s VERIFIED
+
+c verification time: 10.591 seconds

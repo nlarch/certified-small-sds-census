@@ -1,0 +1,236 @@
+{
+  "command": "python3 scripts/prove_v25_character_obstructions.py",
+  "completed_at_utc": "2026-08-12T00:40:36.321038+00:00",
+  "deterministic_enumeration": true,
+  "environment": {
+    "platform": "macOS-26.3-arm64-arm-64bit",
+    "python": "3.9.6"
+  },
+  "input": {
+    "path": "sources/signed-difference-sets/sds.json",
+    "sha256": "39bab9fce78d5c4353c22ba482ff5c3bb8b8b9931edc5ca0fc60062dfe80ca85"
+  },
+  "mathematical_argument": [
+    "Fix any nonprincipal character chi of C5 x C5 and aggregate coefficients into its five fibers, obtaining integer sums s_0,...,s_4 in [-5,5].",
+    "Applying chi to D D^-1=(k-lambda)e+lambda G gives |sum s_j*zeta^j|^2=n=k-lambda for a primitive fifth root zeta.",
+    "If c_h=sum_j s_j*s_(j-h), then sum_h c_h*zeta^h=n. Since the degree-four polynomial sum_h c_h*x^h-n vanishes at zeta, it is an integer multiple of Phi_5(x)=1+x+x^2+x^3+x^4.",
+    "Thus c_1=...=c_4=t and c_0=n+t. Evaluating at x=1 gives principal_sum^2=n+5t, fixing the entire required length-five autocorrelation.",
+    "Method A exhausts every one of the 11^5 bounded integer fiber-sum tuples. Method B independently exhausts 11^4 prefixes and derives the fifth coordinate from the principal sum.",
+    "Both enumerations find no feasible fiber sums for either target, so even one required nonprincipal character cannot exist; hence neither exact signed difference set exists."
+  ],
+  "positive_control": {
+    "allowed_fiber_sum_count": 20,
+    "allowed_fiber_sums": [
+      [
+        -1,
+        1,
+        1,
+        2,
+        3
+      ],
+      [
+        -1,
+        1,
+        3,
+        1,
+        2
+      ],
+      [
+        -1,
+        2,
+        1,
+        3,
+        1
+      ],
+      [
+        -1,
+        3,
+        2,
+        1,
+        1
+      ],
+      [
+        1,
+        -1,
+        2,
+        1,
+        3
+      ],
+      [
+        1,
+        -1,
+        3,
+        2,
+        1
+      ],
+      [
+        1,
+        1,
+        -1,
+        3,
+        2
+      ],
+      [
+        1,
+        1,
+        2,
+        3,
+        -1
+      ],
+      [
+        1,
+        2,
+        -1,
+        1,
+        3
+      ],
+      [
+        1,
+        2,
+        3,
+        -1,
+        1
+      ],
+      [
+        1,
+        3,
+        1,
+        -1,
+        2
+      ],
+      [
+        1,
+        3,
+        1,
+        2,
+        -1
+      ],
+      [
+        2,
+        -1,
+        1,
+        3,
+        1
+      ],
+      [
+        2,
+        1,
+        1,
+        -1,
+        3
+      ],
+      [
+        2,
+        1,
+        3,
+        1,
+        -1
+      ],
+      [
+        2,
+        3,
+        -1,
+        1,
+        1
+      ],
+      [
+        3,
+        -1,
+        1,
+        1,
+        2
+      ],
+      [
+        3,
+        1,
+        -1,
+        2,
+        1
+      ],
+      [
+        3,
+        1,
+        2,
+        -1,
+        1
+      ],
+      [
+        3,
+        2,
+        1,
+        1,
+        -1
+      ]
+    ],
+    "discovered_witness_row_sums": [
+      3,
+      1,
+      -1,
+      2,
+      1
+    ],
+    "instance": "SDS(25,12,1,[5,5])",
+    "witness_row_sums_accepted": true
+  },
+  "results": [
+    {
+      "instance": "SDS(25,16,2,[5,5])",
+      "method_a": {
+        "bounded_tuples_tested": 161051,
+        "name": "full_bounded_five_tuple_product",
+        "principal_sum_candidates": 4935,
+        "runtime_seconds": 0.054191667000000006,
+        "solutions": []
+      },
+      "method_b": {
+        "bounded_completed_tuples": 4935,
+        "identity_square_sum_candidates": 90,
+        "name": "four_tuple_with_derived_fifth_coordinate",
+        "prefixes_tested": 14641,
+        "runtime_seconds": 0.005876374999999989,
+        "solutions": []
+      },
+      "nonprincipal_character_norm": 14,
+      "principal_character_sum_normalized": 8,
+      "required_fiber_autocorrelation": [
+        24,
+        10,
+        10,
+        10,
+        10
+      ],
+      "result": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_OBSTRUCTION"
+    },
+    {
+      "instance": "SDS(25,24,5,[5,5])",
+      "method_a": {
+        "bounded_tuples_tested": 161051,
+        "name": "full_bounded_five_tuple_product",
+        "principal_sum_candidates": 2305,
+        "runtime_seconds": 0.039543333999999986,
+        "solutions": []
+      },
+      "method_b": {
+        "bounded_completed_tuples": 2305,
+        "identity_square_sum_candidates": 100,
+        "name": "four_tuple_with_derived_fifth_coordinate",
+        "prefixes_tested": 14641,
+        "runtime_seconds": 0.004395707999999998,
+        "solutions": []
+      },
+      "nonprincipal_character_norm": 19,
+      "principal_character_sum_normalized": 12,
+      "required_fiber_autocorrelation": [
+        44,
+        25,
+        25,
+        25,
+        25
+      ],
+      "result": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_OBSTRUCTION"
+    }
+  ],
+  "schema": "v25-c5xc5-character-obstructions-v1",
+  "seed": null,
+  "started_at_utc": "2026-08-12T00:40:36.216694+00:00"
+}

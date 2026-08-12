@@ -1,0 +1,75 @@
+{
+  "cases": [
+    {
+      "build_seconds": 0.463619,
+      "encoding": "totalizer",
+      "encoding_metadata": {
+        "augmentation_sign_normalized_nonnegative": true,
+        "clauses": 247451,
+        "encoding": "totalizer",
+        "product_variables": 2208,
+        "translation_fixed_negative_identity": true,
+        "variables": 32144
+      },
+      "expected_from_independent_baseline": null,
+      "formula_path": "artifacts/sat/sds_24_18_2_2_12_totalizer.cnf",
+      "formula_sha256": "a5ad13c1795d91b809a323a54494355c32d6078e5a551f963d0c4e9400ea3f32",
+      "instance": "SDS(24,18,2,[2,12])",
+      "proof_status": "UNSAT_UNCERTIFIED",
+      "result": "UNSAT",
+      "solve_seconds": 457.43577329100003,
+      "solver": "cadical195 via python-sat 1.9.dev13",
+      "solver_stats": {
+        "conflicts": 2531858,
+        "decisions": 4333857,
+        "propagations": 2849523351,
+        "restarts": 100468
+      },
+      "validation": null
+    },
+    {
+      "build_seconds": 0.6907409589999816,
+      "encoding": "totalizer",
+      "encoding_metadata": {
+        "augmentation_sign_normalized_nonnegative": true,
+        "clauses": 247451,
+        "encoding": "totalizer",
+        "product_variables": 2208,
+        "translation_fixed_negative_identity": true,
+        "variables": 32144
+      },
+      "expected_from_independent_baseline": null,
+      "formula_path": "artifacts/sat/sds_24_18_2_2_2_6_totalizer.cnf",
+      "formula_sha256": "42ebbfc734c6d5b7f3208eebb8df0259f55587034fa9a78a1b5784470dfb9750",
+      "instance": "SDS(24,18,2,[2,2,6])",
+      "proof_status": "UNSAT_UNCERTIFIED",
+      "result": "UNSAT",
+      "solve_seconds": 58.53586783399999,
+      "solver": "cadical195 via python-sat 1.9.dev13",
+      "solver_stats": {
+        "conflicts": 328777,
+        "decisions": 537836,
+        "propagations": 413420205,
+        "restarts": 8705
+      },
+      "validation": null
+    }
+  ],
+  "command": ".venv/bin/python scripts/run_sat_campaign.py --scope v24 --encoding totalizer --output artifacts/runs/sat_v24_totalizer.json",
+  "completed_at_utc": "2026-08-12T00:15:05.321055+00:00",
+  "encoding_correctness_argument": [
+    "Exclusive p_g and n_g variables encode coefficients in {0,+1,-1}; exact p/n counts enforce support and the chosen augmentation sign.",
+    "Each product auxiliary is equivalent to its two input literals by all three Tseitin clauses.",
+    "For every nonidentity shift, the signed autocorrelation is same-sign products minus cross-sign products.",
+    "With exactly 2v cross-product occurrences, equality to lambda is equivalent to the unweighted cardinality equality sum(same)+sum(not cross)=lambda+2v.",
+    "The identity equation follows from coefficient exclusivity and exact support.",
+    "Global sign selects nonnegative augmentation, and translation moves a negative coefficient to identity; both preserve the full defining equation."
+  ],
+  "environment": {
+    "platform": "macOS-26.3-arm64-arm-64bit",
+    "python": "3.9.6"
+  },
+  "schema": "signed-difference-set-sat-campaign-v1",
+  "started_at_utc": "2026-08-12T00:15:05.296297+00:00",
+  "warning": "An UNSAT result in this report is not accepted as nonexistence unless a separately preserved proof passes an independent checker."
+}

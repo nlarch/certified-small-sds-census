@@ -2,4 +2,6 @@
 *.pyc
 .DS_Store
 sources/signed-difference-sets/
-
+.venv/
+tools/drat-trim-src/
+build/

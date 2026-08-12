@@ -1,0 +1,425 @@
+{
+  "command": "python3 scripts/prove_real_character_square_obstructions.py",
+  "completed_at_utc": "2026-08-12T00:43:02.419749+00:00",
+  "derived_obstruction_count": 13,
+  "environment": {
+    "platform": "macOS-26.3-arm64-arm-64bit",
+    "python": "3.9.6"
+  },
+  "input": {
+    "path": "artifacts/snapshot/targets_open_v36.json",
+    "sha256": "600df49a002e732d4e1af8d019198afc289e1323497e14f536c4df9c04307aa5"
+  },
+  "mathematical_argument": [
+    "If an invariant factor m is even, x -> (-1)^x on C_m, extended trivially over the other direct factors, is a nonprincipal real character chi:G->{+1,-1}.",
+    "For integer coefficients a_g in {0,+1,-1}, chi(D)=sum_g a_g*chi(g) is an integer and chi(D^-1)=chi(D).",
+    "Applying chi to D D^-1=(k-lambda)e+lambda G gives chi(D)^2=k-lambda because a nonprincipal character has chi(G)=0.",
+    "Therefore k-lambda must be an integer square. Every reported exact frozen entry has an explicit even factor and a nonsquare k-lambda, proving nonexistence."
+  ],
+  "results": [
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 1,
+      "chosen_even_factor_modulus": 6,
+      "instance": "SDS(18,15,2,[3,6])",
+      "integer_square_root": 3,
+      "is_square": false,
+      "k_minus_lambda": 13,
+      "result": "NONEXISTENT_BY_REAL_CHARACTER_SQUARE_OBSTRUCTION"
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 2,
+      "instance": "SDS(28,10,2,[2,14])",
+      "integer_square_root": 2,
+      "is_square": false,
+      "k_minus_lambda": 8,
+      "result": "NONEXISTENT_BY_REAL_CHARACTER_SQUARE_OBSTRUCTION"
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 2,
+      "instance": "SDS(28,22,14,[2,14])",
+      "integer_square_root": 2,
+      "is_square": false,
+      "k_minus_lambda": 8,
+      "result": "NONEXISTENT_BY_REAL_CHARACTER_SQUARE_OBSTRUCTION"
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 2,
+      "instance": "SDS(32,19,2,[2,16])",
+      "integer_square_root": 4,
+      "is_square": false,
+      "k_minus_lambda": 17,
+      "result": "NONEXISTENT_BY_REAL_CHARACTER_SQUARE_OBSTRUCTION"
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 2,
+      "instance": "SDS(32,19,2,[2,2,2,2,2])",
+      "integer_square_root": 4,
+      "is_square": false,
+      "k_minus_lambda": 17,
+      "result": "NONEXISTENT_BY_REAL_CHARACTER_SQUARE_OBSTRUCTION"
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 2,
+      "instance": "SDS(32,19,2,[2,2,2,4])",
+      "integer_square_root": 4,
+      "is_square": false,
+      "k_minus_lambda": 17,
+      "result": "NONEXISTENT_BY_REAL_CHARACTER_SQUARE_OBSTRUCTION"
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 2,
+      "instance": "SDS(32,19,2,[2,2,8])",
+      "integer_square_root": 4,
+      "is_square": false,
+      "k_minus_lambda": 17,
+      "result": "NONEXISTENT_BY_REAL_CHARACTER_SQUARE_OBSTRUCTION"
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 2,
+      "instance": "SDS(32,19,2,[2,4,4])",
+      "integer_square_root": 4,
+      "is_square": false,
+      "k_minus_lambda": 17,
+      "result": "NONEXISTENT_BY_REAL_CHARACTER_SQUARE_OBSTRUCTION"
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 32,
+      "instance": "SDS(32,19,2,[32])",
+      "integer_square_root": 4,
+      "is_square": false,
+      "k_minus_lambda": 17,
+      "result": "NONEXISTENT_BY_REAL_CHARACTER_SQUARE_OBSTRUCTION"
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 4,
+      "instance": "SDS(32,19,2,[4,8])",
+      "integer_square_root": 4,
+      "is_square": false,
+      "k_minus_lambda": 17,
+      "result": "NONEXISTENT_BY_REAL_CHARACTER_SQUARE_OBSTRUCTION"
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 2,
+      "instance": "SDS(36,30,2,[2,18])",
+      "integer_square_root": 5,
+      "is_square": false,
+      "k_minus_lambda": 28,
+      "result": "NONEXISTENT_BY_REAL_CHARACTER_SQUARE_OBSTRUCTION"
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 1,
+      "chosen_even_factor_modulus": 12,
+      "instance": "SDS(36,30,2,[3,12])",
+      "integer_square_root": 5,
+      "is_square": false,
+      "k_minus_lambda": 28,
+      "result": "NONEXISTENT_BY_REAL_CHARACTER_SQUARE_OBSTRUCTION"
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 6,
+      "instance": "SDS(36,30,2,[6,6])",
+      "integer_square_root": 5,
+      "is_square": false,
+      "k_minus_lambda": 28,
+      "result": "NONEXISTENT_BY_REAL_CHARACTER_SQUARE_OBSTRUCTION"
+    }
+  ],
+  "schema": "real-character-square-obstructions-v1",
+  "square_condition_controls": [
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 2,
+      "instance": "SDS(20,11,2,[2,10])",
+      "integer_square_root": 3,
+      "is_square": true,
+      "k_minus_lambda": 9
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 2,
+      "instance": "SDS(20,17,8,[2,10])",
+      "integer_square_root": 3,
+      "is_square": true,
+      "k_minus_lambda": 9
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 2,
+      "instance": "SDS(24,18,2,[2,12])",
+      "integer_square_root": 4,
+      "is_square": true,
+      "k_minus_lambda": 16
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 2,
+      "instance": "SDS(24,18,2,[2,2,6])",
+      "integer_square_root": 4,
+      "is_square": true,
+      "k_minus_lambda": 16
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 2,
+      "instance": "SDS(28,13,4,[2,14])",
+      "integer_square_root": 3,
+      "is_square": true,
+      "k_minus_lambda": 9
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 2,
+      "instance": "SDS(28,19,10,[2,14])",
+      "integer_square_root": 3,
+      "is_square": true,
+      "k_minus_lambda": 9
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 2,
+      "instance": "SDS(28,27,2,[2,14])",
+      "integer_square_root": 5,
+      "is_square": true,
+      "k_minus_lambda": 25
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 2,
+      "instance": "SDS(32,20,4,[2,16])",
+      "integer_square_root": 4,
+      "is_square": true,
+      "k_minus_lambda": 16
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 2,
+      "instance": "SDS(32,20,4,[2,2,2,2,2])",
+      "integer_square_root": 4,
+      "is_square": true,
+      "k_minus_lambda": 16
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 2,
+      "instance": "SDS(32,20,4,[2,2,2,4])",
+      "integer_square_root": 4,
+      "is_square": true,
+      "k_minus_lambda": 16
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 2,
+      "instance": "SDS(32,20,4,[2,2,8])",
+      "integer_square_root": 4,
+      "is_square": true,
+      "k_minus_lambda": 16
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 2,
+      "instance": "SDS(32,20,4,[2,4,4])",
+      "integer_square_root": 4,
+      "is_square": true,
+      "k_minus_lambda": 16
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 32,
+      "instance": "SDS(32,20,4,[32])",
+      "integer_square_root": 4,
+      "is_square": true,
+      "k_minus_lambda": 16
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 4,
+      "instance": "SDS(32,20,4,[4,8])",
+      "integer_square_root": 4,
+      "is_square": true,
+      "k_minus_lambda": 16
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 2,
+      "instance": "SDS(32,28,12,[2,16])",
+      "integer_square_root": 4,
+      "is_square": true,
+      "k_minus_lambda": 16
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 2,
+      "instance": "SDS(32,28,12,[2,2,2,2,2])",
+      "integer_square_root": 4,
+      "is_square": true,
+      "k_minus_lambda": 16
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 2,
+      "instance": "SDS(32,28,12,[2,2,2,4])",
+      "integer_square_root": 4,
+      "is_square": true,
+      "k_minus_lambda": 16
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 2,
+      "instance": "SDS(32,28,12,[2,2,8])",
+      "integer_square_root": 4,
+      "is_square": true,
+      "k_minus_lambda": 16
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 2,
+      "instance": "SDS(32,28,12,[2,4,4])",
+      "integer_square_root": 4,
+      "is_square": true,
+      "k_minus_lambda": 16
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 32,
+      "instance": "SDS(32,28,12,[32])",
+      "integer_square_root": 4,
+      "is_square": true,
+      "k_minus_lambda": 16
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 4,
+      "instance": "SDS(32,28,12,[4,8])",
+      "integer_square_root": 4,
+      "is_square": true,
+      "k_minus_lambda": 16
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 2,
+      "instance": "SDS(36,11,2,[2,18])",
+      "integer_square_root": 3,
+      "is_square": true,
+      "k_minus_lambda": 9
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 1,
+      "chosen_even_factor_modulus": 12,
+      "instance": "SDS(36,11,2,[3,12])",
+      "integer_square_root": 3,
+      "is_square": true,
+      "k_minus_lambda": 9
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 6,
+      "instance": "SDS(36,11,2,[6,6])",
+      "integer_square_root": 3,
+      "is_square": true,
+      "k_minus_lambda": 9
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 2,
+      "instance": "SDS(36,29,4,[2,18])",
+      "integer_square_root": 5,
+      "is_square": true,
+      "k_minus_lambda": 25
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 1,
+      "chosen_even_factor_modulus": 12,
+      "instance": "SDS(36,29,4,[3,12])",
+      "integer_square_root": 5,
+      "is_square": true,
+      "k_minus_lambda": 25
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 6,
+      "instance": "SDS(36,29,4,[6,6])",
+      "integer_square_root": 5,
+      "is_square": true,
+      "k_minus_lambda": 25
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 2,
+      "instance": "SDS(36,29,20,[2,18])",
+      "integer_square_root": 3,
+      "is_square": true,
+      "k_minus_lambda": 9
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 1,
+      "chosen_even_factor_modulus": 12,
+      "instance": "SDS(36,29,20,[3,12])",
+      "integer_square_root": 3,
+      "is_square": true,
+      "k_minus_lambda": 9
+    },
+    {
+      "character": "chi(x)=(-1)^(the chosen even-factor coordinate)",
+      "chosen_even_factor_index": 0,
+      "chosen_even_factor_modulus": 6,
+      "instance": "SDS(36,29,20,[6,6])",
+      "integer_square_root": 3,
+      "is_square": true,
+      "k_minus_lambda": 9
+    }
+  ],
+  "started_at_utc": "2026-08-12T00:43:02.419528+00:00"
+}

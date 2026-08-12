@@ -1,0 +1,165 @@
+{
+  "coefficient_order": "lexicographic coordinates (0,0),(0,1),...,(4,4); second coordinate varies fastest",
+  "coefficient_sum": 6,
+  "coefficient_vector": [
+    0,
+    0,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    -1,
+    1,
+    -1,
+    0,
+    -1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0
+  ],
+  "discovery": {
+    "restarts_completed": 53,
+    "run_path": "artifacts/runs/v25_local_search.json",
+    "run_sha256": "ecfe96efe393dfd714014286b6b0463259327f12eb32956a2799d8f3bb98a05f",
+    "seed": 52,
+    "steps_per_restart": 5000
+  },
+  "frozen_at_utc": "2026-08-12T00:34:09.460996+00:00",
+  "group": "C_5 x C_5",
+  "independent_validation": {
+    "autocorrelation": [
+      12,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "coefficient_sum": 6,
+    "errors": [],
+    "mismatches": {},
+    "support": 12,
+    "valid": true,
+    "validator": "independent_mixed_radix_v1"
+  },
+  "instance": "SDS(25,12,1,[5,5])",
+  "negative_set": [
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      0
+    ]
+  ],
+  "positive_set": [
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      1
+    ]
+  ],
+  "reference_validation": {
+    "autocorrelation": [
+      12,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "coefficient_sum": 6,
+    "errors": [],
+    "mismatches": {},
+    "support": 12,
+    "valid": true,
+    "validator": "reference_tuple_dictionary_v1"
+  },
+  "schema": "signed-difference-set-witness-v1",
+  "support": 12
+}

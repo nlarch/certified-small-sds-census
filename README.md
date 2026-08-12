@@ -29,3 +29,6 @@ python3 scripts/build_census.py
 See `RESEARCH_LEDGER.md` for the exact completeness arguments, runtimes,
 hashes, validation state, failed hypotheses, and next experiment. The current
 68-row status artifact is `artifacts/census/current_census.json`.
+
+Checkpoint 2026-08-12: 38 of 68 frozen entries are resolved (12 explicit
+constructions and 26 certified nonexistence results); 30 remain unresolved.

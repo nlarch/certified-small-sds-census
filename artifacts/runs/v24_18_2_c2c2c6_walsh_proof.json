@@ -1,0 +1,41 @@
+{
+  "command": "python3 scripts/prove_v24_c2c2c6_nonexistence.py --output artifacts/runs/v24_18_2_c2c2c6_walsh_proof.json",
+  "completed_at_utc": "2026-08-12T00:09:55.348890+00:00",
+  "deterministic_enumeration": true,
+  "environment": {
+    "platform": "macOS-26.3-arm64-arm-64bit",
+    "python": "3.9.6"
+  },
+  "input": {
+    "path": "sources/signed-difference-sets/sds.json",
+    "sha256": "39bab9fce78d5c4353c22ba482ff5c3bb8b8b9931edc5ca0fc60062dfe80ca85"
+  },
+  "instance": "SDS(24,18,2,[2,2,6])",
+  "mathematical_argument": [
+    "The real-character quotient of C2 x C2 x C6 is G/2G congruent to C2^3; its eight cosets each contain three group elements.",
+    "For any signed (24,18,2) set, applying a nonprincipal real character to D D^-1 = 16e + 2G gives chi(D)^2=16, hence chi(D) is +4 or -4.",
+    "Global sign permits the principal character sum to be fixed at +8 because its square is 18+2*23=64.",
+    "Writing the eight coset coefficient sums as integers s_x, each lies in [-3,3]. Their Walsh transform has principal value 8 and seven nonprincipal values in {+4,-4}.",
+    "Method A exhausts all 2^7 possible nonprincipal signs and inverse-transforms them; no inverse has all coordinates in [-3,3].",
+    "Method B independently exhausts all 7^8 bounded integer cell-sum tuples, filters principal sum 8, and forward-transforms; none has all seven nonprincipal magnitudes 4.",
+    "Therefore no coefficient vector can satisfy the character consequences of the defining equation, so the exact named signed difference set does not exist."
+  ],
+  "method_a": {
+    "bounded_inverse_patterns": [],
+    "integral_inverse_patterns": 0,
+    "name": "character_signs_to_inverse_walsh",
+    "runtime_seconds": 0.0007010830000000051,
+    "sign_patterns_tested": 128
+  },
+  "method_b": {
+    "bounded_tuples_tested": 5764801,
+    "feasible_spectra": [],
+    "name": "bounded_cell_sums_to_forward_walsh",
+    "principal_sum_eight_tuples": 154645,
+    "runtime_seconds": 7.493345958000001
+  },
+  "result": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_OBSTRUCTION",
+  "schema": "v24-c2c2c6-walsh-nonexistence-v1",
+  "seed": null,
+  "started_at_utc": "2026-08-12T00:09:47.854257+00:00"
+}

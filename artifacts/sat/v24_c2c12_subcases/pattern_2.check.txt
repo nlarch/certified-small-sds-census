@@ -1,0 +1,152 @@
+
+c parsing input formula with 32452 variables and 248229 clauses
+
+c WARNING: deleted clause on proof line 248593 does not occur: [0] -1231 1224 0
+
+c WARNING: deleted clause on proof line 256044 does not occur: [0] -32 6002 0
+
+c WARNING: deleted clause on proof line 256193 does not occur: [0] 6002 6736 0
+
+c WARNING: deleted clause on proof line 256650 does not occur: [0] -32 8782 0
+
+c WARNING: deleted clause on proof line 257017 does not occur: [0] 10158 10830 0
+
+c WARNING: deleted clause on proof line 257159 does not occur: [0] -11245 11243 0
+
+c WARNING: deleted clause on proof line 262155 does not occur: [0] -36 498 0
+
+c WARNING: deleted clause on proof line 262157 does not occur: [0] -26 502 0
+
+c WARNING: deleted clause on proof line 262910 does not occur: [0] -1232 1225 0
+
+c WARNING: deleted clause on proof line 262911 does not occur: [0] 498 1232 0
+
+c WARNING: deleted clause on proof line 263423 does not occur: [0] 507 1646 0
+
+c WARNING: deleted clause on proof line 263816 does not occur: [0] 1878 2606 0
+
+c WARNING: deleted clause on proof line 264527 does not occur: [0] -3021 3019 0
+
+c WARNING: deleted clause on proof line 264542 does not occur: [0] -34 3250 0
+
+c WARNING: deleted clause on proof line 264556 does not occur: [0] -28 3262 0
+
+c WARNING: deleted clause on proof line 265282 does not occur: [0] 3262 3974 0
+
+c WARNING: deleted clause on proof line 265301 does not occur: [0] 3250 3984 0
+
+c WARNING: deleted clause on proof line 266205 does not occur: [0] -5349 5342 0
+
+c WARNING: deleted clause on proof line 266908 does not occur: [0] 4647 5764 0
+
+c WARNING: deleted clause on proof line 267689 does not occur: [0] 6018 6724 0
+
+c WARNING: deleted clause on proof line 270255 does not occur: [0] -9455 9448 0
+
+c WARNING: deleted clause on proof line 270941 does not occur: [0] 8787 9870 0
+
+c WARNING: deleted clause on proof line 272098 does not occur: [0] -28 11506 0
+
+c WARNING: deleted clause on proof line 272124 does not occur: [0] -34 11542 0
+
+c WARNING: deleted clause on proof line 272808 does not occur: [0] 11542 12198 0
+
+c WARNING: deleted clause on proof line 272857 does not occur: [0] 11506 12240 0
+
+c WARNING: deleted clause on proof line 273745 does not occur: [0] -13573 13566 0
+
+c WARNING: deleted clause on proof line 274521 does not occur: [0] 12927 13988 0
+
+c WARNING: deleted clause on proof line 274579 does not occur: [0] -26 14258 0
+
+c WARNING: deleted clause on proof line 274617 does not occur: [0] -36 14302 0
+
+c WARNING: deleted clause on proof line 275278 does not occur: [0] 14298 14948 0
+
+c WARNING: deleted clause on proof line 275331 does not occur: [0] 14258 14992 0
+
+c WARNING: deleted clause on proof line 277931 does not occur: [0] -17655 17648 0
+
+c WARNING: deleted clause on proof line 278592 does not occur: [0] 17067 18070 0
+
+c WARNING: deleted clause on proof line 279335 does not occur: [0] 18438 19030 0
+
+c WARNING: deleted clause on proof line 282141 does not occur: [0] -21773 21766 0
+
+c WARNING: deleted clause on proof line 282804 does not occur: [0] 21207 22188 0
+
+c WARNING: deleted clause on proof line 283545 does not occur: [0] 22578 23148 0
+
+c WARNING: deleted clause on proof line 286350 does not occur: [0] -25879 25872 0
+
+c WARNING: deleted clause on proof line 287013 does not occur: [0] 25347 26294 0
+
+c WARNING: deleted clause on proof line 287755 does not occur: [0] 26718 27254 0
+
+c WARNING: deleted clause on proof line 290560 does not occur: [0] -29997 29990 0
+
+c WARNING: deleted clause on proof line 291225 does not occur: [0] 29487 30412 0
+
+c WARNING: deleted clause on proof line 291957 does not occur: [0] 30858 31372 0
+
+c WARNING: deleted clause on proof line 296182 does not occur: [0] -30 6022 0
+
+c WARNING: deleted clause on proof line 296714 does not occur: [0] -30 8754 0
+
+c WARNING: deleted clause on proof line 296925 does not occur: [0] 8754 9488 0
+
+c WARNING: deleted clause on proof line 384213 does not occur: [0] -37 15634 0
+
+c WARNING: deleted clause on proof line 384215 does not occur: [0] -13 15636 0
+
+c WARNING: deleted clause on proof line 384217 does not occur: [0] -37 15682 0
+
+c WARNING: deleted clause on proof line 384219 does not occur: [0] -13 15683 0
+
+c WARNING: deleted clause on proof line 384222 does not occur: [0] 15682 16280 0
+
+c WARNING: deleted clause on proof line 384223 does not occur: [0] 15634 16368 0
+
+c WARNING: deleted clause on proof line 384452 does not occur: [0] 15683 16696 0
+
+c WARNING: deleted clause on proof line 384474 does not occur: [0] 15636 16784 0
+
+c WARNING: deleted clause on proof line 384686 does not occur: [0] -17656 17649 0
+
+c WARNING: deleted clause on proof line 395681 does not occur: [0] -31 7378 0
+
+c WARNING: deleted clause on proof line 395683 does not occur: [0] -7 7380 0
+
+c WARNING: deleted clause on proof line 395685 does not occur: [0] -31 7402 0
+
+c WARNING: deleted clause on proof line 395687 does not occur: [0] -7 7403 0
+
+c WARNING: deleted clause on proof line 396885 does not occur: [0] 7402 8080 0
+
+c WARNING: deleted clause on proof line 396901 does not occur: [0] 7378 8112 0
+
+c WARNING: deleted clause on proof line 396978 does not occur: [0] 7403 8496 0
+
+c WARNING: deleted clause on proof line 396979 does not occur: [0] 7380 8528 0
+
+c WARNING: deleted clause on proof line 401043 does not occur: [0] -48 17010 0
+
+c WARNING: deleted clause on proof line 401511 does not occur: [0] 17010 17744 0
+
+c WARNING: deleted clause on proof line 408600 does not occur: [0] -48 30862 0
+
+c finished parsing
+
+c start forward verification
+
+c 25457 of 248229 clauses in core                            
+
+c 41405 of 45628 lemmas in core using 5889409 resolution steps
+
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+
+c optimized proofs are not supported for forward checking
+
+s VERIFIED
+
+c verification time: 539.532 seconds

@@ -1,0 +1,448 @@
+{
+  "command": "python3 scripts/prove_v27_order3_character_obstructions.py",
+  "completed_at_utc": "2026-08-12T00:42:00.036276+00:00",
+  "deterministic_enumeration": true,
+  "environment": {
+    "platform": "macOS-26.3-arm64-arm-64bit",
+    "python": "3.9.6"
+  },
+  "input": {
+    "path": "sources/signed-difference-sets/sds.json",
+    "sha256": "39bab9fce78d5c4353c22ba482ff5c3bb8b8b9931edc5ca0fc60062dfe80ca85"
+  },
+  "mathematical_argument": [
+    "Each target group C3^3 or C3 x C9 has a nonprincipal order-three character with three fibers of size nine; their integer coefficient sums lie in [-9,9].",
+    "Applying that character to the signed-difference-set equation gives |sum s_j*omega^j|^2=n=k-lambda.",
+    "Writing the three cyclic fiber correlations as c_h, the degree-two polynomial sum c_h*x^h-n vanishes at a primitive cube root, so it is an integer multiple of Phi_3=1+x+x^2.",
+    "Consequently c_1=c_2=t, c_0=n+t, and the normalized principal sum fixes t through principal_sum^2=n+3t.",
+    "Method A exhausts all 19^3 bounded integer fiber-sum triples; Method B independently exhausts 19^2 prefixes and derives the third coordinate.",
+    "Both methods find an empty feasible set for each rejected parameter triple, so no coefficient vector can satisfy even this necessary character equation in either exact target group."
+  ],
+  "positive_parameter_controls": [
+    {
+      "allowed_count": 6,
+      "allowed_fiber_sums": [
+        [
+          0,
+          3,
+          3
+        ],
+        [
+          1,
+          1,
+          4
+        ],
+        [
+          1,
+          4,
+          1
+        ],
+        [
+          3,
+          0,
+          3
+        ],
+        [
+          3,
+          3,
+          0
+        ],
+        [
+          4,
+          1,
+          1
+        ]
+      ],
+      "parameters": [
+        27,
+        10,
+        1
+      ]
+    },
+    {
+      "allowed_count": 6,
+      "allowed_fiber_sums": [
+        [
+          2,
+          5,
+          5
+        ],
+        [
+          3,
+          3,
+          6
+        ],
+        [
+          3,
+          6,
+          3
+        ],
+        [
+          5,
+          2,
+          5
+        ],
+        [
+          5,
+          5,
+          2
+        ],
+        [
+          6,
+          3,
+          3
+        ]
+      ],
+      "parameters": [
+        27,
+        14,
+        5
+      ]
+    },
+    {
+      "allowed_count": 6,
+      "allowed_fiber_sums": [
+        [
+          2,
+          3,
+          6
+        ],
+        [
+          2,
+          6,
+          3
+        ],
+        [
+          3,
+          2,
+          6
+        ],
+        [
+          3,
+          6,
+          2
+        ],
+        [
+          6,
+          2,
+          3
+        ],
+        [
+          6,
+          3,
+          2
+        ]
+      ],
+      "parameters": [
+        27,
+        17,
+        4
+      ]
+    },
+    {
+      "allowed_count": 6,
+      "allowed_fiber_sums": [
+        [
+          3,
+          6,
+          6
+        ],
+        [
+          4,
+          4,
+          7
+        ],
+        [
+          4,
+          7,
+          4
+        ],
+        [
+          6,
+          3,
+          6
+        ],
+        [
+          6,
+          6,
+          3
+        ],
+        [
+          7,
+          4,
+          4
+        ]
+      ],
+      "parameters": [
+        27,
+        17,
+        8
+      ]
+    },
+    {
+      "allowed_count": 6,
+      "allowed_fiber_sums": [
+        [
+          1,
+          3,
+          6
+        ],
+        [
+          1,
+          6,
+          3
+        ],
+        [
+          3,
+          1,
+          6
+        ],
+        [
+          3,
+          6,
+          1
+        ],
+        [
+          6,
+          1,
+          3
+        ],
+        [
+          6,
+          3,
+          1
+        ]
+      ],
+      "parameters": [
+        27,
+        22,
+        3
+      ]
+    },
+    {
+      "allowed_count": 6,
+      "allowed_fiber_sums": [
+        [
+          3,
+          6,
+          7
+        ],
+        [
+          3,
+          7,
+          6
+        ],
+        [
+          6,
+          3,
+          7
+        ],
+        [
+          6,
+          7,
+          3
+        ],
+        [
+          7,
+          3,
+          6
+        ],
+        [
+          7,
+          6,
+          3
+        ]
+      ],
+      "parameters": [
+        27,
+        22,
+        9
+      ]
+    },
+    {
+      "allowed_count": 6,
+      "allowed_fiber_sums": [
+        [
+          5,
+          8,
+          8
+        ],
+        [
+          6,
+          6,
+          9
+        ],
+        [
+          6,
+          9,
+          6
+        ],
+        [
+          8,
+          5,
+          8
+        ],
+        [
+          8,
+          8,
+          5
+        ],
+        [
+          9,
+          6,
+          6
+        ]
+      ],
+      "parameters": [
+        27,
+        25,
+        16
+      ]
+    }
+  ],
+  "rejected_parameter_analyses": [
+    {
+      "method_a": {
+        "bounded_tuples_tested": 6859,
+        "name": "full_bounded_three_tuple_product",
+        "runtime_seconds": 0.0017738750000000011,
+        "solutions": []
+      },
+      "method_b": {
+        "bounded_completed_tuples": 207,
+        "identity_square_sum_candidates": 0,
+        "name": "two_tuple_with_derived_third_coordinate",
+        "prefixes_tested": 361,
+        "runtime_seconds": 0.00012758300000000056,
+        "solutions": []
+      },
+      "nonprincipal_character_norm": 10,
+      "parameters": [
+        27,
+        12,
+        2
+      ],
+      "principal_sum_normalized": 8,
+      "required_fiber_autocorrelation": [
+        28,
+        18,
+        18
+      ]
+    },
+    {
+      "method_a": {
+        "bounded_tuples_tested": 6859,
+        "name": "full_bounded_three_tuple_product",
+        "runtime_seconds": 0.0017400409999999977,
+        "solutions": []
+      },
+      "method_b": {
+        "bounded_completed_tuples": 222,
+        "identity_square_sum_candidates": 0,
+        "name": "two_tuple_with_derived_third_coordinate",
+        "prefixes_tested": 361,
+        "runtime_seconds": 0.0002681669999999997,
+        "solutions": []
+      },
+      "nonprincipal_character_norm": 22,
+      "parameters": [
+        27,
+        23,
+        1
+      ],
+      "principal_sum_normalized": 7,
+      "required_fiber_autocorrelation": [
+        31,
+        9,
+        9
+      ]
+    },
+    {
+      "method_a": {
+        "bounded_tuples_tested": 6859,
+        "name": "full_bounded_three_tuple_product",
+        "runtime_seconds": 0.003207833,
+        "solutions": []
+      },
+      "method_b": {
+        "bounded_completed_tuples": 45,
+        "identity_square_sum_candidates": 0,
+        "name": "two_tuple_with_derived_third_coordinate",
+        "prefixes_tested": 361,
+        "runtime_seconds": 6.654200000000277e-05,
+        "solutions": []
+      },
+      "nonprincipal_character_norm": 10,
+      "parameters": [
+        27,
+        23,
+        13
+      ],
+      "principal_sum_normalized": 19,
+      "required_fiber_autocorrelation": [
+        127,
+        117,
+        117
+      ]
+    }
+  ],
+  "results": [
+    {
+      "instance": "SDS(27,12,2,[3,3,3])",
+      "parameter_analysis": [
+        27,
+        12,
+        2
+      ],
+      "result": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_OBSTRUCTION"
+    },
+    {
+      "instance": "SDS(27,12,2,[3,9])",
+      "parameter_analysis": [
+        27,
+        12,
+        2
+      ],
+      "result": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_OBSTRUCTION"
+    },
+    {
+      "instance": "SDS(27,23,1,[3,3,3])",
+      "parameter_analysis": [
+        27,
+        23,
+        1
+      ],
+      "result": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_OBSTRUCTION"
+    },
+    {
+      "instance": "SDS(27,23,1,[3,9])",
+      "parameter_analysis": [
+        27,
+        23,
+        1
+      ],
+      "result": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_OBSTRUCTION"
+    },
+    {
+      "instance": "SDS(27,23,13,[3,3,3])",
+      "parameter_analysis": [
+        27,
+        23,
+        13
+      ],
+      "result": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_OBSTRUCTION"
+    },
+    {
+      "instance": "SDS(27,23,13,[3,9])",
+      "parameter_analysis": [
+        27,
+        23,
+        13
+      ],
+      "result": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_OBSTRUCTION"
+    }
+  ],
+  "schema": "v27-order3-character-obstructions-v1",
+  "seed": null,
+  "started_at_utc": "2026-08-12T00:42:00.013808+00:00"
+}

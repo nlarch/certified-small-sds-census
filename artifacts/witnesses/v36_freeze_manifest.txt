@@ -1,0 +1,58 @@
+{
+  "source_run": "artifacts/runs/v36_unresolved_local_search.json",
+  "witnesses": [
+    {
+      "instance": "SDS(36,11,2,[6,6])",
+      "output": "artifacts/witnesses/sds_36_11_2_6_6.json",
+      "sha256": "24c261a45c89c45d3b813436d025f43b81c3beb07fd80b7c51c6bfcac6904cce",
+      "positive_set": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "negative_set": [
+        [
+          2,
+          5
+        ]
+      ]
+    }
+  ]
+}

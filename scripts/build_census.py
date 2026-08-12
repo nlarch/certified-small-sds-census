@@ -13,6 +13,13 @@ ROOT = Path(__file__).resolve().parents[1]
 TARGETS = ROOT / "artifacts" / "snapshot" / "targets_open_v36.json"
 RUNS = ROOT / "artifacts" / "runs"
 OUTPUT = ROOT / "artifacts" / "census" / "current_census.json"
+ACCEPTED_RESULTS = {
+    "EXISTS",
+    "NONEXISTENT_BY_EXHAUSTION",
+    "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_OBSTRUCTION",
+    "NONEXISTENT_BY_REAL_CHARACTER_SQUARE_OBSTRUCTION",
+    "NONEXISTENT_BY_CHECKED_SAT_PROOFS",
+}
 
 
 def sha256(path: Path) -> str:
@@ -35,6 +42,8 @@ def evidence_results() -> dict:
     for path in sorted(RUNS.glob("*.json")):
         document = json.loads(path.read_text())
         for node in result_nodes(document):
+            if node["result"] not in ACCEPTED_RESULTS:
+                continue
             found[node["instance"]] = {
                 "result": node["result"],
                 "evidence_path": str(path.relative_to(ROOT)),
