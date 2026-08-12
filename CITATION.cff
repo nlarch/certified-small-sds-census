@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: >-
+  Please cite the paper and software release. Software is MIT-licensed; the
+  paper and project-authored research data are CC BY 4.0.
+title: Certified Census of Small Signed Difference Sets
+type: software
+authors:
+  - family-names: Masselot
+    given-names: Nicolas
+version: 1.0.0
+date-released: 2026-08-12
+repository-code: https://github.com/NicolasMasselot/certified-small-sds-census
+url: https://github.com/NicolasMasselot/certified-small-sds-census
+license: MIT
+keywords:
+  - signed difference sets
+  - combinatorial design theory
+  - computer-assisted proof
+  - SAT
+  - DRAT
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Masselot
+      given-names: Nicolas
+  title: Two Small-Order Classification Theorems for Signed Difference Sets
+  year: 2026
+  status: unpublished manuscript

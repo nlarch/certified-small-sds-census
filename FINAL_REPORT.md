@@ -112,6 +112,24 @@ The accepted evidence occupies about 1.1 GB, chiefly proof traces. All
 compute was local; paid-compute cost was zero. No public push, publication,
 maintainer contact, or expert outreach was performed.
 
+## Publication-preparation audit
+
+A clean-environment rerun independently compiled `drat-trim` at commit
+`2e3b2dc0ecf938addbd779d42877b6ed69d9a985` inside the pinned Debian image
+`debian@sha256:abd67ffcfa541b485a3dff59865ab629aa048a6c613e639d36e7456b0b229241`.
+All 57 accepted CNF/DRAT pairs returned `s VERIFIED`. The machine-readable
+report is `artifacts/audit/drat_clean_environment_2026-08-12.json` (SHA-256
+`ecc8d88264c20a4e45123f5f39eb1224223a0fba483ae8e5917540a842ad1a3f`),
+and the unabridged journal has SHA-256
+`1b708e833dd8ca522245ad809c0c0a58b16e99dc8d3a6050ded7eab8c37ff0a2`.
+
+The 1.1 GB proof directory has also been packaged locally as a 242,210,838-byte
+Zenodo-ready archive with SHA-256
+`364d658277f227838039d3c5b408f6471e3619cc44e956f8449d5d92771cec99`.
+It has not been uploaded. A separate lightweight package contains the paper,
+all 16 witnesses, both validators, compact quotient artifacts, regenerating
+checks, licenses, disclosure, and file-level hashes.
+
 ## Scope limits
 
 This is a complete classification only for the 68 entries that were `Open`

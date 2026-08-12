@@ -1,5 +1,43 @@
 # Certified Census of Small Signed Difference Sets
 
+## Main theorems
+
+**Theorem 1 (order 32 classification).** A signed `(32,20,4)`
+difference set exists in an abelian group of order 32 if and only if the group
+is noncyclic. Explicit, independently validated constructions are supplied for
+
+```text
+C2 x C16, C4 x C8, C2 x C2 x C8, C2 x C4 x C4,
+C2 x C2 x C2 x C4, and C2 x C2 x C2 x C2 x C2.
+```
+
+For `C32`, a complete `C8 -> C16 -> C32` quotient refinement exhausts all
+possibilities and finds none.
+
+**Theorem 2 (the previously open noncyclic order 36 cases).** None of
+
+```text
+C2 x C18, C3 x C12, and C6 x C6
+```
+
+admits a signed `(36,29,4)` difference set. The first two cases are excluded
+by complete quotient enumerations. For `C6 x C6`, quotient reductions leave
+one normalized orbit, whose exact CNF formula is proved unsatisfiable by a
+DRAT certificate checked independently with `drat-trim`.
+
+The frozen repository already recorded the cyclic `C36` case as
+nonexistent. Consequently, the theorem established here together with that
+earlier result closes `(36,29,4)` for every abelian group of order 36.
+
+These are the two principal mathematical results. The complete 68-entry
+census described below is the broader verification project in which they were
+obtained.
+
+The accompanying English note is available as
+[`paper/two_small_order_classifications.md`](paper/two_small_order_classifications.md)
+and as a visually checked 10-page
+[`PDF`](output/pdf/two_small_order_classifications.pdf).
+
 ## What is this project about?
 
 This is a computer-assisted mathematics project about arranging `+1`, `-1`,
@@ -122,6 +160,11 @@ all 16 standalone witnesses, audits every stored formula/proof/checker hash,
 requires `s VERIFIED` in all checker outputs, and checks the dated novelty
 classification.
 
+The complete clean-environment DRAT rerun is recorded in
+[`artifacts/audit/drat_clean_environment_2026-08-12.json`](artifacts/audit/drat_clean_environment_2026-08-12.json)
+with its unabridged journal beside it. A freshly compiled checker verified all
+57 proof pairs in a pinned Debian container.
+
 ## Rebuild the frozen inputs
 
 The upstream and prior-art repositories are intentionally ignored by the
@@ -165,3 +208,15 @@ The full entry-by-entry screen is
 
 See `RESEARCH_LEDGER.md` for experiment history, failures, completeness
 arguments, commands, runtimes, hashes, and decisions.
+
+## Licensing, citation, and AI disclosure
+
+Project software is available under the MIT License. The paper,
+project-authored documentation, and project-authored research data are CC BY
+4.0; third-party material retains its original license. See [`LICENSE`](LICENSE)
+and [`CITATION.cff`](CITATION.cff).
+
+OpenAI Codex was used extensively for computational research, software
+engineering, artifact organization, and drafting. No model output was accepted
+as mathematical evidence. The precise scope and verification boundary are
+recorded in [`AI_USE.md`](AI_USE.md).

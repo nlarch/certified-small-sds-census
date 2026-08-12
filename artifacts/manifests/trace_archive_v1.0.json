@@ -1,0 +1,7 @@
+{
+  "archive": "certified-small-sds-drat-traces-v1.0.tar.gz",
+  "archive_bytes": 242210838,
+  "archive_sha256": "364d658277f227838039d3c5b408f6471e3619cc44e956f8449d5d92771cec99",
+  "manifest": "artifacts/manifests/trace_archive_manifest_v1.0.json",
+  "manifest_sha256": "06d8595b4ead21dee7a903891fd21bd57a22d769f000604ee4dae3faf29e747e"
+}
