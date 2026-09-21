@@ -1,5 +1,9 @@
 # Two Small-Order Classification Theorems for Signed Difference Sets
 
+> Historical version 1.0 draft. The canonical revised manuscript is
+> `paper/two_small_order_classifications.tex`, with the current rendered PDF
+> under `output/pdf/`.
+
 Nicolas Masselot  
 August 12, 2026
 

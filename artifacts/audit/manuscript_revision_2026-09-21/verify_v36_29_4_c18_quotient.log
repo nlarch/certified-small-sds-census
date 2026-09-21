@@ -1,0 +1,8 @@
+{
+  "output": "artifacts/audit/manuscript_revision_2026-09-21/verify_v36_29_4_c18_quotient.json",
+  "sha256": "2b7583d35cf4cc14523e364bc034f4b00e827b8014aaabc2aef906d5fed8b6f5",
+  "c9_solutions": 9,
+  "c18_sum_norm_candidates": 7560,
+  "c18_solutions": 0,
+  "runtime_seconds": 1.867871958
+}

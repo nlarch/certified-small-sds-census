@@ -23,3 +23,26 @@ work, reviewed the framing, and remains responsible for the mathematical
 claims and for any public release. AI assistance should be disclosed in any
 derived manuscript, preprint, repository release, or submission, subject also
 to the policy of the receiving venue.
+
+## Attribution and verification limits (September 21, 2026 revision)
+
+The AI contribution extended to proposing research approaches and implementing
+the computations, not only to editing prose. The project record identifies
+OpenAI Codex but does not establish a particular model version for every
+historical step; the manuscript does not assign one retrospectively.
+
+The two principal classification theorems now use explicit constructions and
+solver-free finite enumerations. The broader census also uses checked DRAT
+certificates. Checking stored proof hashes and earlier checker outputs is an
+integrity audit, not a fresh replay of those proofs.
+
+Fabian Arévalo's external review independently reproduced the original
+witness and quotient calculations. The local direct C6 x C6 program was
+subsequently adapted from his review code and must not be counted as another
+independent implementation. His review disclosed substantial AI assistance;
+it did not audit the project's CNF encoder or the entire Zenodo archive.
+
+Deterministic reruns and independent implementations provide evidence with
+the scope described in the manuscript. They do not establish a formal
+verification of the software stack or a separate line-by-line human audit of
+every mathematical argument and program. No such human audit is asserted.

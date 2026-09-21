@@ -36,7 +36,10 @@
     "steps_per_restart": 5000
   },
   "frozen_at_utc": "2026-08-12T00:34:09.460996+00:00",
-  "group": "C_5 x C_5",
+  "group_invariant_factors": [
+    5,
+    5
+  ],
   "independent_validation": {
     "autocorrelation": [
       12,

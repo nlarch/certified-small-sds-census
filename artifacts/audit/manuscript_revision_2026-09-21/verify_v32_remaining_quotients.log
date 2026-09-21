@@ -1,0 +1,5 @@
+SDS(32,20,4,[32]) PASS
+SDS(32,28,12,[32]) PASS
+SDS(32,28,12,[2,16]) PASS
+SDS(32,28,12,[2,2,2,2,2]) PASS
+independent v=32 quotient verification: PASS

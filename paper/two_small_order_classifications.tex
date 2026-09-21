@@ -1,0 +1,657 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage{xurl}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,allcolors=blue!55!black]{hyperref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\C}{\mathrm{C}}
+\newcommand{\SDS}{\operatorname{SDS}}
+\newcommand{\corr}{\operatorname{corr}}
+
+\title{Two Small-Order Classification Theorems\\
+for Signed Difference Sets}
+\author{Nicolas Masselot\\\small Independent researcher, Paris, France\\
+\small \texttt{nicolas.masselot@edu.escp.eu}}
+\date{September 21, 2026}
+
+\hypersetup{
+  pdftitle={Two Small-Order Classification Theorems for Signed Difference Sets},
+  pdfauthor={Nicolas Masselot},
+  pdfsubject={Signed difference sets and exact finite classification},
+  pdfkeywords={signed difference sets, finite abelian groups, quotient enumeration,
+    autocorrelation, computer-assisted proof}
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+A signed difference set assigns coefficients in $\{0,1,-1\}$ to a finite
+group so that every nonidentity periodic autocorrelation has the same value.
+We settle two clusters of cases that were open in the April 24, 2026 snapshot
+of the La Jolla Signed Difference Set Repository.  First, a signed
+$(32,20,4)$ difference set exists in an abelian group of order $32$ if and
+only if the group is noncyclic.  The six positive cases are given by explicit
+coefficient vectors, while the cyclic case is excluded by a complete
+$\C_8\to\C_{16}\to\C_{32}$ quotient refinement.  Second, no abelian group
+of order $36$ admits a signed $(36,29,4)$ difference set.  This is proved by
+three short exhaustive arguments: an empty $\C_{18}$ quotient system excludes
+$\C_{36}$ and $\C_2\times\C_{18}$ simultaneously; an empty
+$\C_2\times\C_3^2$ quotient system excludes $\C_3\times\C_{12}$; and a
+solver-free two-marginal enumeration excludes $\C_6\times\C_6$.  All searches
+use exact arithmetic, expose their complete finite search spaces, and are
+accompanied by regenerating verification programs.  An external
+computational review reproduced the witnesses and the finite computations
+supporting these two theorems; its scope is stated separately below.
+\end{abstract}
+
+\noindent\textbf{Keywords.}
+Signed difference set; finite abelian group; quotient enumeration;
+autocorrelation; computer-assisted proof.
+
+\medskip
+\noindent\textbf{2020 Mathematics Subject Classification.}
+05B10; 05B20; 20K01.
+
+\section{Introduction}
+
+Let $G$ be a finite group of order $v$.  A signed subset of $G$ is a group
+ring element
+\[
+    D=\sum_{g\in G} a_g g, \qquad a_g\in\{0,1,-1\}.
+\]
+Following Gordon~\cite{gordon}, $D$ is a signed $(v,k,\lambda)$ difference
+set when exactly $k$ coefficients are nonzero and
+\begin{equation}\label{eq:sds}
+    DD^{(-1)}=(k-\lambda)e+\lambda G.
+\end{equation}
+Equivalently, its periodic autocorrelation is $k$ at the identity and
+$\lambda$ at every nonidentity shift.  Signed difference sets contain
+ordinary difference sets and circulant weighing matrices as special cases;
+further constructions were obtained by He, Chen, and Ge~\cite{hechenge}.
+
+The starting point of this work was the La Jolla Signed Difference Set
+Repository~\cite{repository}, frozen at commit
+\texttt{e3bf810c5ee6826cf5030f983f6adf23b0ffd20e} on April 24, 2026.
+The following two theorems concern ten entries marked \texttt{Open} in that
+snapshot.
+
+\begin{theorem}[Order $32$ classification]\label{thm:32}
+Let $G$ be an abelian group of order $32$.  A signed $(32,20,4)$ difference
+set exists in $G$ if and only if $G$ is noncyclic.  The positive direction is
+certified by six explicit constructions; the negative direction is certified
+by a complete quotient refinement for $\C_{32}$.
+\end{theorem}
+
+\begin{theorem}[Order $36$ classification]\label{thm:36}
+No abelian group of order $36$ admits a signed $(36,29,4)$ difference set.
+\end{theorem}
+
+The results are existence classifications, not classifications up to
+equivalence.  In particular, the six positive files at order $32$ contain one
+representative per group; we do not claim that they contain all orbits under
+translations, automorphisms, and global sign.
+
+The first version of this note used the repository's cyclic $\C_{36}$
+nonexistence and a proof-producing SAT calculation for the final
+$\C_6\times\C_6$ case.  Independent review by Ar\'evalo~\cite{arevalo-review}
+produced two simplifications now incorporated here: a one-step $\C_{18}$
+quotient exclusion for the cyclic case and a direct solver-free exhaustion
+for $\C_6\times\C_6$.  The original DRAT certificate is retained as an
+independent supplementary check, but neither Theorem~\ref{thm:36} nor its
+presentation now depends on SAT.
+
+\section{Arithmetic constraints and quotient projection}
+
+For $h\in G$, write
+\[
+    \corr_D(h)=\sum_{g\in G}a_g a_{h^{-1}g}.
+\]
+Equation~\eqref{eq:sds} is equivalent to
+$\corr_D(e)=k$ and $\corr_D(h)=\lambda$ for $h\ne e$.
+Applying the trivial character gives
+\begin{equation}\label{eq:augmentation}
+    \left(\sum_{g\in G}a_g\right)^2=k+(v-1)\lambda.
+\end{equation}
+For every nonprincipal character $\chi$ of an abelian group,
+\begin{equation}\label{eq:character}
+    \left|\sum_{g\in G}a_g\chi(g)\right|^2=k-\lambda.
+\end{equation}
+Thus a global sign may normalize the coefficient sum to be nonnegative.
+For $(32,20,4)$ the sum is $12$, so a solution has $16$ positive and $4$
+negative coefficients.  For $(36,29,4)$ the sum is $13$, so a solution has
+$21$ positive and $8$ negative coefficients.
+
+The computational reductions use the following elementary projection.  Its
+sum and squared-norm consequences are also instances of the
+intersection-number relations in Lemma~5.2 of Gordon~\cite{gordon}.
+
+\begin{lemma}[Quotient projection]\label{lem:projection}
+Let $K\trianglelefteq G$ have order $m$, let $Q=G/K$, and define the cell-sum
+projection
+\[
+    B=\sum_{q\in Q}b_q q, \qquad
+    b_q=\sum_{g\in q}a_g.
+\]
+If $D$ is a signed $(v,k,\lambda)$ difference set, then
+\begin{equation}\label{eq:quotient}
+    BB^{(-1)}=(k-\lambda)e_Q+m\lambda Q.
+\end{equation}
+Consequently,
+\[
+    \sum_q b_q=\sum_g a_g,
+    \qquad
+    \sum_q b_q^2=k+(m-1)\lambda,
+\]
+and every nonzero quotient shift has correlation $m\lambda$.  Each cell is an
+integer in $[-m,m]$.
+\end{lemma}
+
+\begin{proof}
+The natural map $\Z[G]\to\Z[Q]$ is a ring homomorphism.  Applying it to
+Equation~\eqref{eq:sds} sends $e$ to $e_Q$ and sends the formal sum $G$ to
+$mQ$, which gives Equation~\eqref{eq:quotient}.  Reading the identity
+coefficient gives the sum of squares, and applying the trivial character
+gives the total sum.  The cell bound follows because each fiber contains $m$
+coefficients in $\{0,1,-1\}$.
+\end{proof}
+
+\section{What the exhaustive programs enumerate}\label{sec:method}
+
+We describe the finite searches explicitly because a failed heuristic search
+would not prove nonexistence.  For a quotient $Q$ of size $r$ and kernel size
+$m$, the basic enumerator performs the following steps.
+
+\begin{enumerate}[label=\textbf{E\arabic*.},leftmargin=3em]
+\item Generate every vector $b\in[-m,m]^r\cap\Z^r$ having the required total
+sum and squared norm from Lemma~\ref{lem:projection}.  A depth-first traversal
+uses necessary feasibility bounds: the remaining cells must be able to
+reach the remaining sum and squared norm, and Cauchy--Schwarz requires
+$(\text{remaining sum})^2\le
+(\text{remaining cells})(\text{remaining norm})$.
+\item For each terminal vector, calculate all $r$ quotient correlations
+directly and retain it precisely when the identity and every nonidentity
+value agree with Equation~\eqref{eq:quotient}.
+\item When a retained cell of size $2m$ is refined into two cells of size
+$m$, generate every bounded pair whose sum is the parent value.  Repeat until
+the final entries lie in $\{0,1,-1\}$, then check the support size and every
+full-group correlation.
+\end{enumerate}
+
+Every loop is finite and uses exact integer arithmetic.  Translation and
+automorphism orbits are used only where their actions are proved to lift to
+the next quotient.  Regenerating checkers reconstruct the search spaces
+rather than trusting saved candidate counts.  Positive witnesses are checked
+by two structurally separate implementations: one uses tuple-valued group
+elements and a dictionary operation, while the other uses mixed-radix integer
+indices.
+
+\section{The six constructions at order 32}
+
+There are seven abelian groups of order $32$.  The six noncyclic groups all
+admit signed $(32,20,4)$ difference sets.  Table~\ref{tab:witnesses} points to
+one full coefficient vector for each group.  Every vector contains $16$
+entries $+1$, four entries $-1$, and twelve zeros, and both validators return
+the correlation vector $(20,4,\ldots,4)$.
+
+\begin{table}[ht]
+\centering
+\caption{Explicit order-$32$ witnesses in the accompanying data.}
+\label{tab:witnesses}
+\small
+\begin{tabular}{@{}ll@{}}
+\toprule
+Group & Witness file under \texttt{artifacts/witnesses/}\\
+\midrule
+$\C_2\times\C_{16}$ & \texttt{sds\_32\_20\_4\_2\_16.json}\\
+$\C_4\times\C_8$ & \texttt{sds\_32\_20\_4\_4\_8.json}\\
+$\C_2^2\times\C_8$ & \texttt{sds\_32\_20\_4\_2\_2\_8.json}\\
+$\C_2\times\C_4^2$ & \texttt{sds\_32\_20\_4\_2\_4\_4.json}\\
+$\C_2^3\times\C_4$ & \texttt{sds\_32\_20\_4\_2\_2\_2\_4.json}\\
+$\C_2^5$ & \texttt{sds\_32\_20\_4\_2\_2\_2\_2\_2.json}\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The JSON files record the invariant factors, coordinate convention, full
+coefficient vector, positive and negative point sets, and complete
+autocorrelation output.  They are also exported as $[P,N]$ coordinate lists
+in the format of the La Jolla repository.  Appendix~\ref{app:witnesses}
+records the six constructions explicitly.  Since existence is verified by
+substitution in Equation~\eqref{eq:sds}, the six files prove the positive
+direction of Theorem~\ref{thm:32}.
+
+\section{Excluding the cyclic group of order 32}\label{sec:c32}
+
+Let $D$ be a hypothetical signed $(32,20,4)$ difference set in $\C_{32}$.
+Projection first to $\C_8$ uses a kernel of order $4$.  The cells therefore
+lie in $[-4,4]$, have sum $12$, squared norm
+$20+3\cdot4=32$, and nonzero correlation $16$.  The complete enumeration
+from Section~\ref{sec:method} has the counts in Table~\ref{tab:c32}.
+
+\begin{table}[ht]
+\centering
+\caption{Complete cyclic quotient refinement for $(32,20,4)$.}
+\label{tab:c32}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Stage & Examined & Surviving\\
+\midrule
+$\C_8$: bounded vectors after sum and norm & $9{,}528$ & $56$\\
+Affine orbits on $\C_8$ & $56$ & $5$ orbits\\
+$\C_{16}$ refinements of the five representatives & complete & $12$\\
+$\C_{32}$ coefficient refinements & $248{,}832$ & $0$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The five $\C_8$ orbit sizes are $8,16,8,16,8$.  The affine action is generated
+by translations and multiplication by units.  Both operations lift through
+$\C_{16}$ to $\C_{32}$ because reduction
+$(\Z/32\Z)^\times\to(\Z/8\Z)^\times$ is onto.  For each representative, every
+bounded split into two $\C_{16}$ cells is generated and checked.  All twelve
+$\C_{16}$ survivors in the normalized parent slices are retained; no second
+symmetry quotient is imposed.  Each is then split in every possible way into
+two coefficients in $\{0,1,-1\}$, with exact support checked before all $31$
+full correlations.  No full vector survives.
+
+As an independent robustness check, Ar\'evalo refined all $56$ $\C_8$
+solutions without any orbit reduction.  That calculation produced $144$
+$\C_{16}$ survivors and tested $2{,}985{,}984$ final refinements, again with
+no solution~\cite{arevalo-review}.  Thus the negative direction does not
+depend in practice on the affine reduction.  This completes the proof of
+Theorem~\ref{thm:32}.
+
+\section{The order 36 classification}\label{sec:v36}
+
+The abelian groups of order $36$ are
+\[
+    \C_{36},\qquad \C_2\times\C_{18},\qquad
+    \C_3\times\C_{12},\qquad \C_6\times\C_6.
+\]
+For $(36,29,4)$, Equation~\eqref{eq:augmentation} gives normalized sum $13$.
+We exclude the four groups in three computations.
+
+\subsection{One C18 system excludes two groups}
+
+Both $\C_{36}$ and $\C_2\times\C_{18}$ have a quotient $\C_{18}$ with kernel
+of order $2$.  A projected vector must therefore lie in $[-2,2]^{18}$, have
+sum $13$, squared norm $29+4=33$, and correlation $8$ at every nonzero shift.
+
+Rather than enumerate $5^{18}$ vectors, the verifier constructs the complete
+$\C_9$ and $\C_2$ marginal systems first.  The $\C_9$ system has cell bound
+$4$, squared norm $41$, and nonzero correlation $16$.  Among $106{,}353$
+vectors satisfying sum and norm, its only nine solutions are the nine
+translations of
+\[
+    (-3,2,2,2,2,2,2,2,2).
+\]
+The $\C_2$ system has precisely the two solutions $(4,9)$ and $(9,4)$.
+For every one of the $9\cdot2$ marginal pairs, the program enumerates every
+split
+\[
+    b_i+b_{i+9}=t_i,\qquad b_i,b_{i+9}\in[-2,2],
+\]
+and retains the required even and odd sums.  There are $19{,}152$
+marginal-compatible refinements, of which $7{,}560$ have squared norm $33$.
+Direct evaluation of all $18$ cyclic correlations leaves no solution.
+Consequently neither $\C_{36}$ nor $\C_2\times\C_{18}$ admits the required
+signed difference set.
+
+\subsection{The group C3 x C12}
+
+Project $\C_3\times\C_{12}$ onto $\C_2\times\C_3^2$ with kernel order $2$.
+The real marginal is one of $(4,9)$ and $(9,4)$, and the $\C_3^2$ marginal is
+a translation of $(-3,2,\ldots,2)$.  Translation in the two quotient factors
+acts independently and lifts to $\C_3\times\C_{12}$, so one pair suffices.
+The local combined-quotient checker uses this normalization; Ar\'evalo's
+external review additionally checked every marginal pair without it.
+
+For the normalized pair, each of the nine $\C_3^2$ cells is split into two
+entries in $[-2,2]$, while the row sums are fixed to $(4,9)$.  Exactly $420$
+vectors satisfy these marginals and squared norm $33$.  None has correlation
+$8$ at all $17$ nonzero shifts of $\C_2\times\C_3^2$.  The quotient system is
+empty, so no full signed difference set exists in $\C_3\times\C_{12}$.
+
+\subsection{A direct solver-free search for C6 x C6}
+
+Use the Chinese remainder isomorphism
+\[
+    \C_6\times\C_6\cong \C_2^2\times\C_3^2.
+\]
+The complete $\C_3^2$ quotient system consists of the nine translations of
+$(-3,2,\ldots,2)$.  The complete $\C_2^2$ quotient system consists of the four
+translations of $(7,2,2,2)$.  The direct search examines all $9\cdot4=36$
+pairs, so it uses no symmetry normalization.
+
+Fix a marginal pair $(T,R)$.  For each of the nine $\C_3^2$ positions $j$,
+generate every pattern $p_j\in\{-1,0,1\}^4$ satisfying
+$\sum_z p_j(z)=T_j$.  Split the nine fibers into groups of four and five.
+For each half, store the four partial $\C_2^2$ sums; join two half-vectors
+exactly when their partial sums add to $R$.  This meet-in-the-middle step is
+only an indexing optimization: it generates every full vector with the chosen
+marginals exactly once.
+
+Across all $36$ marginal pairs, the joins produce $16{,}964{,}640$ full
+vectors.  Each is filtered by the $35$ nonidentity correlation equations in
+exact integer arithmetic.  The dot products have magnitude at most $36$, so
+the signed $64$-bit batch operations cannot overflow.  Every candidate has
+sum $13$; if all $35$ nonidentity correlations were $4$, their sum would force
+the identity correlation to be $13^2-35\cdot4=29$.  Thus no separate support
+filter is omitted.  No vector survives.  The original SAT encoding
+and its checked DRAT trace reach the same conclusion, but are not needed for
+this proof.  The four abelian groups have now all been excluded, proving
+Theorem~\ref{thm:36}.
+
+\section{Independent replication and verification limits}
+
+Ar\'evalo's review~\cite{arevalo-review} reimplemented the checks from the
+definition, independently of the original project's two witness validators,
+quotient programs, and SAT encoder.  The present $\C_6\times\C_6$ program
+was subsequently adapted from that review, so it is not a third independent
+implementation of the direct search.  The review reports the following.
+
+\begin{itemize}
+\item All $16$ witnesses from the broader census pass a third checker written
+against Gordon's convention.
+\item Every count in Sections~\ref{sec:c32} and~\ref{sec:v36} was reproduced.
+For the cyclic order-$32$ and the order-$36$ quotient systems, all symmetry
+reductions were removed and the same nonexistence decisions were obtained.
+\item The direct $\C_6\times\C_6$ search over $16{,}964{,}640$ candidates was
+the independent source of the simplified proof now used above.
+\item A cell-by-cell comparison of the larger $68$-entry census found $58$
+agreements with Ar\'evalo's earlier census and no disagreement; the ten cases
+in Theorems~\ref{thm:32} and~\ref{thm:36} are exactly the ten his census had
+left open.
+\end{itemize}
+
+The review did not audit the CNF encoder or the contents of the large Zenodo
+archive.  That limitation no longer bears on Theorem~\ref{thm:36}, because the
+direct search replaces the SAT argument.  The review itself used substantial
+AI assistance, disclosed by its author; its evidentiary claims are backed by
+committed deterministic programs and outputs rather than model responses.
+
+\section{Exact computation and reproducibility}\label{sec:verification}
+
+The accompanying source tree contains the manuscript, witnesses, exact
+quotient programs, and machine-readable outputs.  Table~\ref{tab:checks}
+connects each part of the two theorems to the finite calculation that checks
+it.  The mathematical reductions and completeness arguments are given in
+Sections~\ref{sec:method}--\ref{sec:v36}; agreement with a stored count alone
+would not establish that a search covers every possible solution.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Verification targets for the two classification theorems.}
+\label{tab:checks}
+\begin{tabular}{@{}p{0.30\linewidth}p{0.64\linewidth}@{}}
+\toprule
+Claim & Exact check and expected result\\
+\midrule
+Six positive order-$32$ cases & Both validators recompute support $20$ and
+all $32$ correlations of each printed construction.\\[3pt]
+No solution in $\C_{32}$ & $9{,}528$ bounded $\C_8$ candidates yield $56$
+solutions in five affine orbits; $12$ normalized $\C_{16}$ refinements
+yield $248{,}832$ final candidates and no solution.\\[3pt]
+No solution in $\C_{36}$ or $\C_2\times\C_{18}$ & All $18$ marginal pairs
+yield $19{,}152$ refinements; $7{,}560$ have norm $33$, and none satisfies
+the $\C_{18}$ correlations.\\[3pt]
+No solution in $\C_3\times\C_{12}$ & The normalized quotient system has
+$420$ marginal-and-norm candidates and no solution.\\[3pt]
+No solution in $\C_6\times\C_6$ & All $36$ marginal pairs yield
+$16{,}964{,}640$ full vectors and no solution.\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+From the project root, the following commands rerun the witness audit and
+the four finite computations.  The environment requires Python~3; the
+direct $\C_6\times\C_6$ calculation additionally uses NumPy~2.0.2.
+\begin{verbatim}
+.venv/bin/python scripts/audit_final_census.py
+.venv/bin/python scripts/verify_v32_remaining_quotients.py
+.venv/bin/python scripts/verify_v36_29_4_c18_quotient.py
+.venv/bin/python scripts/verify_v36_29_4_combined_quotients.py
+.venv/bin/python scripts/verify_v36_29_4_c6x6_direct.py
+\end{verbatim}
+The first command checks the full census and both witness validators; it
+also requires the separate CNF/DRAT files when auditing their stored hashes.
+The remaining commands regenerate the cyclic order-$32$ ladder, the empty
+$\C_{18}$ system, the combined quotients (including $\C_3\times\C_{12}$),
+and the full $\C_6\times\C_6$ search, respectively.  The lightweight package
+provides \texttt{verify\_package.py} for checking its file manifest and all
+$16$ witnesses without the large trace archive.
+
+The calculations use integer arithmetic, with no floating-point tolerance,
+randomized acceptance test, or language-model judgment.  Python integer
+operations are unbounded.  The only fixed-width correlation batches use
+signed $64$-bit integers on $36$ coefficients in $\{-1,0,1\}$; each product
+has magnitude at most one and each sum at most $36$.  Early rejection uses
+necessary equations, so a rejected candidate cannot be a solution.  The
+saved outputs document the runs, while the source describes how to recreate
+their finite search spaces.
+
+These computational checks do not constitute a formal verification of the
+Python interpreter, NumPy, or the mathematical reductions.  Repeating an
+AI-assisted calculation is also distinct from an independent human proof
+audit.  The external review and the independently implemented witness
+validators provide the additional checks described above.
+
+\subsection{Relation to the larger census and archived releases}
+
+The two theorems emerged from a census of all $68$ entries with group order at
+most $36$ marked \texttt{Open} in the frozen repository snapshot.  That
+broader project records $16$ existence results and $52$ nonexistence results.
+The ten cases treated here are the principal novelty-supported mathematical
+contribution; the other $58$ are independent replications of an exact public
+predecessor.  Literature and repository searches found no earlier resolution
+of the ten cases, but absence from a search is not a mathematical proof of
+novelty.
+
+The public version~1.0 repository is available at~\cite{masselot-repo}.
+The original $1.1$~GB collection of CNF formulas and DRAT traces is archived
+at Zenodo~\cite{zenodo}.  It remains useful as an independent certificate set
+for the larger census, even though the order-$36$ theorem now has a
+solver-free proof.  The source package accompanying this submission contains
+the additional order-$36$ checks described here; the public version~1.0
+release and its DOI should not be mistaken for an archive of this revised
+manuscript.
+
+\section{Use of generative AI and author responsibility}
+
+OpenAI Codex was used extensively throughout this project, including to
+propose candidate character, quotient, and SAT search strategies; write and
+revise search programs, tests, and validators; execute local experiments;
+organize evidence and reproducibility materials; and draft and revise the
+mathematical exposition.  Its contribution therefore extended to research
+exploration and implementation as well as language editing.  The particular
+model version used for every historical step is not established by the
+project's disclosure record; no single model version is asserted here.
+
+The evidentiary basis is the explicit constructions, complete finite
+enumerations, and deterministic checks described in
+Section~\ref{sec:verification}.  An AI-generated argument, a failed search,
+or an unchecked solver answer is not accepted as evidence.  The two
+theorems in this revision use the direct enumerations; the checked DRAT
+certificates support additional census entries and a supplementary check
+of the $\C_6\times\C_6$ case.  Ar\'evalo's independently developed review
+also disclosed substantial AI assistance, with the specific coverage and
+limitations stated above.
+
+The human author selected the objective, authorized the computational work,
+and reviewed the framing, and remains responsible for the claims and any
+submission or public release.  This statement records the documented roles
+and checks; it does not assert a separate line-by-line human verification
+of every argument or program.  Tan's recent work on circulant weighing
+matrices~\cite{tan} provides a related example of reporting exact
+computations alongside an explicit AI-use disclosure; the attribution here
+describes this project's own workflow.
+
+\paragraph{Acknowledgments.}
+The author thanks Daniel M. Gordon for discussing the prior-art search and
+mathematical framing, clarifying the repository data format, and encouraging
+journal submission.  The author thanks Fabian Ar\'evalo for a detailed
+independent reproduction, for the $\C_{18}$ observation, and for the
+solver-free $\C_6\times\C_6$ enumeration used in the revised proof.
+
+\paragraph{Supplementary information.}
+Online Resource~1 is a reproducibility package containing the exact programs,
+witnesses, machine-readable outputs, run instructions, and an integrity
+manifest for the computations used in the two theorems.
+
+\section*{Statements and Declarations}
+
+\paragraph{Funding.}
+No funding was received to assist with the preparation of this manuscript or
+to conduct this study.
+
+\paragraph{Competing interests.}
+The author has no relevant financial or non-financial interests to disclose.
+
+\paragraph{Data availability.}
+The coefficient vectors, machine-readable outputs, and integrity manifests
+supporting the two classification theorems are included in the accompanying
+reproducibility package (Online Resource~1).  The version~1.0 CNF and DRAT
+archive for the broader census is publicly available from Zenodo at
+\url{https://doi.org/10.5281/zenodo.21901581}.  That archive is a historical
+release and is not presented as an archive of the present revision.
+
+\paragraph{Code availability.}
+The exact Python programs needed to validate the witnesses and regenerate the
+finite searches used in the two theorems are included in Online Resource~1.
+The public project repository is available at
+\url{https://github.com/NicolasMasselot/certified-small-sds-census}; the
+submission package records the revision-specific files separately from the
+public version~1.0 release.
+
+\paragraph{Author contribution.}
+Nicolas Masselot selected the research objective, directed the computational
+investigation, reviewed the mathematical framing, and takes responsibility
+for the manuscript and its submission.  The substantial roles of generative
+AI in research exploration, implementation, experiment execution, evidence
+organization, and drafting are described in the preceding section.  Fabian
+Ar\'evalo's separately authored review and the components adapted from it are
+attributed above and in the cited review artifact.
+
+\appendix
+\section{Explicit order-32 constructions}\label{app:witnesses}
+
+Coordinates are written in invariant-factor order.  In each case
+$D=\sum_{g\in P}g-\sum_{g\in N}g$.  Direct substitution gives support $20$
+and correlation $4$ at every nonidentity shift.
+
+\paragraph{$\C_2\times\C_{16}$.}
+\begin{align*}
+P={}&\{(0,5),(0,7),(0,10),(0,11),(0,13),(0,15),(1,0),(1,1),\\
+&\quad (1,3),(1,4),(1,7),(1,8),(1,9),(1,10),(1,12),(1,15)\},\\
+N={}&\{(0,2),(0,3),(1,2),(1,11)\}.
+\end{align*}
+
+\paragraph{$\C_4\times\C_8$.}
+\begin{align*}
+P={}&\{(0,4),(0,5),(0,6),(1,0),(1,1),(1,2),(1,3),(1,5),\\
+&\quad (1,6),(2,1),(2,2),(2,4),(3,2),(3,4),(3,6),(3,7)\},\\
+N={}&\{(0,0),(2,0),(3,1),(3,5)\}.
+\end{align*}
+
+\paragraph{$\C_2^2\times\C_8$.}
+\begin{align*}
+P={}&\{(0,0,1),(0,0,2),(0,0,3),(0,0,7),(0,1,0),(0,1,3),\\
+&\quad (0,1,4),(0,1,6),(0,1,7),(1,0,4),(1,0,5),(1,1,1),\\
+&\quad (1,1,3),(1,1,4),(1,1,6),(1,1,7)\},\\
+N={}&\{(0,1,1),(1,0,0),(1,0,6),(1,1,0)\}.
+\end{align*}
+
+\paragraph{$\C_2\times\C_4^2$.}
+\begin{align*}
+P={}&\{(0,0,3),(0,1,0),(0,1,1),(0,2,0),(0,2,1),(0,2,2),\\
+&\quad (0,3,1),(1,0,0),(1,1,0),(1,1,1),(1,1,3),(1,2,0),\\
+&\quad (1,2,3),(1,3,1),(1,3,2),(1,3,3)\},\\
+N={}&\{(0,0,0),(0,0,2),(0,1,2),(1,2,1)\}.
+\end{align*}
+
+\paragraph{$\C_2^3\times\C_4$.}
+\begin{align*}
+P={}&\{(0,0,0,0),(0,0,0,2),(0,0,0,3),(0,0,1,1),\\
+&\quad (0,0,1,2),(0,0,1,3),(0,1,0,0),(0,1,0,1),\\
+&\quad (0,1,1,1),(0,1,1,2),(1,0,0,0),(1,0,0,2),\\
+&\quad (1,0,1,2),(1,1,0,1),(1,1,0,2),(1,1,0,3)\},\\
+N={}&\{(0,1,0,3),(0,1,1,0),(1,0,0,1),(1,1,1,1)\}.
+\end{align*}
+
+\paragraph{$\C_2^5$.}
+\begin{align*}
+P={}&\{(0,0,1,1,0),(0,0,1,1,1),(0,1,0,0,0),(0,1,0,0,1),\\
+&\quad (0,1,0,1,1),(0,1,1,0,1),(1,0,0,0,0),(1,0,0,1,0),\\
+&\quad (1,0,0,1,1),(1,0,1,0,0),(1,0,1,1,1),(1,1,0,0,1),\\
+&\quad (1,1,0,1,0),(1,1,0,1,1),(1,1,1,0,0),(1,1,1,1,0)\},\\
+N={}&\{(0,0,0,1,1),(0,0,1,0,1),(1,0,1,0,1),(1,1,1,0,1)\}.
+\end{align*}
+
+\begin{thebibliography}{9}
+
+\bibitem{gordon}
+D. M. Gordon,
+\newblock Signed difference sets,
+\newblock \emph{Designs, Codes and Cryptography} \textbf{91} (2023),
+2107--2115.
+\newblock \url{https://doi.org/10.1007/s10623-022-01171-8}.
+
+\bibitem{hechenge}
+Z. He, T. Chen, and G. Ge,
+\newblock New constructions of signed difference sets,
+\newblock \emph{Designs, Codes and Cryptography} \textbf{92} (2024),
+2323--2340.
+\newblock \url{https://doi.org/10.1007/s10623-024-01389-8}.
+
+\bibitem{repository}
+D. M. Gordon,
+\newblock La Jolla Signed Difference Set Repository, version 1.2,
+April 24, 2026.
+\newblock \url{https://github.com/dmgordo/signed-difference-sets}.
+
+\bibitem{arevalo-review}
+F. Ar\'evalo,
+\newblock Bounded review of ``Two Small-Order Classification Theorems for
+Signed Difference Sets'',
+\newblock independent verification code and report, August 12, 2026,
+commit \texttt{05f18c4f9db8d3cb073f78fb486dce7c033a6b69}.
+\newblock \url{https://github.com/farev/Matematica/tree/main/conjectures/signed-difference-sets/masselot-review}.
+
+\bibitem{masselot-repo}
+N. Masselot,
+\newblock Certified Census of Small Signed Difference Sets,
+version 1.0 public repository and subsequent project history, 2026.
+\newblock \url{https://github.com/NicolasMasselot/certified-small-sds-census}.
+
+\bibitem{zenodo}
+N. Masselot,
+\newblock Certified Small Signed Difference Sets: CNF and DRAT Proof Archive,
+version 1.0, Zenodo, 2026.
+\newblock \url{https://doi.org/10.5281/zenodo.21901581}.
+
+\bibitem{tan}
+M. M. Tan,
+\newblock Character and Multiplier Obstructions for Circulant Weighing
+Matrices,
+\newblock arXiv:2608.18468v2 [math.CO], September 1, 2026.
+\newblock \url{https://arxiv.org/abs/2608.18468v2}.
+
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,179 @@
+{
+  "completed_at_utc": "2026-09-20T23:18:58.374432+00:00",
+  "environment": {
+    "platform": "macOS-26.3-arm64-arm-64bit",
+    "python": "3.9.6"
+  },
+  "instances": [
+    {
+      "instance": "SDS(36,29,4,[36])",
+      "reason": "The necessary C18 quotient system is empty.",
+      "result": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION"
+    },
+    {
+      "instance": "SDS(36,29,4,[2,18])",
+      "reason": "The necessary C18 quotient system is empty.",
+      "result": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION"
+    }
+  ],
+  "mathematical_argument": [
+    "Projection through a kernel of order m sends an SDS to bounded quotient cell sums with peak k+(m-1)lambda and off-peak m lambda.",
+    "Every bounded C9 quotient vector and every C2 quotient vector satisfying the exact sum, norm, and full correlation equations is enumerated without symmetry reduction.",
+    "Every pair splitting in [-2,2]^2 compatible with both marginals is enumerated, then every resulting C18 vector of norm 33 is checked at all 18 cyclic shifts.",
+    "The C18 quotient system has no solution, excluding both C36 and C2 x C18."
+  ],
+  "parameters": {
+    "coefficient_sum": 13,
+    "k": 29,
+    "lambda": 4,
+    "v": 36
+  },
+  "provenance": {
+    "implementation": "Independent local standard-library implementation; no external review code imported.",
+    "observation": "Suggested by Fabian Arevalo in his independent review of project version 1.0.",
+    "review_commit_checked": "05f18c4f9db8d3cb073f78fb486dce7c033a6b69",
+    "review_repository": "https://github.com/farev/Matematica/tree/main/conjectures/signed-difference-sets/masselot-review"
+  },
+  "result": "NONEXISTENT_BY_EXHAUSTIVE_CHARACTER_REDUCTION",
+  "runtime_seconds": 1.867871958,
+  "schema": "v36-29-4-c18-quotient-exhaustion-v1",
+  "started_at_utc": "2026-09-20T23:18:56.527411+00:00",
+  "systems": {
+    "C18_kernel_order_2": {
+      "cell_bound": 2,
+      "marginal_compatible_refinements": 19152,
+      "off_peak": 8,
+      "peak": 33,
+      "solutions": 0,
+      "sum": 13,
+      "sum_norm_candidates": 7560
+    },
+    "C2_kernel_order_18": {
+      "cell_bound": 18,
+      "off_peak": 72,
+      "peak": 97,
+      "solution_vectors": [
+        [
+          4,
+          9
+        ],
+        [
+          9,
+          4
+        ]
+      ],
+      "solutions": 2,
+      "sum": 13,
+      "sum_norm_candidates": 2
+    },
+    "C9_kernel_order_4": {
+      "cell_bound": 4,
+      "off_peak": 16,
+      "peak": 41,
+      "solution_vectors": [
+        [
+          -3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          -3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          -3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          -3,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          2,
+          -3,
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          2,
+          2,
+          -3,
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          -3,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          -3,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          -3
+        ]
+      ],
+      "solutions": 9,
+      "sum": 13,
+      "sum_norm_candidates": 106353
+    }
+  }
+}

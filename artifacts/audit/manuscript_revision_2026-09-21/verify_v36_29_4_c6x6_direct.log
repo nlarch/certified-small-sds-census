@@ -1,0 +1,8 @@
+{
+  "output": "artifacts/audit/manuscript_revision_2026-09-21/verify_v36_29_4_c6x6_direct.json",
+  "sha256": "0a6cac4070d294bace6a8c6283f565036550926cb0fe31bd6ad5266ac23b2764",
+  "marginal_pairs": 36,
+  "candidates": 16964640,
+  "solutions": 0,
+  "runtime_seconds": 77.512000709
+}

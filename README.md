@@ -14,29 +14,33 @@ C2 x C2 x C2 x C4, and C2 x C2 x C2 x C2 x C2.
 For `C32`, a complete `C8 -> C16 -> C32` quotient refinement exhausts all
 possibilities and finds none.
 
-**Theorem 2 (the previously open noncyclic order 36 cases).** None of
+**Theorem 2 (order 36 classification).** No abelian group of order 36 admits
+a signed `(36,29,4)` difference set. The four groups are
 
 ```text
-C2 x C18, C3 x C12, and C6 x C6
+C36, C2 x C18, C3 x C12, and C6 x C6.
 ```
 
-admits a signed `(36,29,4)` difference set. The first two cases are excluded
-by complete quotient enumerations. For `C6 x C6`, quotient reductions leave
-one normalized orbit, whose exact CNF formula is proved unsatisfiable by a
-DRAT certificate checked independently with `drat-trim`.
-
-The frozen repository already recorded the cyclic `C36` case as
-nonexistent. Consequently, the theorem established here together with that
-earlier result closes `(36,29,4)` for every abelian group of order 36.
+An empty `C18` quotient system excludes `C36` and `C2 x C18` simultaneously.
+An empty `C2 x C3^2` quotient excludes `C3 x C12`. A solver-free direct
+enumeration checks all 36 marginal pairs and 16,964,640 candidates for
+`C6 x C6`, with no survivor. The earlier DRAT certificate remains an
+independent supplementary check.
 
 These are the two principal mathematical results. The complete 68-entry
 census described below is the broader verification project in which they were
 obtained.
 
-The accompanying English note is available as
-[`paper/two_small_order_classifications.md`](paper/two_small_order_classifications.md)
-and as a visually checked 10-page
-[`PDF`](output/pdf/two_small_order_classifications.pdf).
+The revised English manuscript is available as journal-ready
+[`LaTeX source`](paper/two_small_order_classifications.tex) and as a visually
+checked [`PDF`](output/pdf/two_small_order_classifications.pdf). The earlier
+Markdown draft is retained as the version 1.0 historical text.
+
+The September 21, 2026 manuscript revision makes the AI contributions,
+claim-by-claim checks, and verification limits explicit. All five relevant
+local checks were rerun successfully; see the
+[`revision record`](release/MANUSCRIPT_REVISION_2026-09-21.md).
+The version 1.0 release archives do not include this manuscript revision.
 
 ## What is this project about?
 
@@ -142,8 +146,19 @@ The human-readable synthesis is [`FINAL_REPORT.md`](FINAL_REPORT.md).
 - Other negative results use transparent character or quotient exhaustions,
   with separate verification programs for the final v=27, v=32, and v=36
   reductions.
+- The order-36 theorem additionally has a solver-free proof that enumerates
+  every marginal pair without symmetry reduction.
 - Raw `UNSAT`, timeouts, and failed searches remain non-evidence and are not
   consumed by `scripts/build_census.py`.
+
+Fabian Arévalo's separately authored review reports checks of all 16 witnesses,
+reproductions of the finite-search counts used in the two theorem proofs, and
+agreement with his independent 58-entry census. The manuscript states the
+scope and limitations of that review, including its disclosed AI assistance
+and the later adaptation of its C6 x C6 code. Daniel M. Gordon discussed the
+prior-art search and mathematical framing and encouraged journal submission.
+Neither correspondence establishes formal verification, journal acceptance,
+or a guarantee of novelty.
 
 ## Fast final audit
 
@@ -153,6 +168,8 @@ The human-readable synthesis is [`FINAL_REPORT.md`](FINAL_REPORT.md).
 python3 scripts/verify_v27_remaining_quotients.py
 python3 scripts/verify_v32_remaining_quotients.py
 python3 scripts/verify_v36_29_4_combined_quotients.py
+python3 scripts/verify_v36_29_4_c18_quotient.py
+.venv/bin/python scripts/verify_v36_29_4_c6x6_direct.py
 ```
 
 The audit checks all 68 top-level evidence hashes, reruns both validators on
